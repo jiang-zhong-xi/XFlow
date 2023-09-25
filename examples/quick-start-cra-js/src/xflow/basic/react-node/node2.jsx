@@ -1,10 +1,7 @@
 import React from 'react'
-import { useAppContext } from '@antv/xflow'
 import './node2.less'
 
-const Node2 = props => {
-  const ctx = useAppContext()
-
+const Node2 = () => {
   return (
     <div className="node2-container">
       <div>{'React节点2'}</div>

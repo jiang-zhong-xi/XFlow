@@ -5,6 +5,7 @@ import { LinkShape } from './link'
 // js 实现类似 typescript enum
 const makeEnum = obj => {
   Object.entries(obj).forEach(([key, value]) => {
+    console.log(key)
     obj[value] = value
   })
 

@@ -51,6 +51,7 @@ export const getRegisterNode = nodes => {
       height = NODE_HEIGHT,
       ports,
       parentKey,
+      renderCompoennt,
     } = item
     const id = uuidv4() // 暂不使用上层数据
     return {
@@ -65,6 +66,7 @@ export const getRegisterNode = nodes => {
       originData: { ...item },
       isCustom: true,
       parentKey,
+      renderCompoennt,
     }
   })
 }

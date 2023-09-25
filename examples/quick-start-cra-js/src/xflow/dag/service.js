@@ -19,7 +19,7 @@ MockApi.queryGraphMeta = async args => {
   return { ...args, flowId: args.meta.flowId }
 }
 /** 加载图数据的api */
-MockApi.loadGraphData = async meta => {
+MockApi.loadGraphData = async () => {
   const nodes = [
     {
       ...NODE_COMMON_PROPS,

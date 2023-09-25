@@ -5,8 +5,8 @@ import './edge1.less'
 
 const Edge1 = props => {
   const ctx = useAppContext()
-  // console.log('edge useAppContext', ctx);
-  // console.log('edge props:', props);
+  console.log('edge useAppContext', ctx)
+  console.log('edge props:', props)
   return (
     <div className="edge1-container">
       <Tooltip

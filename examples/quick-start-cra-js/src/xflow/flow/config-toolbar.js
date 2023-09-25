@@ -209,7 +209,7 @@ const registerIcon = () => {
   IconStore.set('SnippetsOutlined', SnippetsOutlined)
 }
 
-export const useToolbarConfig = createToolbarConfig((toolbarConfig, proxy) => {
+export const useToolbarConfig = createToolbarConfig(toolbarConfig => {
   registerIcon()
   /** 生产 toolbar item */
   toolbarConfig.setToolbarModelService(async (toolbarModel, modelService, toDispose) => {

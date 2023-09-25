@@ -13,7 +13,7 @@ export const useKeybindingConfig = createKeybindingConfig(config => {
       {
         id: 'delete node or edge',
         keybinding: 'backspace',
-        callback: async function (item, modelService, cmd, e) {
+        callback: async function (item, modelService, cmd) {
           const cells = await MODELS.SELECTED_CELLS.useValue(modelService)
           cells.map(cell => {
             if (cell.isNode()) {

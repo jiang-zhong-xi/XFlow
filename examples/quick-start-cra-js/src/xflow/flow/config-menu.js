@@ -77,9 +77,9 @@ NsMenuItemConfig.SEPARATOR = {
 // }
 
 export const useMenuConfig = createCtxMenuConfig(config => {
-  config.setMenuModelService(async (target, model, modelService, toDispose) => {
+  config.setMenuModelService(async (target, model) => {
     const { type, cell } = target
-    console.log(type)
+    console.log(type, cell)
     switch (type) {
       /** 节点菜单 */
       case 'node':

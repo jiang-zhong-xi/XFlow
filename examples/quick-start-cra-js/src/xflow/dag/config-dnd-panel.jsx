@@ -4,7 +4,7 @@ import { DND_RENDER_ID } from './constant'
 import { Card } from 'antd'
 import React from 'react'
 
-export const onNodeDrop = async (node, commands, modelService) => {
+export const onNodeDrop = async (node, commands) => {
   const args = {
     nodeConfig: { ...node, id: uuidv4() },
   }
