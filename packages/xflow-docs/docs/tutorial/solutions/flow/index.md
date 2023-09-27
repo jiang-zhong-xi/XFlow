@@ -63,13 +63,14 @@ FlowchartNodePanel 除了内置的常用节点外，提供了便捷的自定义�
 
 节点面板配置
 
-| 属性名           | 类型                             | 描述                                                   | 默认值       | 是否必填   |
-| ---------------- | -------------------------------- | ------------------------------------------------------ | ------------ | ---------- |
-| show             | boolean                          | 是否展示节点面板、常用于阅读态                         | -            | true       |
-| showHeader       | boolean                          | 是否展示 header                                        | true         | false      |
-| showOfficial     | boolean                          | 是否展示 通用面板                                      | true         | false      |
-| defaultActiveKey | string[]                         | 默认展开的面板，custom: 自定义节点；official: 内置节点 | ['official'] | ['custom'] |
-| registerNode     | `RegisterNode \| RegisterNode[]` | 自定义节点                                             | -            | false      |
+| 属性名           | 类型                             | 描述                                                   | 默认值                                       | 是否必填   |
+| ---------------- | -------------------------------- | ------------------------------------------------------ | -------------------------------------------- | ---------- |
+| show             | boolean                          | 是否展示节点面板                                       | true                                         | true       |
+| position         | IPosition                        | 面板位置                                               | { width: 240, top: 40, bottom: 0, right: 0 } | true       |
+| showHeader       | boolean                          | 是否展示 header                                        | true                                         | false      |
+| showOfficial     | boolean                          | 是否展示 通用面板                                      | true                                         | false      |
+| defaultActiveKey | string[]                         | 默认展开的面板，custom: 自定义节点；official: 内置节点 | ['official']                                 | ['custom'] |
+| registerNode     | `RegisterNode \| RegisterNode[]` | 自定义节点                                             | -                                            | false      |
 
 _RegisterNode_
 
@@ -82,10 +83,12 @@ _RegisterNode_
 
 ```ts
 interface CustomNode {
-  /** 节点名称，唯一 */
+  /** 节点名称，唯一，如果想用内置图形，可以直接写内置图形的名字，内置图形的名字见下方 */
   name: string
   /** 节点 React 组件 */
   component: NsGraph.INodeRender<any>
+  /** 定义图形 */
+  renderComponent: NsGraph.INodeRender<any>
   /** popover 组件 */
   popover?: React.Component<any>
   /** 默认标签 */
@@ -98,6 +101,41 @@ interface CustomNode {
   ports?: NsGraph.INodeConfig['ports']
 }
 ```
+
+如果 name 用了内置图形名称，那么只有 renderComponent 有效。
+
+如果 name 是非内置图形名称，如果只自定义了 component，那么组件和图形都是用这个 component；如果 component 和 renderComponent 都定义了，则 component 负责组件渲染，renderComponent 负责图形渲染。
+
+_内置图形名称_
+
+如果使用了内置名称，那么 component 属性失效。
+
+[
+"Terminal",
+"Process",
+"Decision",
+"Multi Document",
+"Connector",
+"DataIO",
+"Database",
+"Hard Disk",
+"Stroed Data",
+"Document",
+"Predefined Process",
+"Extract",
+"Merge",
+"Or",
+"Manual Input",
+"Preparation",
+"Delay",
+"Manual Operation",
+"Display",
+"Off Page Link",
+"Note Left",
+"Note Right",
+"Internal Storage",
+"Text"
+]
 
 ### 表单组件-FlowchartFormPanel
 

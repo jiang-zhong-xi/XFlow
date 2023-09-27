@@ -51,7 +51,7 @@ export const getRegisterNode = nodes => {
       height = NODE_HEIGHT,
       ports,
       parentKey,
-      renderCompoennt,
+      renderComponent,
     } = item
     const id = uuidv4() // 暂不使用上层数据
     return {
@@ -66,7 +66,7 @@ export const getRegisterNode = nodes => {
       originData: { ...item },
       isCustom: true,
       parentKey,
-      renderCompoennt,
+      renderComponent,
     }
   })
 }
@@ -117,7 +117,9 @@ export const registerCustomNode = (panelConfigs?: IRegisterNode | IRegisterNode[
   }
   registerNode.forEach(item => {
     const { name, component } = item
-    graphConfig.setNodeRender(name, component)
+    if (!graphConfig.nodeRender.get(name)) {
+      graphConfig.setNodeRender(name, component)
+    }
   })
 }
 

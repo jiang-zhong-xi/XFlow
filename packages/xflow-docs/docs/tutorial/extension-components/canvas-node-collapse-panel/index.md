@@ -40,7 +40,7 @@ export interface ICollapsePanel {
   isCollapsed?: boolean
   /** 自定义渲染每个面板右上角的内容 */
   extra?: React.ComponentType<ICollapsePanel>
-  /** 自定义渲染每个面板右上角的内容 */
+  /** 自定义渲染每个面板左上角的内容 */
   header: React.ComponentType<ICollapsePanel> | string
   /** icon */
   icon?: React.ComponentType<{ isCollapsed: boolean }>

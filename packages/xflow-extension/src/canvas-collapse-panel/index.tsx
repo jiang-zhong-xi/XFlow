@@ -12,17 +12,15 @@ import { NsCollapsePanelModel } from './interface'
 import * as NsNodeCollapsePanel from './interface'
 
 const CollapsePanelMain: React.FC<IProps> = props => {
-  const { headerStyle, bodyStyle, footerStyle } = usePanelLyaoutStyle(
-    props as ILayoutProps,
-  )
+  const { headerStyle, bodyStyle, footerStyle } = usePanelLyaoutStyle(props as ILayoutProps)
   const { state, onActiveKeyChange, onKeywordChange } = useCollapsePanelData(props)
-  
+
   return (
     <>
       <NodePanelHeader
         {...props}
         state={state}
-        style={headerStyle} 
+        style={headerStyle}
         onKeywordChange={onKeywordChange}
       />
       <CollapsePanelBody
@@ -31,11 +29,7 @@ const CollapsePanelMain: React.FC<IProps> = props => {
         style={bodyStyle}
         onActiveKeyChange={onActiveKeyChange}
       />
-      <NodePanelFooter
-        {...props}
-        state={state}
-        style={footerStyle}
-      />
+      <NodePanelFooter {...props} state={state} style={footerStyle} />
     </>
   )
 }
@@ -49,15 +43,15 @@ const NodeCollapsePanel: React.FC<IProps> = props => {
 
   const handleBtnClick = useCallback(() => {
     setIsCollapsed(!isCollapsed)
-    onCollapseChange(!isCollapsed)
+    onCollapseChange && onCollapseChange(!isCollapsed)
   }, [isCollapsed, onCollapseChange])
 
   return (
-    <WorkspacePanel 
-      {...props} 
-      className={prefixClz} 
-      position={{...position, left: !isCollapsed ? left : -width }}
-      style={{transition: 'left 0.5s'}}
+    <WorkspacePanel
+      {...props}
+      className={prefixClz}
+      position={{ ...position, left: !isCollapsed ? left : -width }}
+      style={{ transition: 'left 0.5s' }}
     >
       <CollapsePanelMain {...props} prefixClz={prefixClz} />
 
