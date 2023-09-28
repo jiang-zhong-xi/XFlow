@@ -1,7 +1,7 @@
-import type { NsGraphCmd } from '@antv/xflow'
-import { createCmdConfig, DisposableCollection, XFlowGraphCommands } from '@antv/xflow'
-import type { IApplication } from '@antv/xflow'
-import type { IGraphPipelineCommand } from '@antv/xflow'
+import type { NsGraphCmd } from '@wow/tflow'
+import { createCmdConfig, DisposableCollection, XFlowGraphCommands } from '@wow/tflow'
+import type { IApplication } from '@wow/tflow'
+import type { IGraphPipelineCommand } from '@wow/tflow'
 import { MockApi } from './service'
 import { commandContributions } from './cmd-extensions'
 

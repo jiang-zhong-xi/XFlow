@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 /** 图核心组件 */
-import { XFlow, XFlowCanvas } from '@antv/xflow'
+import { XFlow, XFlowCanvas } from '@wow/tflow'
 /** 图的各种扩展交互组件 */
-import { CanvasMiniMap, CanvasScaleToolbar, CanvasSnapline } from '@antv/xflow'
+import { CanvasMiniMap, CanvasScaleToolbar, CanvasSnapline } from '@wow/tflow'
 /** 图的配置项 */
 import { useGraphConfig } from './config-graph'
 import { message } from 'antd'
 import './index.less'
-import '@antv/xflow/dist/index.css'
+import '@wow/tflow/dist/index.css'
 
 const Demo = props => {
   /** 画布配置 */

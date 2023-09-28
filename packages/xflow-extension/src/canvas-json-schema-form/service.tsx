@@ -1,7 +1,7 @@
 import React from 'react'
-import { useXFlowApp, DisposableCollection, createComponentModel } from '@antv/xflow-core'
-import type { NsModelServiceCmd, IGraphCommandService, IModelService } from '@antv/xflow-core'
-import { XFlowModelCommands, Disposable, MODELS } from '@antv/xflow-core'
+import { useXFlowApp, DisposableCollection, createComponentModel } from '@wow/tflow-core'
+import type { NsModelServiceCmd, IGraphCommandService, IModelService } from '@wow/tflow-core'
+import { XFlowModelCommands, Disposable, MODELS } from '@wow/tflow-core'
 import type { IProps, ISchema, TargetType, TargetData } from './interface'
 import type { Cell } from '@antv/x6'
 
@@ -56,9 +56,7 @@ export const useJsonSchemaFormModel = (props: IProps) => {
       return
     }
     const toDispose = new DisposableCollection()
-    const deferredModel = app.modelService.findDeferredModel(
-      NsJsonSchemaFormModel.id,
-    )
+    const deferredModel = app.modelService.findDeferredModel(NsJsonSchemaFormModel.id)
     if (!deferredModel) {
       const d = app.modelService.registerModel({
         id: NsJsonSchemaFormModel.id,

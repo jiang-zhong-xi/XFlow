@@ -4,10 +4,10 @@
  *  解散指定的群组
  */
 import React from 'react'
-import { XFlow, XFlowCanvas } from '@antv/xflow'
+import { XFlow, XFlowCanvas } from '@wow/tflow'
 import { FormPanel } from './form'
 import { useGraphConfig, onLoad } from './config-graph'
-import '@antv/xflow/dist/index.css'
+import '@wow/tflow/dist/index.css'
 import './index.less'
 
 /**  Demo Props  */

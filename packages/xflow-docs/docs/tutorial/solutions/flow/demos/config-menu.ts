@@ -6,13 +6,13 @@ import type {
   IArgsBase,
   HookHub,
   ICmdHooks as IHooks,
-} from '@antv/xflow'
-import { createCtxMenuConfig, MenuItemType } from '@antv/xflow'
-import { IconStore, XFlowNodeCommands, XFlowEdgeCommands } from '@antv/xflow'
+} from '@wow/tflow'
+import { createCtxMenuConfig, MenuItemType } from '@wow/tflow'
+import { IconStore, XFlowNodeCommands, XFlowEdgeCommands } from '@wow/tflow'
 import { DeleteOutlined, EditOutlined, StopOutlined } from '@ant-design/icons'
 import { MockApi } from './service'
 
-import type { IGraphCommand } from '@antv/xflow'
+import type { IGraphCommand } from '@wow/tflow'
 
 /** 节点命令 */
 export namespace CustomCommands {

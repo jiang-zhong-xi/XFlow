@@ -1,4 +1,4 @@
-import type { IMenuOptions } from '@antv/xflow-core'
+import type { IMenuOptions } from '@wow/tflow-core'
 import {
   ManaSyringe,
   DisposableCollection,
@@ -7,8 +7,8 @@ import {
   IModelService,
   RxModel,
   Disposable,
-} from '@antv/xflow-core'
-import { MODELS } from '@antv/xflow-core'
+} from '@wow/tflow-core'
+import { MODELS } from '@wow/tflow-core'
 import { CONTEXT_MENU_MODEL } from '../interface'
 import { ContextMenuConfig } from '../config'
 

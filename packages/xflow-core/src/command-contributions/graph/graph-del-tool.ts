@@ -1,6 +1,6 @@
 import type { Cell, Node } from '@antv/x6'
 import { inject, injectable } from 'mana-syringe'
-import type { HookHub } from '@antv/xflow-hook'
+import type { HookHub } from '@wow/tflow-hook'
 import type { NsGraph } from '../../interface'
 import type { IHooks } from '../../hooks/interface'
 import type { IArgsBase } from '../../command/interface'

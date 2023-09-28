@@ -1,8 +1,8 @@
 import React from 'react'
 import { createModule } from '../module'
-import type { IPosition } from '@antv/xflow-core'
-import { insertCss } from '@antv/xflow-core'
-import { XFlowAppExtensionModule, usePositionStyle } from '@antv/xflow-core'
+import type { IPosition } from '@wow/tflow-core'
+import { insertCss } from '@wow/tflow-core'
+import { XFlowAppExtensionModule, usePositionStyle } from '@wow/tflow-core'
 import { SimpleNodeView } from '../x6-node-view'
 import type { IMinimapOptions } from '../interface'
 

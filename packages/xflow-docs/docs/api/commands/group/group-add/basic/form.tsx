@@ -1,9 +1,9 @@
-import type { IFormSchema } from '@antv/xflow'
-import type { NsGraph, NsGroupCmd } from '@antv/xflow'
+import type { IFormSchema } from '@wow/tflow'
+import type { NsGraph, NsGroupCmd } from '@wow/tflow'
 import React from 'react'
 import { Card, Form, Input, message, Button } from 'antd'
-import { usePanelContext, WorkspacePanel, FormBuilder, uuidv4 } from '@antv/xflow'
-import { XFlowGroupCommands } from '@antv/xflow'
+import { usePanelContext, WorkspacePanel, FormBuilder, uuidv4 } from '@wow/tflow'
+import { XFlowGroupCommands } from '@wow/tflow'
 import { GROUP_NODE_RENDER_ID, GROUP_COLLAPSED_SIZE } from './constant'
 export const width = 100
 export const height = 40
@@ -15,11 +15,11 @@ interface IFormValues extends NsGraph.IGroupConfig {
 }
 
 /**
-  // 子节点元素集合  
+  // 子节点元素集合
   groupChildren?: string[]
-  // group Header 
+  // group Header
   groupHeaderHeight?: number
-  // group 内边距  
+  // group 内边距
   groupPadding?: number
  */
 const formItems: IFormSchema[] = [

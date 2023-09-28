@@ -1,6 +1,6 @@
 import type { Edge, Node } from '@antv/x6'
-import { createKeybindingConfig, MODELS, XFlowEdgeCommands, XFlowNodeCommands } from '@antv/xflow'
-import type { NsEdgeCmd, NsNodeCmd } from '@antv/xflow'
+import { createKeybindingConfig, MODELS, XFlowEdgeCommands, XFlowNodeCommands } from '@wow/tflow'
+import type { NsEdgeCmd, NsNodeCmd } from '@wow/tflow'
 
 /**  keybindings  */
 export const useKeybindingConfig = createKeybindingConfig((config, getProps) => {

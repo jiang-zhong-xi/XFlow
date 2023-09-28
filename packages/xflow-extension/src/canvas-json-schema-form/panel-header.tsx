@@ -1,6 +1,6 @@
 import React from 'react'
 import type { IProps } from './interface'
-import { useXFlowApp } from '@antv/xflow-core'
+import { useXFlowApp } from '@wow/tflow-core'
 import { usePanelContext } from '../base-panel/context'
 import type { NsJsonSchemaFormModel } from './service'
 export interface IHeaderProps extends IProps {

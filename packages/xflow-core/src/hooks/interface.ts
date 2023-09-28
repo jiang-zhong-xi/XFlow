@@ -3,7 +3,7 @@ import type { NsGraph } from '../interface'
 import type { Disposable } from '../common/disposable'
 import type { IGraphCommandService } from '../command/interface'
 import type { IModelService } from '../model-service/interface'
-import { HookHub } from '@antv/xflow-hook'
+import { HookHub } from '@wow/tflow-hook'
 import { Syringe } from 'mana-syringe'
 import type { EventArgs } from '@antv/x6/es/graph/events'
 import type { IGraphConfig } from '../xflow-main/graph/config'
@@ -53,7 +53,7 @@ export type IEventSubscription = Disposable[]
 export interface IGeneralAppService {
   graph: Graph
   commandService: IGraphCommandService
-  modelService: IModelService,
+  modelService: IModelService
   options: IGraphConfig
 }
 

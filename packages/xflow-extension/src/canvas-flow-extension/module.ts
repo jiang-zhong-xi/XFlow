@@ -1,6 +1,6 @@
 import 'reflect-metadata'
 /** Application 扩展依赖 */
-import { ManaSyringe } from '@antv/xflow-core'
+import { ManaSyringe } from '@wow/tflow-core'
 import { FlowHooksContribution } from './contributions/flow'
 
 export * from './x6-extension/node'

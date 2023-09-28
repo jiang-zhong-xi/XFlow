@@ -10,7 +10,7 @@ import type {
   ICommandRegisterFunction,
 } from './interface'
 import { IGraphCommandService, IGraphCommandContribution } from './interface'
-import type { IRuntimeHook } from '@antv/xflow-hook/es/interface'
+import type { IRuntimeHook } from '@wow/tflow-hook/es/interface'
 import 'reflect-metadata'
 
 export namespace NCommand {

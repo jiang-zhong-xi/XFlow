@@ -1,5 +1,5 @@
 import React from 'react'
-import { createGraphConfig } from '@antv/xflow'
+import { createGraphConfig } from '@wow/tflow'
 /** 自定义React节点/边 */
 import Node1 from './react-node/node1'
 import Node2 from './react-node/node2'

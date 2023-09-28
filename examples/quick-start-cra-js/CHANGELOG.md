@@ -6,21 +6,21 @@
 
 - Updated dependencies [013cfc5e]
 - Updated dependencies [013cfc5e]
-  - @antv/xflow@1.0.54
+  - @wow/tflow@1.0.54
 
 ## 0.1.7
 
 ### Patch Changes
 
 - Updated dependencies [ec6e7203]
-  - @antv/xflow@1.0.52
+  - @wow/tflow@1.0.52
 
 ## 0.1.6
 
 ### Patch Changes
 
 - Updated dependencies [9fcf1234]
-  - @antv/xflow@1.0.51
+  - @wow/tflow@1.0.51
 
 ## 0.1.5
 
@@ -30,7 +30,7 @@
 - Updated dependencies [706c98dc]
 - Updated dependencies [1bfa63a4]
 - Updated dependencies [372f453b]
-  - @antv/xflow@1.0.49
+  - @wow/tflow@1.0.49
 
 ## 0.1.4
 
@@ -38,14 +38,14 @@
 
 - Updated dependencies [cd8c2be5]
 - Updated dependencies [cd8c2be5]
-  - @antv/xflow@1.0.48
+  - @wow/tflow@1.0.48
 
 ## 0.1.3
 
 ### Patch Changes
 
 - Updated dependencies [58382676]
-  - @antv/xflow@1.0.47
+  - @wow/tflow@1.0.47
 
 ## 0.1.2
 
@@ -53,10 +53,10 @@
 
 - Updated dependencies [779a9705]
 - Updated dependencies [779a9705]
-  - @antv/xflow@1.0.46
+  - @wow/tflow@1.0.46
 
 ## 0.1.1
 
 ### Patch Changes
 
-- @antv/xflow@1.0.45
+- @wow/tflow@1.0.45

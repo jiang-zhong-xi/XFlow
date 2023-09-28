@@ -1,5 +1,5 @@
-import type { IAppLoad, NsGraphCmd } from '@antv/xflow'
-import { XFlowGraphCommands } from '@antv/xflow'
+import type { IAppLoad, NsGraphCmd } from '@wow/tflow'
+import { XFlowGraphCommands } from '@wow/tflow'
 import { getGraphData } from './mock'
 
 export const onLoad: IAppLoad = async app => {

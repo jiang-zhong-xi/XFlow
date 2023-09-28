@@ -1,5 +1,5 @@
-import { XFlowGraphCommands, ManaSyringe } from '@antv/xflow'
-import { ICommandContextProvider } from '@antv/xflow'
+import { XFlowGraphCommands, ManaSyringe } from '@wow/tflow'
+import { ICommandContextProvider } from '@wow/tflow'
 import { CustomCommands } from './constants'
 
 export const NsDeployDagCmd = {}

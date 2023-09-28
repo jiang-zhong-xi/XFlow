@@ -1,6 +1,6 @@
-import type { IModelService, IToolbarItemOptions } from '@antv/xflow'
-import { createToolbarConfig } from '@antv/xflow'
-import { MODELS, XFlowNodeCommands, IconStore } from '@antv/xflow'
+import type { IModelService, IToolbarItemOptions } from '@wow/tflow'
+import { createToolbarConfig } from '@wow/tflow'
+import { MODELS, XFlowNodeCommands, IconStore } from '@wow/tflow'
 import { SaveOutlined, PlusCircleOutlined, DeleteOutlined } from '@ant-design/icons'
 
 export namespace NSToolbarConfig {

@@ -1,7 +1,7 @@
 import type { IPanelNode } from '../interface'
-import type { IGraphCommandService, IGraphConfig, IModelService } from '@antv/xflow-core'
+import type { IGraphCommandService, IGraphConfig, IModelService } from '@wow/tflow-core'
 import React from 'react'
-import { XFlowConstants } from '@antv/xflow-core'
+import { XFlowConstants } from '@wow/tflow-core'
 import { Popover } from 'antd'
 
 interface INodeRenderOptions {

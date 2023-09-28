@@ -1,6 +1,6 @@
 import React from 'react'
 import { Empty } from 'antd'
-import type { NsGraph, IGraphConfig, IModelService, IGraphCommandService } from '@antv/xflow-core'
+import type { NsGraph, IGraphConfig, IModelService, IGraphCommandService } from '@wow/tflow-core'
 import type { IPanelNode } from '../interface'
 import { PanelNode } from './panel-node'
 

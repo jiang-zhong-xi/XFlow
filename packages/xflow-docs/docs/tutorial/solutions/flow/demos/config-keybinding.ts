@@ -1,11 +1,11 @@
-import type { NsNodeCmd, NsGraphCmd, NsEdgeCmd } from '@antv/xflow'
+import type { NsNodeCmd, NsGraphCmd, NsEdgeCmd } from '@wow/tflow'
 import {
   createKeybindingConfig,
   XFlowNodeCommands,
   XFlowEdgeCommands,
   XFlowGraphCommands,
   MODELS,
-} from '@antv/xflow'
+} from '@wow/tflow'
 
 export const useKeybindingConfig = createKeybindingConfig(config => {
   // delete

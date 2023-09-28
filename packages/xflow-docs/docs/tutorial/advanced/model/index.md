@@ -36,7 +36,7 @@ CommandService 在 XFlow 内部无处不在，入口分为两种：
 
 ```tsx | pure
 // 如何使用？
-import { MODELS } from '@antv/xflow'
+import { MODELS } from '@wow/tflow'
 // 使用models
 const getModel = async () => {
   /** value */
@@ -50,8 +50,8 @@ const getModel = async () => {
 ### 如何生产 Model
 
 ```tsx | pure
-import type { IModelService } from '@antv/xflow'
-import { XFlow, createModelServiceConfig } from '@antv/xflow'
+import type { IModelService } from '@wow/tflow'
+import { XFlow, createModelServiceConfig } from '@wow/tflow'
 
 export namespace NS_LOADING_STATE {
   export const id = 'custom-loading'

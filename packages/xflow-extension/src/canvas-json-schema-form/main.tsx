@@ -1,6 +1,6 @@
 import React from 'react'
 import type { IProps, IInternalProps, IPanelProps, ITriggerUpdate, FieldData } from './interface'
-import { useXflowPrefixCls } from '@antv/xflow-core'
+import { useXflowPrefixCls } from '@wow/tflow-core'
 import { PanelFooter } from './panel-footer'
 import { PanelHeader } from './panel-header'
 import { PanelBody } from './panel-body'

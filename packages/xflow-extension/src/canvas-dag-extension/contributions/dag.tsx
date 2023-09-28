@@ -4,7 +4,7 @@ import {
   NsGraph,
   Disposable,
   XFlowEdgeCommands,
-} from '@antv/xflow-core'
+} from '@wow/tflow-core'
 import type {
   IModelService,
   IHookService,
@@ -12,16 +12,16 @@ import type {
   NsEdgeCmd,
   NsNodeCmd,
   IGraphCommandService,
-} from '@antv/xflow-core'
+} from '@wow/tflow-core'
 import {
   IGraphCommandFactory,
   IHookContribution,
   IModelContribution,
   IGraphCommandContribution,
-} from '@antv/xflow-core'
+} from '@wow/tflow-core'
 import type { Edge, Graph, Node } from '@antv/x6'
 import type { EventArgs } from '@antv/x6/lib/graph/events'
-import { HookHub } from '@antv/xflow-hook'
+import { HookHub } from '@wow/tflow-hook'
 import { XFlowNode } from '../x6-extension/node'
 import { XFlowEdge } from '../x6-extension/edge'
 import { GRAPH_STATUS_INFO } from '../constants'
@@ -76,9 +76,9 @@ export const getDagOptions = (props: IProps) => {
     },
     connecting: {
       //链接桩的位置 https://x6.antv.vision/zh/docs/api/registry/node-anchor
-      sourceAnchor: layout ? layout === LayoutEnum.TOP_BOTTOM ? 'bottom' : 'right' : "center",
+      sourceAnchor: layout ? (layout === LayoutEnum.TOP_BOTTOM ? 'bottom' : 'right') : 'center',
       //链接桩的位置 https://x6.antv.vision/zh/docs/api/registry/node-anchor
-      targetAnchor: layout ? layout === LayoutEnum.TOP_BOTTOM ? 'center' : 'left' : "center",
+      targetAnchor: layout ? (layout === LayoutEnum.TOP_BOTTOM ? 'center' : 'left') : 'center',
       connectionPoint: 'anchor',
       snap: { radius: 20 },
       router: router,
@@ -143,7 +143,9 @@ export const getDagOptions = (props: IProps) => {
       },
       // 是否触发交互事件
       validateMagnet({ magnet, cell }) {
-        const inputPortInfo = cell.getData().ports.filter(portItem => portItem.type === NsGraph.AnchorType.INPUT)
+        const inputPortInfo = cell
+          .getData()
+          .ports.filter(portItem => portItem.type === NsGraph.AnchorType.INPUT)
         if (inputPortInfo.length > 0) {
           return magnet.getAttribute('port-group') !== inputPortInfo[0].group
         }
@@ -238,7 +240,8 @@ export const getDagOptions = (props: IProps) => {
   contrib: [IHookContribution, IModelContribution, IGraphCommandContribution],
 })
 export class DagHooksContribution
-  implements IHookContribution<ICmdHooks>, IGraphCommandContribution, IModelContribution {
+  implements IHookContribution<ICmdHooks>, IGraphCommandContribution, IModelContribution
+{
   /** IGraphCommandFactory */
   @ManaSyringe.inject(IGraphCommandFactory)
   commandFactory: IGraphCommandFactory
@@ -357,7 +360,7 @@ export class DagHooksContribution
       }),
     ]
     toDispose.pushAll(disposables)
-    return Disposable.create(() => { })
+    return Disposable.create(() => {})
   }
 
   /** 注册Hub */
@@ -382,6 +385,3 @@ export class DagHooksContribution
     })
   }
 }
-
-
-

@@ -1,6 +1,6 @@
 import type { Syringe } from 'mana-syringe'
 import type { IGraphCommand } from '../../command/interface'
-import type { HookHub } from '@antv/xflow-hook'
+import type { HookHub } from '@wow/tflow-hook'
 import type { IHooks } from '../../hooks/interface'
 import type { Simplify } from '../../common/types'
 /** commands */

@@ -21,28 +21,28 @@ XFlow 通过 npm 或 yarn 命令安装。
 ```shell
 
 #npm
-$ npm install @antv/xflow --save
+$ npm install @wow/tflow --save
 
 #yarn
-$ yarn add @antv/xflow
+$ yarn add @wow/tflow
 
 ```
 
 如果是直接通过 script 标签引入, 可以使用下面两个 CDN 中的任何一个, 默认返回 XFlow 的最新版:
 
-- https://unpkg.com/@antv/xflow/dist/index.umd.js
+- https://unpkg.com/@wow/tflow/dist/index.umd.js
 
-- https://cdn.jsdelivr.net/npm/@antv/xflow/dist/index.umd.js
+- https://cdn.jsdelivr.net/npm/@wow/tflow/dist/index.umd.js
 
 ```tsx | pure
-<script src="https://unpkg.com/@antv/xflow/dist/index.umd.js"></script>
+<script src="https://unpkg.com/@wow/tflow/dist/index.umd.js"></script>
 ```
 
 对于生产环境, 我们推荐使用一个明确的版本号, 以避免新版本升级造成不可预期的破坏:
 
-- https://unpkg.com/@antv/xflow@1.0.0/dist/index.umd.js
+- https://unpkg.com/@wow/tflow@1.0.0/dist/index.umd.js
 
-- https://cdn.jsdelivr.net/npm/@antv/xflow@1.0.0/dist/index.umd.js
+- https://cdn.jsdelivr.net/npm/@wow/tflow@1.0.0/dist/index.umd.js
 
 需要注意的是:
 
@@ -63,8 +63,8 @@ $ yarn add @antv/xflow
 首先, 我们需要构建一个 XFlow 工作空间，其中 XFlowCanvas 画布组件，CanvasScaleToolbar 工具栏、CanvasMiniMap 小地图、CanvasSnapline 对齐线等交互组件，都是 XFlow 工作空间中的内容。`需要强调的是，在XFlow 中，一切都是React 组件`。
 
 ```tsx | pure
-import { XFlow, XFlowCanvas } from '@antv/xflow'
-import { CanvasScaleToolbar, CanvasMiniMap, CanvasSnapline } from '@antv/xflow'
+import { XFlow, XFlowCanvas } from '@wow/tflow'
+import { CanvasScaleToolbar, CanvasMiniMap, CanvasSnapline } from '@wow/tflow'
 import { useGraphConfig } from './config-graph'
 
 return (
@@ -78,7 +78,7 @@ return (
         rankdir: 'TB',
         nodesep: 60,
         ranksep: 40,
-      }
+      },
     }}
     onLoad={onLoad}
     isAutoCenter={true}
@@ -100,7 +100,7 @@ return (
 然后, 我们需要设置画布全局配置项 `graphConfig`, 该配置项决定了画布上的内容如何呈现。比如画布是否需要网格、画布的缩放等级、画布是否支持滚轮缩放等, 再比如画布上需要渲染哪种类型的 React 节点/连线等。
 
 ```tsx | pure
-import { createGraphConfig } from '@antv/xflow'
+import { createGraphConfig } from '@wow/tflow'
 import Node1 from './react-node/node1'
 import Edge1 from './react-edge/edge1'
 

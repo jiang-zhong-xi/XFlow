@@ -7,8 +7,8 @@ import {
   useModelAsync,
   randomInt,
   uuidv4,
-} from '@antv/xflow'
-import type { IPosition, NsNodeCmd } from '@antv/xflow'
+} from '@wow/tflow'
+import type { IPosition, NsNodeCmd } from '@wow/tflow'
 import { Card, Form, Button, Input, message } from 'antd'
 export interface IPanelProps {
   position: IPosition

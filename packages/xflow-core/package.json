@@ -1,6 +1,6 @@
 {
   "private": false,
-  "name": "@antv/xflow-core",
+  "name": "@wow/tflow-core",
   "version": "1.0.54",
   "license": "MIT",
   "scripts": {
@@ -46,7 +46,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
-    "@antv/xflow-hook": "workspace:*",
+    "@wow/tflow-hook": "workspace:*",
     "classnames": "^2.3.1",
     "immer": "^9.0.7",
     "mana-common": "^0.3.1",

@@ -1,7 +1,7 @@
 import React from 'react'
 /** app 核心组件 */
-import { XFlow, XFlowCanvas, KeyBindings } from '@antv/xflow'
-import type { IApplication, IAppLoad } from '@antv/xflow'
+import { XFlow, XFlowCanvas, KeyBindings } from '@wow/tflow'
+import type { IApplication, IAppLoad } from '@wow/tflow'
 /** 交互组件 */
 import {
   /** 触发Command的交互组件 */
@@ -14,7 +14,7 @@ import {
   CanvasSnapline,
   CanvasNodePortTooltip,
   DagGraphExtension,
-} from '@antv/xflow'
+} from '@wow/tflow'
 
 /** app 组件配置  */
 /** 配置画布 */
@@ -35,7 +35,7 @@ import * as dndPanelConfig from './config-dnd-panel'
 import { formSchemaService, formValueUpdateService, controlMapService } from './config-form'
 
 import './index.less'
-import '@antv/xflow/dist/index.css'
+import '@wow/tflow/dist/index.css'
 
 export interface IProps {
   meta: { flowId: string }

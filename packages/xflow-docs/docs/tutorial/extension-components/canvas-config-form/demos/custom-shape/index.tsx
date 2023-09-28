@@ -4,11 +4,11 @@
  *  通过 Schema 中的 shape 字段和 controlMapService 配合可以渲染自定义的表单项目
  */
 import React from 'react'
-import type { NsJsonSchemaForm } from '@antv/xflow'
-import { XFlow, XFlowCanvas, JsonSchemaForm, createGraphConfig } from '@antv/xflow'
+import type { NsJsonSchemaForm } from '@wow/tflow'
+import { XFlow, XFlowCanvas, JsonSchemaForm, createGraphConfig } from '@wow/tflow'
 import { controlMapService, ControlShapeEnum } from './custom-shapes'
 import { onLoad } from './graph-config'
-import '@antv/xflow/dist/index.css'
+import '@wow/tflow/dist/index.css'
 import './index.less'
 
 /**  Demo Props  */

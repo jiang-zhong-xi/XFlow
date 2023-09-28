@@ -4,7 +4,7 @@
  *   把节点和边组合成群组 <br>
  */
 import React from 'react'
-import { XFlow, XFlowCanvas } from '@antv/xflow'
+import { XFlow, XFlowCanvas } from '@wow/tflow'
 import { FormPanel } from './form'
 import { useGraphConfig, onLoad } from './config-graph'
 import './index.less'

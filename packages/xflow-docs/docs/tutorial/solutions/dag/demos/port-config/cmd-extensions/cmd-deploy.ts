@@ -5,9 +5,9 @@ import type {
   IArgsBase,
   ICommandHandler,
   HookHub,
-} from '@antv/xflow'
-import { XFlowGraphCommands, ManaSyringe } from '@antv/xflow'
-import { ICommandContextProvider } from '@antv/xflow'
+} from '@wow/tflow'
+import { XFlowGraphCommands, ManaSyringe } from '@wow/tflow'
+import { ICommandContextProvider } from '@wow/tflow'
 import { CustomCommands } from './constants'
 
 type ICommand = ICommandHandler<

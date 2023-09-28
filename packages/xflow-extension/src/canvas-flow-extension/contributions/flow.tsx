@@ -1,7 +1,7 @@
 import type { Graph } from '@antv/x6'
-import type { ICmdHooks, NsEdgeCmd, NsNodeCmd } from '@antv/xflow-core'
-import { ManaSyringe, DisposableCollection, Disposable } from '@antv/xflow-core'
-import { IHookContribution } from '@antv/xflow-core'
+import type { ICmdHooks, NsEdgeCmd, NsNodeCmd } from '@wow/tflow-core'
+import { ManaSyringe, DisposableCollection, Disposable } from '@wow/tflow-core'
+import { IHookContribution } from '@wow/tflow-core'
 import { XFlowNode } from '../x6-extension/node'
 import { Shape } from '@antv/x6'
 

@@ -1,4 +1,4 @@
-import type { NsGraph, IModelService } from '@antv/xflow-core'
+import type { NsGraph, IModelService } from '@wow/tflow-core'
 
 export namespace NsPortEvent {
   export const MOUSE_ENTER = 'node-port:mouseenter'

@@ -1,5 +1,5 @@
 import type { Disposable } from '../common/disposable'
-import type { HookHub } from '@antv/xflow-hook'
+import type { HookHub } from '@wow/tflow-hook'
 import type { IHooks } from './interface'
 import { singleton, Contribution, contrib } from 'mana-syringe'
 import { DisposableCollection } from '../common/disposable'

@@ -1,8 +1,8 @@
-import type { DisposableCollection } from '@antv/xflow-core'
+import type { DisposableCollection } from '@wow/tflow-core'
 import type { IProps } from '../interface'
 import React from 'react'
 import { Dropdown } from '@antv/x6-react-components'
-import { useXFlowApp, useModelAsync } from '@antv/xflow-core'
+import { useXFlowApp, useModelAsync } from '@wow/tflow-core'
 import { CONTEXT_MENU_MODEL } from '../interface'
 import { XFlowMenu } from './menu'
 

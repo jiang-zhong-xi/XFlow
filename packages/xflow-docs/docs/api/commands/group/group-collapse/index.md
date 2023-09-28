@@ -62,7 +62,7 @@ export interface ICreateNodeService {
 XFlow 的命令可以通过全局的 Hook 来扩展业务逻辑, 比如要配置全局的 createNodeService 只需要在 createCmdConfig 中通过 hooks.addGroup.registerHook 注册自己的添加 createService 到 args 中（[IArgs](#命令参数iargs)）
 
 ```tsx | pure
-import { createCmdConfig, DisposableCollection } from '@antv/xflow'
+import { createCmdConfig, DisposableCollection } from '@wow/tflow'
 import { MockApi } from './service'
 
 export const useCmdConfig = createCmdConfig(config => {

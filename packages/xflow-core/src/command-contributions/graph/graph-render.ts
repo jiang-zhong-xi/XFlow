@@ -1,5 +1,5 @@
 import type { Graph as X6Graph, Node as X6Node, Edge as X6Edge } from '@antv/x6'
-import type { HookHub } from '@antv/xflow-hook'
+import type { HookHub } from '@wow/tflow-hook'
 import type { NsGraph } from '../../interface'
 import type { NsEdgeCmd, NsNodeCmd, NsGroupCmd } from '../interface'
 import type { IHooks } from '../../hooks/interface'

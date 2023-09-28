@@ -17,12 +17,11 @@ XFlow 提供连线删除的命令 `XFlowEdgeCommands.DEL_EDGE`, 通过该命令�
 
 ## 命令参数
 
-|               名称 |                类型 | 必选  | 默认值 | 描述                |
-| ----------------: | ------------------: | ---: | ----: | -----------------|
-| edgeConfig        | NsGraph.IEdgeConfig |    ✓ |     - | 节点的配置数据      |
-| x6Edge            | X6Edge              |      |     - | cell 工厂方法      |
-| deleteEdgeService | IDeleteEdgeService  |      |     - | 删除连线的服务      |
-
+|              名称 |                类型 | 必选 | 默认值 | 描述           |
+| ----------------: | ------------------: | ---: | -----: | -------------- |
+|        edgeConfig | NsGraph.IEdgeConfig |    ✓ |      - | 节点的配置数据 |
+|            x6Edge |              X6Edge |      |      - | cell 工厂方法  |
+| deleteEdgeService |  IDeleteEdgeService |      |      - | 删除连线的服务 |
 
 ### edgeConfig
 
@@ -44,14 +43,13 @@ export interface IDeleteEdgeService {
 }
 ```
 
-
-## 配置全局Hook
+## 配置全局 Hook
 
 XFlow 的命令可以通过全局的 Hook 来扩展业务逻辑, 比如 DelEdge 时配置全局的 delEdgeService。
 
 ```tsx | pure
 
-import { createCmdConfig, DisposableCollection } from '@antv/xflow'
+import { createCmdConfig, DisposableCollection } from '@wow/tflow'
 import { MockApi } from './service'
 
 export const useCmdConfig = createCmdConfig(config => {

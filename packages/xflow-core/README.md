@@ -1,4 +1,4 @@
-# @antv/xflow-core
+# @wow/tflow-core
 
 ## Getting Started
 

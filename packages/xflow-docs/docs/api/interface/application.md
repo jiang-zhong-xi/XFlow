@@ -15,7 +15,7 @@ nav:
 
 ```tsx | pure
 /** 如何引用？ */
-import { IApplication } from '@antv/xflow'
+import { IApplication } from '@wow/tflow'
 /** 类型说明：图编辑应用 */
 export declare class IApplication {
   /** IGraphCommandService：执行命令修改应用状态 */
@@ -42,7 +42,7 @@ export declare class IApplication {
 
 ```tsx | pure
 /** 引入方式 */
-import { IAppLoad } from '@antv/xflow'
+import { IAppLoad } from '@wow/tflow'
 /** 类型说明：app启动后的回调 */
 export type IAppLoad = (app: IApplication) => void
 ```
@@ -51,7 +51,7 @@ export type IAppLoad = (app: IApplication) => void
 
 ```tsx | pure
 /** 引入方式 */
-import { IAppDestroy } from '@antv/xflow'
+import { IAppDestroy } from '@wow/tflow'
 /** 类型说明：app销毁前的回调 */
 export type IAppDestroy = (app: IApplication) => void
 ```

@@ -1,12 +1,12 @@
 import 'reflect-metadata'
 /** Application 扩展依赖 */
-import type { IExtensionModule } from '@antv/xflow-core'
-import { ManaSyringe } from '@antv/xflow-core'
+import type { IExtensionModule } from '@wow/tflow-core'
+import { ManaSyringe } from '@wow/tflow-core'
 import { DagHooksContribution } from './contributions/dag'
 import { QueryGraphStatusCommand } from './contributions/command'
 export * from './x6-extension/edge'
 export * from './x6-extension/node'
-import type { IProps } from './interface';
+import type { IProps } from './interface'
 import { IComponentConfig } from './interface'
 
 /** 依赖扩展模块，必须要加载 */
