@@ -1,8 +1,7 @@
 import React from 'react'
-import { XFlow, XFlowCanvas, IAppLoad, IApplication, NsGraph, createGraphConfig } from '@antv/xflow'
-import { XFlowGraphCommands, XFlowEdgeCommands, NsGraphCmd, NsEdgeCmd } from '@antv/xflow'
+import { XFlow, XFlowCanvas, IAppLoad, IApplication, NsGraph, createGraphConfig } from '@wow/tflow'
+import { XFlowGraphCommands, XFlowEdgeCommands, NsGraphCmd, NsEdgeCmd } from '@wow/tflow'
 import './index.less'
-
 
 export const useGraphConfig = createGraphConfig(config => {
   config.setX6Config({ grid: true })
@@ -10,7 +9,7 @@ export const useGraphConfig = createGraphConfig(config => {
   config.setEdgeRender('EDGE1', props => <div className="react-edge">{props.data.info}</div>)
 })
 
-let appRef: IApplication;
+let appRef: IApplication
 
 const Demo: React.FC<{}> = () => {
   const onLoad: IAppLoad = async app => {
@@ -55,18 +54,18 @@ const Demo: React.FC<{}> = () => {
       },
     ]
     const edges: NsGraph.IEdgeConfig[] = [
-      { 
-        id: 'root11-down11', 
+      {
+        id: 'root11-down11',
         source: 'root11',
         target: 'down11',
-        label: 'text'
+        label: 'text',
       },
-      { 
+      {
         id: 'root12-down12',
         source: 'root12',
         target: 'down12',
         edgeContentWidth: 60,
-        edgeContentHeight: 30, 
+        edgeContentHeight: 30,
         info: 'text',
         renderKey: 'EDGE1',
       },
@@ -91,16 +90,16 @@ const Demo: React.FC<{}> = () => {
         >
           {'更新连线上label的内容'}
         </div>
-        <div 
+        <div
           className="div"
           onClick={() => {
             appRef.executeCommand(XFlowEdgeCommands.UPDATE_EDGE.id, {
-              edgeConfig: { 
+              edgeConfig: {
                 id: 'root12-down12',
                 source: 'root12',
                 target: 'down12',
                 edgeContentWidth: 60,
-                edgeContentHeight: 30, 
+                edgeContentHeight: 30,
                 info: 'new-text',
                 renderKey: 'EDGE1',
               },

@@ -1,4 +1,4 @@
-import type { IPosition } from '@antv/xflow-core'
+import type { IPosition } from '@wow/tflow-core'
 import React from 'react'
 import { CanvasToolbar } from '../canvas-toolbar'
 import { useConfig, CANVAS_SCALE_TOOLBAR_CONFIG } from './config'

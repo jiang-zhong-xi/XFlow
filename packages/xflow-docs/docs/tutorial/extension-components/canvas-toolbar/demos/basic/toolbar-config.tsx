@@ -1,9 +1,9 @@
-import type { IToolbarItemOptions } from '@antv/xflow'
-import { createToolbarConfig } from '@antv/xflow'
-import { XFlowGraphCommands, XFlowNodeCommands, IconStore } from '@antv/xflow'
+import type { IToolbarItemOptions } from '@wow/tflow'
+import { createToolbarConfig } from '@wow/tflow'
+import { XFlowGraphCommands, XFlowNodeCommands, IconStore } from '@wow/tflow'
 import { SaveOutlined, PlusCircleOutlined, DeleteOutlined } from '@ant-design/icons'
 import { message } from 'antd'
-import type { NsGraphCmd, NsNodeCmd } from '@antv/xflow'
+import type { NsGraphCmd, NsNodeCmd } from '@wow/tflow'
 
 namespace NsConfig {
   /** 注册icon 类型 */

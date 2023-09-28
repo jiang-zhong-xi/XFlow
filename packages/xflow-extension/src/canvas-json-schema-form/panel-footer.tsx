@@ -1,5 +1,5 @@
 import React from 'react'
-import { useXFlowApp } from '@antv/xflow-core'
+import { useXFlowApp } from '@wow/tflow-core'
 import type { IProps } from './interface'
 import type { NsJsonSchemaFormModel } from './service'
 import { usePanelContext } from '../base-panel/context'

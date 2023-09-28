@@ -3,12 +3,12 @@
  * desc: 通过ModelService实现ToolbarItem的可用状态
  */
 import React from 'react'
-import type { IAppLoad, NsNodeCmd } from '@antv/xflow'
-import { XFlowNodeCommands } from '@antv/xflow'
-import { XFlow, createGraphConfig, XFlowCanvas, CanvasToolbar } from '@antv/xflow'
+import type { IAppLoad, NsNodeCmd } from '@wow/tflow'
+import { XFlowNodeCommands } from '@wow/tflow'
+import { XFlow, createGraphConfig, XFlowCanvas, CanvasToolbar } from '@wow/tflow'
 import { useToolbarConfig } from './toolbar-config'
 import './index.less'
-import '@antv/xflow/dist/index.css'
+import '@wow/tflow/dist/index.css'
 /**  Demo Props  */
 export interface IDemoProps {
   anything: string

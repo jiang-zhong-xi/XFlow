@@ -38,7 +38,7 @@
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@antv/gatsby-theme-antv": "^1.1.16",
-    "@antv/xflow": "workspace:^",
+    "@wow/tflow": "workspace:^",
     "antd": "^4.17.4",
     "classnames": "^2.3.1",
     "dumi-theme-graphin": "^0.1.4",

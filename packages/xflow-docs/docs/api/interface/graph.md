@@ -103,7 +103,7 @@ const defaultOptions: Graph.Options = {
 
 ```tsx | pure
 // 如何引用
-import { IGraphConfig } from '@antv/xflow'
+import { IGraphConfig } from '@wow/tflow'
 
 // 类型说明
 export interface IGraphConfig {

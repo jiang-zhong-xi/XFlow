@@ -1,5 +1,5 @@
-import type { IGraphCommandService } from '@antv/xflow-core'
-import { XFlowNodeCommands, XFlowEdgeCommands } from '@antv/xflow-core'
+import type { IGraphCommandService } from '@wow/tflow-core'
+import { XFlowNodeCommands, XFlowEdgeCommands } from '@wow/tflow-core'
 import { get } from 'lodash'
 import { onConfigChange, getGraphInstance } from './util'
 import type { Node } from '@antv/x6'

@@ -1,6 +1,6 @@
 {
   "private": false,
-  "name": "@antv/xflow-hook",
+  "name": "@wow/tflow-hook",
   "version": "1.0.54",
   "license": "MIT",
   "scripts": {

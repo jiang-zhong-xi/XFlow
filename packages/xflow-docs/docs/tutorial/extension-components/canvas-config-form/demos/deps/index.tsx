@@ -4,7 +4,7 @@
  *  使用 dependencies 字段来控制表单控件的enable和visible状态 <br>
  */
 import React from 'react'
-import type { NsNodeCmd, NsGraph } from '@antv/xflow'
+import type { NsNodeCmd, NsGraph } from '@wow/tflow'
 import {
   XFlow,
   XFlowCanvas,
@@ -12,10 +12,10 @@ import {
   createGraphConfig,
   NsJsonSchemaForm,
   XFlowNodeCommands,
-} from '@antv/xflow'
+} from '@wow/tflow'
 import { set } from 'lodash'
 import { onLoad } from './graph-config'
-import '@antv/xflow/dist/index.css'
+import '@wow/tflow/dist/index.css'
 import './index.less'
 
 /**  Demo Props  */

@@ -1,5 +1,5 @@
 import React from 'react'
-import type { NsGraph } from '@antv/xflow-core'
+import type { NsGraph } from '@wow/tflow-core'
 import type { RelationCanvasModel } from '../interface'
 import { Popover, Popconfirm, Tooltip } from 'antd'
 import { ScissorOutlined } from '@ant-design/icons'

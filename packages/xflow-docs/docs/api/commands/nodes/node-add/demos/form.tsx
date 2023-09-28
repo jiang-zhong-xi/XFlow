@@ -1,9 +1,9 @@
 import React from 'react'
 import { Card, Form, Input, message } from 'antd'
-import type { IFormSchema } from '@antv/xflow'
-import { usePanelContext, WorkspacePanel, randomInt, FormBuilder } from '@antv/xflow'
-import type { NsGraph, NsNodeCmd } from '@antv/xflow'
-import { XFlowNodeCommands } from '@antv/xflow'
+import type { IFormSchema } from '@wow/tflow'
+import { usePanelContext, WorkspacePanel, randomInt, FormBuilder } from '@wow/tflow'
+import type { NsGraph, NsNodeCmd } from '@wow/tflow'
+import { XFlowNodeCommands } from '@wow/tflow'
 
 export const width = 100
 export const height = 40

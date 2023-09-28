@@ -58,7 +58,7 @@ export interface IDeleteNodeService {
 XFlow 的命令可以通过全局的 Hook 来扩展业务逻辑, 比如要配置全局的 deleteNodeService 在 createCmdConfig 中通过 hooks.delNode.registerHook 注册自己的添加 deleteNodeService 到 args 中（[IArgs](#命令参数iargs)）
 
 ```tsx | pure
-import { createCmdConfig, DisposableCollection } from '@antv/xflow'
+import { createCmdConfig, DisposableCollection } from '@wow/tflow'
 import { MockApi } from './service'
 
 export const useCmdConfig = createCmdConfig(config => {

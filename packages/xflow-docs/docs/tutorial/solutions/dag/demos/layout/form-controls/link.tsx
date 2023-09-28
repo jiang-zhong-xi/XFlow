@@ -1,4 +1,4 @@
-import type { NsJsonSchemaForm } from '@antv/xflow'
+import type { NsJsonSchemaForm } from '@wow/tflow'
 import React from 'react'
 
 export const LinkShape: React.FC<NsJsonSchemaForm.IControlProps> = props => {

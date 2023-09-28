@@ -2,7 +2,7 @@
 import { ReactShape } from '@antv/x6-react-shape'
 import { Node } from '@antv/x6'
 import { XFLOW_NODE_SHAPE, NODE_DEFAULT_WIDTH, NODE_DEFAULT_HEIGHT } from '../constants'
-import { NsGraph, XFlowConstants } from '@antv/xflow-core'
+import { NsGraph, XFlowConstants } from '@wow/tflow-core'
 
 let XFlowNode: Node.Definition
 

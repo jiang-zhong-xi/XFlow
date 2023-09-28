@@ -4,12 +4,12 @@
  *    可以根据不同的节点数据，动态的生成不同的Menu Items <br>
  */
 import React from 'react'
-import { XFlow, XFlowCanvas, CanvasContextMenu } from '@antv/xflow'
+import { XFlow, XFlowCanvas, CanvasContextMenu } from '@wow/tflow'
 import { onLoad, useGraphConfig } from './graph-config'
 import { useMenuConfig } from './menu-config'
 
 import './index.less'
-import '@antv/xflow/dist/index.css'
+import '@wow/tflow/dist/index.css'
 
 /**  Demo Props  */
 export interface IDemoProps {

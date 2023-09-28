@@ -1,5 +1,5 @@
-import type { NsGraph } from '@antv/xflow'
-import { uuidv4 } from '@antv/xflow'
+import type { NsGraph } from '@wow/tflow'
+import { uuidv4 } from '@wow/tflow'
 import { DND_NODE_RENDER_ID } from './constant'
 
 // NodeConfig

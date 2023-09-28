@@ -1,5 +1,5 @@
 import React from 'react'
-import type { NsGraph } from '@antv/xflow'
+import type { NsGraph } from '@wow/tflow'
 import type { EntityCanvasModel, EntityProperty } from '../interface'
 import { BarsOutlined, DeleteOutlined } from '@ant-design/icons'
 import { EntityType } from '../const'

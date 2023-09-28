@@ -3,11 +3,11 @@
  * desc: 支持text/iconName/tooltip/isEnable/isDisable/active/onClick/render属性来配置Toolbar
  */
 import React from 'react'
-import type { IAppLoad } from '@antv/xflow'
-import { XFlow, createGraphConfig, XFlowCanvas, CanvasToolbar } from '@antv/xflow'
+import type { IAppLoad } from '@wow/tflow'
+import { XFlow, createGraphConfig, XFlowCanvas, CanvasToolbar } from '@wow/tflow'
 import { useToolbarConfig } from './toolbar-config'
 import './index.less'
-import '@antv/xflow/dist/index.css'
+import '@wow/tflow/dist/index.css'
 /**  Demo Props  */
 export interface IDemoProps {
   anything: string

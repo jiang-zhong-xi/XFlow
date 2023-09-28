@@ -1,5 +1,5 @@
 import React from 'react'
-import type { NsModelServiceCmd, IGraphCommandService } from '@antv/xflow-core'
+import type { NsModelServiceCmd, IGraphCommandService } from '@wow/tflow-core'
 import {
   // utils
   Disposable,
@@ -10,7 +10,7 @@ import {
   createComponentModel,
   // commands
   XFlowModelCommands,
-} from '@antv/xflow-core'
+} from '@wow/tflow-core'
 
 import type { IPanelNode, IProps } from './interface'
 import { NsCollapsePanelModel } from './interface'

@@ -1,6 +1,6 @@
 import React from 'react'
-import type { IAppLoad, NsNodeCmd } from '@antv/xflow'
-import { XFlow, createGraphConfig, XFlowNodeCommands, XFlowCanvas } from '@antv/xflow'
+import type { IAppLoad, NsNodeCmd } from '@wow/tflow'
+import { XFlow, createGraphConfig, XFlowNodeCommands, XFlowCanvas } from '@wow/tflow'
 import './index.less'
 
 /**  Demo Props  */

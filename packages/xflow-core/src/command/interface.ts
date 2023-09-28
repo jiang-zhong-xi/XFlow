@@ -9,7 +9,7 @@ import type { NsModel, RxModel } from '../common/rx-model'
 import type { IModelService } from '../model-service'
 // hooks
 import type { IHooks } from '../command-contributions/interface'
-import type { IRuntimeHook } from '@antv/xflow-hook/es/interface'
+import type { IRuntimeHook } from '@wow/tflow-hook/es/interface'
 import type { NsGraph } from '../interface'
 
 /**
@@ -235,7 +235,7 @@ export interface IArgsBase {
 export interface IGraphPipelineCommand<
   Args extends IArgsBase = any,
   Result = any,
-  ICmdHooks = IHooks
+  ICmdHooks = IHooks,
 > {
   commandId: string
   getCommandOption: (ctx: IContext<Args, Result, ICmdHooks>) => Promise<ICommandConfig<Args>>

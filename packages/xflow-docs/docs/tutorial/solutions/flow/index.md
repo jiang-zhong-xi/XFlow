@@ -156,7 +156,7 @@ _内置图形名称_
 import React, { useState, useEffect } from 'react'
 import ReactDOM from 'react-dom'
 import { Input } from 'antd'
-import { FlowchartFormPanel, FormWrapper } from '@antv/xflow'
+import { FlowchartFormPanel, FormWrapper } from '@wow/tflow'
 
 const InputComponent = props => {
   const { config, plugin = {} } = props

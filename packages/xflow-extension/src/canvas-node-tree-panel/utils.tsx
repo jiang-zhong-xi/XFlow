@@ -1,4 +1,4 @@
-import { usePositionStyle } from '@antv/xflow-core'
+import { usePositionStyle } from '@wow/tflow-core'
 import type { IPanelProps } from './interface'
 import { PANEL_HEADER_HEIGHT, PANEL_FOOTER_HEIGHT } from './constants'
 

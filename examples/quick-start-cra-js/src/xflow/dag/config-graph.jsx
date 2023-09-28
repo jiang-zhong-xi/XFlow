@@ -1,5 +1,5 @@
-import { XFlowNodeCommands /* , XFlowEdgeCommands */ } from '@antv/xflow'
-import { createHookConfig, DisposableCollection } from '@antv/xflow'
+import { XFlowNodeCommands /* , XFlowEdgeCommands */ } from '@wow/tflow'
+import { createHookConfig, DisposableCollection } from '@wow/tflow'
 import { DND_RENDER_ID, GROUP_NODE_RENDER_ID } from './constant'
 import { AlgoNode } from './react-node/algo-node'
 import { GroupNode } from './react-node/group'

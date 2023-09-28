@@ -29,14 +29,14 @@ import {
   XFlowGraphCommands,
   XFlowGroupCommands,
   XFlowModelCommands,
-} from '@antv/xflow'
+} from '@wow/tflow'
 ```
 
 ## XFlowNodeCommands
 
 ```tsx | pure
 /** 如何引用？ */
-import { XFlowNodeCommands } from '@antv/xflow'
+import { XFlowNodeCommands } from '@wow/tflow'
 
 /** 节点命令 */
 export namespace XFlowNodeCommands {
@@ -102,7 +102,7 @@ export namespace XFlowNodeCommands {
 
 ```tsx | pure
 /** 如何引用？ */
-import { XFlowEdgeCommands } from '@antv/xflow'
+import { XFlowEdgeCommands } from '@wow/tflow'
 
 /** 边命令 */
 export namespace XFlowEdgeCommands {
@@ -150,7 +150,7 @@ export namespace XFlowEdgeCommands {
 
 ```tsx | pure
 /** 如何引用？ */
-import { XFlowGraphCommands } from '@antv/xflow'
+import { XFlowGraphCommands } from '@wow/tflow'
 
 /** 画布命令 */
 export namespace XFlowGraphCommands {
@@ -276,7 +276,7 @@ export namespace XFlowGraphCommands {
 
 ```tsx | pure
 /** 如何引用？ */
-import { XFlowGroupCommands } from '@antv/xflow'
+import { XFlowGroupCommands } from '@wow/tflow'
 
 /** 群组操作 */
 export namespace XFlowGroupCommands {
@@ -312,7 +312,7 @@ export namespace XFlowGroupCommands {
 
 ```tsx | pure
 /** 如何引用？ */
-import { XFlowModelCommands } from '@antv/xflow'
+import { XFlowModelCommands } from '@wow/tflow'
 
 /** 全局状态 */
 export namespace XFlowModelCommands {

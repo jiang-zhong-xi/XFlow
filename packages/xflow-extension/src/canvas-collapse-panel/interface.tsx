@@ -5,7 +5,7 @@ import type {
   IModelService,
   MODELS,
   IGraphCommandService,
-} from '@antv/xflow-core'
+} from '@wow/tflow-core'
 import type React from 'react'
 import type { Node as X6Node } from '@antv/x6'
 

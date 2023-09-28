@@ -1,4 +1,4 @@
-import type { IApplication } from '@antv/xflow-core'
+import type { IApplication } from '@wow/tflow-core'
 import type { Graph } from '@antv/x6'
 import { debounce } from 'lodash'
 

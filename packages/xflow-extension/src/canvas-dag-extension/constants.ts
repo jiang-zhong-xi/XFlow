@@ -1,6 +1,6 @@
-import type { DisposableCollection } from '@antv/xflow-core'
-import type { IGraphCommand } from '@antv/xflow-core'
-import { getModelUtil, useModelValueUtil } from '@antv/xflow-core/es/model-service/constant'
+import type { DisposableCollection } from '@wow/tflow-core'
+import type { IGraphCommand } from '@wow/tflow-core'
+import { getModelUtil, useModelValueUtil } from '@wow/tflow-core/es/model-service/constant'
 
 export const EDGE_PATH_TYPE = {
   /** node 水平 */

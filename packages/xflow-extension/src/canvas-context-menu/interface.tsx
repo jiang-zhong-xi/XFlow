@@ -1,4 +1,4 @@
-import { MODELS } from '@antv/xflow-core'
+import { MODELS } from '@wow/tflow-core'
 import type { ContextMenuConfig } from './config'
 import type {
   IAnchor,
@@ -6,7 +6,7 @@ import type {
   IMenuTarget,
   IModelService,
   DisposableCollection,
-} from '@antv/xflow-core'
+} from '@wow/tflow-core'
 
 export interface IProps {
   config: ContextMenuConfig

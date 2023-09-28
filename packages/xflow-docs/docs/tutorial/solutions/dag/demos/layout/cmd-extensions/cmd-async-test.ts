@@ -1,7 +1,7 @@
-import type { ICmdHooks as IHooks } from '@antv/xflow'
-import type { HookHub } from '@antv/xflow-hook'
-import type { IArgsBase, ICommandHandler } from '@antv/xflow'
-import { ICommandContextProvider, ManaSyringe } from '@antv/xflow'
+import type { ICmdHooks as IHooks } from '@wow/tflow'
+import type { HookHub } from '@wow/tflow-hook'
+import type { IArgsBase, ICommandHandler } from '@wow/tflow'
+import { ICommandContextProvider, ManaSyringe } from '@wow/tflow'
 import { CustomCommands } from './constants'
 
 type ICommand = ICommandHandler<NsTestCmd.IArgs, NsTestCmd.IResult, NsTestCmd.ICmdHooks>

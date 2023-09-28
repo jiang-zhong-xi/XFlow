@@ -1,6 +1,6 @@
 {
   "private": false,
-  "name": "@antv/xflow-extension",
+  "name": "@wow/tflow-extension",
   "version": "1.0.54",
   "license": "MIT",
   "scripts": {
@@ -38,8 +38,8 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
-    "@antv/xflow-core": "workspace:*",
-    "@antv/xflow-hook": "workspace:*",
+    "@wow/tflow-core": "workspace:*",
+    "@wow/tflow-hook": "workspace:*",
     "mana-syringe": "^0.2.2",
     "moment": "^2.29.1",
     "rc-field-form": "^1.22.0",

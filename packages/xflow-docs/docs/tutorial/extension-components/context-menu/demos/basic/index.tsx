@@ -6,12 +6,12 @@
  *    点击查看 [所有可用的命令](/api/commands) <br>
  */
 import React from 'react'
-import { XFlow, XFlowCanvas, CanvasContextMenu } from '@antv/xflow'
+import { XFlow, XFlowCanvas, CanvasContextMenu } from '@wow/tflow'
 import { onLoad, useGraphConfig } from './graph-config'
 import { useMenuConfig } from './menu-config'
 
 import './index.less'
-import '@antv/xflow/dist/index.css'
+import '@wow/tflow/dist/index.css'
 
 /**  Demo Props  */
 export interface IDemoProps {

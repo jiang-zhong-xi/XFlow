@@ -28,7 +28,7 @@ nav:
 
 ```tsx | pure
 /** 如何引入？ */
-import { NsGraph } from '@antv/xflow'
+import { NsGraph } from '@wow/tflow'
 
 /** 类型说明 */
 export namespace NsGraph {

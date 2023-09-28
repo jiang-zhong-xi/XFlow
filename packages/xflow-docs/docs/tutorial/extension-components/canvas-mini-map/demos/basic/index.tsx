@@ -3,16 +3,16 @@
  * desc:  放置在XFlowCanvas组件内部生效
  */
 import React from 'react'
-import type { IAppLoad, NsGraphCmd } from '@antv/xflow'
+import type { IAppLoad, NsGraphCmd } from '@wow/tflow'
 import {
   XFlow,
   createGraphConfig,
   XFlowCanvas,
   CanvasMiniMap,
   XFlowGraphCommands,
-} from '@antv/xflow'
+} from '@wow/tflow'
 import { getGraphData } from './mock'
-import '@antv/xflow/dist/index.css'
+import '@wow/tflow/dist/index.css'
 import './index.less'
 
 /**  Demo Props  */

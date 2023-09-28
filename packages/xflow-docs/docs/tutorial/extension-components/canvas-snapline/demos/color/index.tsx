@@ -3,17 +3,17 @@
  * desc: 使用color属性配置不同的对齐线颜色
  */
 import React from 'react'
-import type { IAppLoad, NsGraphCmd } from '@antv/xflow'
+import type { IAppLoad, NsGraphCmd } from '@wow/tflow'
 import {
   XFlow,
   XFlowCanvas,
   CanvasSnapline,
   XFlowGraphCommands,
   createGraphConfig,
-} from '@antv/xflow'
+} from '@wow/tflow'
 import { getGraphData } from './mock'
 import './index.less'
-import '@antv/xflow/dist/index.css'
+import '@wow/tflow/dist/index.css'
 /**  Demo Props  */
 export interface IDemoProps {
   anything: string

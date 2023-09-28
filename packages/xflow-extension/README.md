@@ -1,4 +1,4 @@
-# @antv/xflow-extension
+# @wow/tflow-extension
 
 ## Getting Started
 

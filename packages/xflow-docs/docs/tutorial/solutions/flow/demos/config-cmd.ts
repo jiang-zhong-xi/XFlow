@@ -1,11 +1,8 @@
-
-import { createCmdConfig, DisposableCollection, uuidv4 } from '@antv/xflow'
-
+import { createCmdConfig, DisposableCollection, uuidv4 } from '@wow/tflow'
 
 export const useCmdConfig = createCmdConfig(config => {
   config.setRegisterHookFn(hooks => {
     const list = [
-
       hooks.addNode.registerHook({
         name: 'set node config',
         handler: async args => {

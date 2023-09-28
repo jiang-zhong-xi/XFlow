@@ -1,8 +1,8 @@
 import React from 'react'
-import { Deferred, ManaSyringe } from '@antv/xflow'
+import { Deferred, ManaSyringe } from '@wow/tflow'
 import { Modal, Form, Input, ConfigProvider } from 'antd'
 
-import { ICommandContextProvider } from '@antv/xflow'
+import { ICommandContextProvider } from '@wow/tflow'
 
 import { CustomCommands } from './constants'
 

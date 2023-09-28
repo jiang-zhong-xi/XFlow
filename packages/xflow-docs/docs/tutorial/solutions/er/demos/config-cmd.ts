@@ -1,4 +1,4 @@
-import { createCmdConfig, DisposableCollection } from '@antv/xflow'
+import { createCmdConfig, DisposableCollection } from '@wow/tflow'
 import { MockApi } from './service'
 
 export const useCmdConfig = createCmdConfig(config => {

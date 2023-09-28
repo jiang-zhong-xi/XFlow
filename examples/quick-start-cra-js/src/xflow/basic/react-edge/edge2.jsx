@@ -1,5 +1,5 @@
 import React from 'react'
-// import { useAppContext } from '@antv/xflow'
+// import { useAppContext } from '@wow/tflow'
 import './edge2.less'
 
 const Edge2 = props => {

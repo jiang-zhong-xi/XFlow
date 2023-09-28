@@ -5,7 +5,7 @@
  *  校验错误可以在formValueUpdateService中通过allFields数组的errors字段获取到
  */
 import React from 'react'
-import type { NsNodeCmd, NsGraph } from '@antv/xflow'
+import type { NsNodeCmd, NsGraph } from '@wow/tflow'
 import {
   XFlow,
   XFlowCanvas,
@@ -13,10 +13,10 @@ import {
   createGraphConfig,
   NsJsonSchemaForm,
   XFlowNodeCommands,
-} from '@antv/xflow'
+} from '@wow/tflow'
 import { set } from 'lodash'
 import { onLoad } from './graph-config'
-import '@antv/xflow/dist/index.css'
+import '@wow/tflow/dist/index.css'
 import './index.less'
 
 /**  Demo Props  */

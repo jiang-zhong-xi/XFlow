@@ -4,7 +4,7 @@
  *    与KeyBindings组件配合，可以实现快捷键和菜单都触发Command <br>
  */
 import React from 'react'
-import { XFlow, XFlowCanvas, CanvasContextMenu, KeyBindings } from '@antv/xflow'
+import { XFlow, XFlowCanvas, CanvasContextMenu, KeyBindings } from '@wow/tflow'
 import { onLoad, useGraphConfig } from './graph-config'
 import { useMenuConfig } from './menu-config'
 import { useKeybindingConfig } from './hotkey-config'

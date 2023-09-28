@@ -1,4 +1,4 @@
-// import type { NsJsonSchemaForm } from '@antv/xflow'
+// import type { NsJsonSchemaForm } from '@wow/tflow'
 import { EditorShape } from './custom-editor'
 import { LinkShape } from './link'
 

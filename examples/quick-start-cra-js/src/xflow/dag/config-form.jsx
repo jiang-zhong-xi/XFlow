@@ -1,5 +1,5 @@
 import { controlMapService, ControlShapeEnum } from './form-controls'
-import { MODELS /* , XFlowNodeCommands */ } from '@antv/xflow'
+import { MODELS /* , XFlowNodeCommands */ } from '@wow/tflow'
 // import { set } from 'lodash'
 
 export function delay(ms) {

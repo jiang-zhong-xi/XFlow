@@ -1,7 +1,7 @@
 import { ReactShape } from '@antv/x6-react-shape'
 import { Node } from '@antv/x6'
-import { X6_NODE_PORTAL_NODE_VIEW } from '@antv/xflow-core/es/constants'
-import { NsGraph } from '@antv/xflow-core/es/interface'
+import { X6_NODE_PORTAL_NODE_VIEW } from '@wow/tflow-core/es/constants'
+import { NsGraph } from '@wow/tflow-core/es/interface'
 
 export const XFLOW_NODE_SHAPE = 'XFLOW_NODE_SHAPE'
 

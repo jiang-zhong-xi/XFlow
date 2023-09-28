@@ -4,7 +4,7 @@ import {
   XFlowEdgeCommands,
   MODELS,
   XFlowGraphCommands,
-} from '@antv/xflow'
+} from '@wow/tflow'
 
 export const useKeybindingConfig = createKeybindingConfig(config => {
   config.setKeybindingFunc(regsitry => {

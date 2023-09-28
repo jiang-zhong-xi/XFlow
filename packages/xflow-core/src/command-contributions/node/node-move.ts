@@ -3,7 +3,7 @@ import type { IArgsBase } from '../../command/interface'
 import { ICommandHandler, ICommandContextProvider } from '../../command/interface'
 import type { IHooks } from '../../hooks/interface'
 import type { Node } from '@antv/x6'
-import { HookHub } from '@antv/xflow-hook'
+import { HookHub } from '@wow/tflow-hook'
 import { XFlowNodeCommands } from '../constant'
 import { Disposable } from '../../common/disposable'
 

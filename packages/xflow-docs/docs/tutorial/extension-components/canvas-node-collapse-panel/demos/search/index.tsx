@@ -4,12 +4,12 @@
  *  配置 searchService 会支持搜索 <br>
  */
 import React from 'react'
-import { XFlow, XFlowCanvas, NodeCollapsePanel } from '@antv/xflow'
+import { XFlow, XFlowCanvas, NodeCollapsePanel } from '@wow/tflow'
 import { onLoad, useGraphConfig } from './graph-config'
 import * as panelConfig from './dnd-config'
 
 import './index.less'
-import '@antv/xflow/dist/index.css'
+import '@wow/tflow/dist/index.css'
 
 const XFlowDemo: React.FC<{}> = props => {
   const graphConfig = useGraphConfig(props)

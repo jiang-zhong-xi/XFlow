@@ -1,16 +1,15 @@
 import React from 'react'
-import { XFlow, XFlowCanvas, IAppLoad, IApplication, NsGraph, createGraphConfig } from '@antv/xflow'
-import { XFlowGraphCommands, XFlowEdgeCommands, NsGraphCmd, NsEdgeCmd } from '@antv/xflow'
+import { XFlow, XFlowCanvas, IAppLoad, IApplication, NsGraph, createGraphConfig } from '@wow/tflow'
+import { XFlowGraphCommands, XFlowEdgeCommands, NsGraphCmd, NsEdgeCmd } from '@wow/tflow'
 import { Graph as X6Graph } from '@antv/x6'
 import './index.less'
-
 
 export const useGraphConfig = createGraphConfig(config => {
   config.setX6Config({ grid: true })
   config.setNodeRender('NODE1', props => <div className="react-node">{props.data?.info}</div>)
 })
 
-let appRef: IApplication;
+let appRef: IApplication
 
 const Demo: React.FC<{}> = () => {
   const onLoad: IAppLoad = async (app: IApplication) => {
@@ -45,14 +44,14 @@ const Demo: React.FC<{}> = () => {
       },
     ]
     const edges: NsGraph.IEdgeConfig[] = [
-      { 
-        id: 'root1-down1', 
+      {
+        id: 'root1-down1',
         source: 'root1',
         target: 'down1',
         label: '1:N',
       },
-      { 
-        id: 'root1-down2', 
+      {
+        id: 'root1-down2',
         source: 'root1',
         target: 'down2',
         label: 'N:N',
@@ -66,7 +65,7 @@ const Demo: React.FC<{}> = () => {
 
     const graphInstance: X6Graph = await app.getGraphInstance()
     graphInstance.on('edge:click', ({ edge }) => {
-      const edgeData = edge?.getData();
+      const edgeData = edge?.getData()
       app.executeCommand(XFlowEdgeCommands.HIGHLIGHT_EDGE.id, {
         edgeId: edgeData.id,
         strokeColor: '#873bf4',
@@ -76,9 +75,7 @@ const Demo: React.FC<{}> = () => {
   }
   return (
     <XFlow onLoad={onLoad} className="xflow-edge-highlight-demo">
-      <div className="btn">
-        {'请用鼠标点击连线, 会触发连线高亮'}
-      </div>
+      <div className="btn">{'请用鼠标点击连线, 会触发连线高亮'}</div>
       <XFlowCanvas config={useGraphConfig()} />
     </XFlow>
   )

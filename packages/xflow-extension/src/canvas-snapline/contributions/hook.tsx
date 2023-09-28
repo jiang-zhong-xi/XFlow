@@ -1,6 +1,6 @@
-import type { ICmdHooks } from '@antv/xflow-core'
-import { DisposableCollection, Disposable } from '@antv/xflow-core'
-import { IHookContribution, ManaSyringe } from '@antv/xflow-core'
+import type { ICmdHooks } from '@wow/tflow-core'
+import { DisposableCollection, Disposable } from '@wow/tflow-core'
+import { IHookContribution, ManaSyringe } from '@wow/tflow-core'
 
 /**
  * 内置的hook contribution
