@@ -1,4 +1,4 @@
-import type { NsGraph } from '@wow/tflow-core'
+import type { NsGraph } from '@jiangzhongxi0322/tflow-core'
 import type React from 'react'
 import type { IProps as TreeNodeProps, ITreeDataService } from '../canvas-node-tree-panel/interface'
 import { INodeFactoryArgs } from '../canvas-node-tree-panel/interface'

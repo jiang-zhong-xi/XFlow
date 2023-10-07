@@ -1,4 +1,4 @@
-import type { IGraphCommand } from '@wow/tflow'
+import type { IGraphCommand } from '@jiangzhongxi0322/tflow'
 
 /** 节点命令 */
 export namespace CustomCommands {

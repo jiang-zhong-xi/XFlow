@@ -1,11 +1,11 @@
 import React from 'react'
-import type { HookHub, ICmdHooks as IHooks, NsGraph, IModelService } from '@wow/tflow'
-import { Deferred, ManaSyringe } from '@wow/tflow'
+import type { HookHub, ICmdHooks as IHooks, NsGraph, IModelService } from '@jiangzhongxi0322/tflow'
+import { Deferred, ManaSyringe } from '@jiangzhongxi0322/tflow'
 import type { FormInstance } from 'antd'
 import { Modal, Form, Input, ConfigProvider } from 'antd'
 
-import type { IArgsBase, ICommandHandler, IGraphCommandService } from '@wow/tflow'
-import { ICommandContextProvider } from '@wow/tflow'
+import type { IArgsBase, ICommandHandler, IGraphCommandService } from '@jiangzhongxi0322/tflow'
+import { ICommandContextProvider } from '@jiangzhongxi0322/tflow'
 
 import { CustomCommands } from './constants'
 

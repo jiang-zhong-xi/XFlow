@@ -1,5 +1,5 @@
-import type { GraphConfig } from '@wow/tflow-core'
-import { uuidv4 } from '@wow/tflow-core'
+import type { GraphConfig } from '@jiangzhongxi0322/tflow-core'
+import { uuidv4 } from '@jiangzhongxi0322/tflow-core'
 import { isNumber } from 'lodash'
 import { setProps, getProps } from '../flowchart-canvas/utils'
 import * as NodesComponent from './nodes'

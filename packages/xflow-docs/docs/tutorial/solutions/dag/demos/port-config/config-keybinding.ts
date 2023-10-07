@@ -1,11 +1,11 @@
-import type { NsNodeCmd, NsEdgeCmd, NsGraphCmd } from '@wow/tflow'
+import type { NsNodeCmd, NsEdgeCmd, NsGraphCmd } from '@jiangzhongxi0322/tflow'
 import {
   createKeybindingConfig,
   XFlowNodeCommands,
   XFlowEdgeCommands,
   MODELS,
   XFlowGraphCommands,
-} from '@wow/tflow'
+} from '@jiangzhongxi0322/tflow'
 
 export const useKeybindingConfig = createKeybindingConfig(config => {
   config.setKeybindingFunc(regsitry => {

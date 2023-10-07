@@ -1,6 +1,6 @@
 import type { IProps, ILayoutProps } from './interface'
 import React, { useState, useCallback } from 'react'
-import { useXflowPrefixCls } from '@wow/tflow-core'
+import { useXflowPrefixCls } from '@jiangzhongxi0322/tflow-core'
 import { WorkspacePanel } from '../base-panel'
 import { CollapsePanelBody } from './panel-body'
 import { NodePanelHeader } from './panel-header'

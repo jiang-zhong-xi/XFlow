@@ -1,4 +1,4 @@
-import type { NsGraph } from '@wow/tflow';
+import type { NsGraph } from '@jiangzhongxi0322/tflow';
 import React from 'react';
 import './node1.less';
 

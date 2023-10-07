@@ -1,6 +1,6 @@
-import type { IToolbarItemOptions } from '@wow/tflow'
-import { createToolbarConfig, uuidv4 } from '@wow/tflow'
-import type { IModelService } from '@wow/tflow'
+import type { IToolbarItemOptions } from '@jiangzhongxi0322/tflow'
+import { createToolbarConfig, uuidv4 } from '@jiangzhongxi0322/tflow'
+import type { IModelService } from '@jiangzhongxi0322/tflow'
 import {
   XFlowGraphCommands,
   XFlowGroupCommands,
@@ -8,7 +8,7 @@ import {
   NsGraphStatusCommand,
   MODELS,
   IconStore,
-} from '@wow/tflow'
+} from '@jiangzhongxi0322/tflow'
 import {
   UngroupOutlined,
   SaveOutlined,
@@ -21,7 +21,7 @@ import {
 import { MockApi } from './service'
 import { CustomCommands } from './cmd-extensions/constants'
 import type { NsDeployDagCmd } from './cmd-extensions/cmd-deploy'
-import type { NsGraphCmd, NsGroupCmd } from '@wow/tflow'
+import type { NsGraphCmd, NsGroupCmd } from '@jiangzhongxi0322/tflow'
 import { GROUP_NODE_RENDER_ID } from './constant'
 import { Popconfirm } from 'antd'
 import React from 'react'

@@ -1,6 +1,6 @@
 import React from 'react'
-import type { IModuleConfig } from '@wow/tflow-core'
-import { useExtensionRegistry } from '@wow/tflow-core'
+import type { IModuleConfig } from '@jiangzhongxi0322/tflow-core'
+import { useExtensionRegistry } from '@jiangzhongxi0322/tflow-core'
 import { createFlowExtensionModule } from '../module'
 
 export const FlowGraphExtension: React.FC = () => {

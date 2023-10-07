@@ -1,12 +1,17 @@
 import type { Graph } from '@antv/x6'
-import type { NsGraph } from '@wow/tflow-core'
+import type { NsGraph } from '@jiangzhongxi0322/tflow-core'
 import type { NsPanelData } from './service'
 import type { IProps, IFlowchartNode } from './interface'
 import type { ITreeNode } from '../canvas-node-tree-panel/interface'
 import React, { useCallback } from 'react'
 import { Empty, Collapse } from 'antd'
 import { Addon } from '@antv/x6'
-import { getNodeReactComponent, useXFlowApp, uuidv4, XFlowNodeCommands } from '@wow/tflow-core'
+import {
+  getNodeReactComponent,
+  useXFlowApp,
+  uuidv4,
+  XFlowNodeCommands,
+} from '@jiangzhongxi0322/tflow-core'
 import { getProps } from '../flowchart-canvas/utils'
 import { NodeTitle, defaultNodeFactory } from '../canvas-node-tree-panel/panel-body'
 import { isArray } from 'lodash'

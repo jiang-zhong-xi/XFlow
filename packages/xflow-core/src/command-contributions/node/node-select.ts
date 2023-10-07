@@ -1,4 +1,4 @@
-import type { HookHub } from '@wow/tflow-hook'
+import type { HookHub } from '@jiangzhongxi0322/tflow-hook'
 import type { IHooks } from '../../hooks/interface'
 import type { IContext, IArgsBase } from '../../command/interface'
 import { inject, injectable, postConstruct } from 'mana-syringe'

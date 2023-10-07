@@ -1,7 +1,7 @@
-import type { NsNodeCmd, IMenuOptions, MODELS, NsGraph } from '@wow/tflow'
-import { createCtxMenuConfig, MenuItemType } from '@wow/tflow'
-import {} from '@wow/tflow'
-import { IconStore, XFlowNodeCommands } from '@wow/tflow'
+import type { NsNodeCmd, IMenuOptions, MODELS, NsGraph } from '@jiangzhongxi0322/tflow'
+import { createCtxMenuConfig, MenuItemType } from '@jiangzhongxi0322/tflow'
+import {} from '@jiangzhongxi0322/tflow'
+import { IconStore, XFlowNodeCommands } from '@jiangzhongxi0322/tflow'
 import {
   DeleteOutlined,
   EditOutlined,

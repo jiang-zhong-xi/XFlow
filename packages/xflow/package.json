@@ -1,7 +1,6 @@
 {
-  "private": false,
-  "name": "@wow/tflow",
-  "version": "1.0.54",
+  "name": "@jiangzhongxi0322/tflow",
+  "version": "0.0.2",
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist es lib",
@@ -17,7 +16,7 @@
     "build": "run-s build:ts build:less",
     "prebuild": "run-s lint clean",
     "prepare": "pnpm build",
-    "release": "pnpm publish  --access=public",
+    "release": "pnpm publish  --access=public --force",
     "lint": "run-s lint:ts  ",
     "lint:ts": "eslint 'src/**/*.{js,ts}?(x)' --fix",
     "lint:style": "stylelint 'src/**/*.less' --syntax less --fix",
@@ -53,9 +52,9 @@
     "@antv/x6": "^1.30.1",
     "@antv/x6-react-components": "^1.1.15",
     "@antv/x6-react-shape": "^1.5.2",
-    "@wow/tflow-core": "workspace:*",
-    "@wow/tflow-extension": "workspace:*",
-    "@wow/tflow-hook": "workspace:*"
+    "@jiangzhongxi0322/tflow-core": "workspace:*",
+    "@jiangzhongxi0322/tflow-extension": "workspace:*",
+    "@jiangzhongxi0322/tflow-hook": "workspace:*"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^20.0.0",
@@ -85,5 +84,17 @@
     "react": "^16.8.0  || ^17.0.0",
     "react-dom": "^16.8.0  || ^17.0.0"
   },
-  "repository": "git@github.com:antvis/XFlow.git"
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/antvis/XFlow.git"
+  },
+  "description": "## Getting Started",
+  "bugs": {
+    "url": "https://github.com/antvis/XFlow/issues"
+  },
+  "homepage": "https://github.com/antvis/XFlow#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "jiang"
 }

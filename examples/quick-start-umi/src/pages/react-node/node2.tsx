@@ -1,6 +1,6 @@
-import type { NsGraph } from '@wow/tflow';
+import type { NsGraph } from '@jiangzhongxi0322/tflow';
 import React from 'react';
-import { useAppContext } from '@wow/tflow';
+import { useAppContext } from '@jiangzhongxi0322/tflow';
 import './node2.less';
 
 const Node2: NsGraph.INodeRender = (props) => {

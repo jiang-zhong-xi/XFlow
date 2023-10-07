@@ -15,7 +15,7 @@ nav:
 
 ```tsx | pure
 /** 如何引入？ */
-import { IModelService } from '@wow/tflow'
+import { IModelService } from '@jiangzhongxi0322/tflow'
 
 /**
  * Model Service 类型
@@ -33,7 +33,7 @@ export interface IModelService {
 ## IModel
 
 ```tsx | pure
-import { NsModel } from '@wow/tflow'
+import { NsModel } from '@jiangzhongxi0322/tflow'
 // NsModel.IModel
 
 /** model的类型 */

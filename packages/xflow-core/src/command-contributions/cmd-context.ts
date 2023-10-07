@@ -1,7 +1,7 @@
 import type { Disposable } from '../common/disposable'
 import type { Graph } from '@antv/x6'
 import type { IHooks } from '../hooks/interface'
-import type { IRuntimeHook } from '@wow/tflow-hook/es/interface'
+import type { IRuntimeHook } from '@jiangzhongxi0322/tflow-hook/es/interface'
 import type { ICommandHandler, IContext } from '../command/interface'
 import type { NsGraph } from '../interface'
 import { injectable, inject, postConstruct } from 'mana-syringe'

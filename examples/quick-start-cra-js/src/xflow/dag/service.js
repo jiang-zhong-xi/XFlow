@@ -1,5 +1,5 @@
 import { DND_RENDER_ID, NODE_WIDTH, NODE_HEIGHT, EDGE_NODE_RENDER_ID } from './constant'
-import { uuidv4, NsGraph, NsGraphStatusCommand } from '@wow/tflow'
+import { uuidv4, NsGraph, NsGraphStatusCommand } from '@jiangzhongxi0322/tflow'
 /** mock 后端接口调用 */
 export const MockApi = {}
 

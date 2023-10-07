@@ -1,4 +1,4 @@
-import { createModelServiceConfig } from '@wow/tflow'
+import { createModelServiceConfig } from '@jiangzhongxi0322/tflow'
 
 export const NS_LOADING_STATE = {}
 NS_LOADING_STATE.id = 'test'

@@ -7,7 +7,7 @@ import {
 } from '../command/interface'
 import { Module } from 'mana-syringe'
 import { CmdContext } from './cmd-context'
-import type { IRuntimeHook } from '@wow/tflow-hook/es/interface'
+import type { IRuntimeHook } from '@jiangzhongxi0322/tflow-hook/es/interface'
 
 /** Commands */
 import type { CommandConfig } from './config'

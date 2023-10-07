@@ -1,12 +1,12 @@
-import type { ICmdHooks } from '@wow/tflow-core'
+import type { ICmdHooks } from '@jiangzhongxi0322/tflow-core'
 import { singleton } from 'mana-syringe'
 import {
   DisposableCollection,
   Disposable,
   XFlowEdgeCommands,
   XFlowNodeCommands,
-} from '@wow/tflow-core'
-import { IHookContribution } from '@wow/tflow-core'
+} from '@jiangzhongxi0322/tflow-core'
+import { IHookContribution } from '@jiangzhongxi0322/tflow-core'
 import { NsAddEdgeEvent } from '../../config-graph'
 import { getProps } from '../../utils'
 

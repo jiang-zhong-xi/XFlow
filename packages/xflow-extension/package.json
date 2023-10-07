@@ -1,7 +1,7 @@
 {
   "private": false,
-  "name": "@wow/tflow-extension",
-  "version": "1.0.54",
+  "name": "@jiangzhongxi0322/tflow-extension",
+  "version": "0.0.2",
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist es lib",
@@ -38,8 +38,8 @@
     "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
-    "@wow/tflow-core": "workspace:*",
-    "@wow/tflow-hook": "workspace:*",
+    "@jiangzhongxi0322/tflow-core": "workspace:*",
+    "@jiangzhongxi0322/tflow-hook": "workspace:*",
     "mana-syringe": "^0.2.2",
     "moment": "^2.29.1",
     "rc-field-form": "^1.22.0",

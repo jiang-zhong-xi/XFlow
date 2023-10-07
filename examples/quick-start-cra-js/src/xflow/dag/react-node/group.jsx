@@ -1,6 +1,6 @@
 import React from 'react'
 import { PlusSquareOutlined, MinusSquareOutlined } from '@ant-design/icons'
-import { useXFlowApp, XFlowGroupCommands } from '@wow/tflow'
+import { useXFlowApp, XFlowGroupCommands } from '@jiangzhongxi0322/tflow'
 import './group.less'
 
 export const GroupNode = props => {

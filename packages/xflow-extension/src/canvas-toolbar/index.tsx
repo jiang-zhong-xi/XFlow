@@ -1,5 +1,5 @@
 import React from 'react'
-import { useXFlowApp } from '@wow/tflow-core'
+import { useXFlowApp } from '@jiangzhongxi0322/tflow-core'
 import { ToolbarConfig } from './config'
 import { XFlowToolbar } from './render-components'
 import type { IToolbarProps } from './interface'

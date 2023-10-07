@@ -1,5 +1,5 @@
-import type { IModelService } from '@wow/tflow'
-import { createModelServiceConfig } from '@wow/tflow'
+import type { IModelService } from '@jiangzhongxi0322/tflow'
+import { createModelServiceConfig } from '@jiangzhongxi0322/tflow'
 
 export namespace NS_LOADING_STATE {
   export const id = 'test'

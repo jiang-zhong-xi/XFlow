@@ -1,4 +1,4 @@
-# @wow/tflow-core
+# @jiangzhongxi0322/tflow-core
 
 ## Getting Started
 

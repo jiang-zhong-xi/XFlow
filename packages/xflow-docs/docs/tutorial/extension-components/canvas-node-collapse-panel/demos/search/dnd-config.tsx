@@ -1,5 +1,5 @@
-import type { NsNodeCollapsePanel } from '@wow/tflow'
-import { XFlowConstants } from '@wow/tflow'
+import type { NsNodeCollapsePanel } from '@jiangzhongxi0322/tflow'
+import { XFlowConstants } from '@jiangzhongxi0322/tflow'
 import React from 'react'
 import * as commandUtils from './comannd-utils'
 

@@ -4,11 +4,11 @@
  *    获取app, 分别使用Model/Command/X6Graph <br>
  */
 import React from 'react'
-import { XFlow, XFlowCanvas } from '@wow/tflow'
+import { XFlow, XFlowCanvas } from '@jiangzhongxi0322/tflow'
 import CustomPanel from './custom-panel'
 import './index.less'
 import { useGraphConfig, onLoad } from './graph-config'
-import '@wow/tflow/dist/index.css'
+import '@jiangzhongxi0322/tflow/dist/index.css'
 /**  Demo Props  */
 export interface IDemoProps {
   anything: string

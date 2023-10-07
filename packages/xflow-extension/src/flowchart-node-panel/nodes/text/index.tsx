@@ -1,5 +1,5 @@
 import React from 'react'
-import type { NsGraph } from '@wow/tflow-core'
+import type { NsGraph } from '@jiangzhongxi0322/tflow-core'
 import { NODE_WIDTH, NODE_HEIGHT, DefaultNodeConfig } from '../../constants'
 
 export const TextNode: NsGraph.INodeRender = props => {

@@ -5,7 +5,7 @@ import type {
   IToolbarLayout,
   DisposableCollection,
   IToolbarOptions,
-} from '@wow/tflow-core'
+} from '@jiangzhongxi0322/tflow-core'
 import type React from 'react'
 
 import type { ToolbarConfig } from './config'

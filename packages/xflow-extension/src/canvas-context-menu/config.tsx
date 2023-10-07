@@ -4,9 +4,9 @@ import type {
   RxModel,
   IMenuOptions,
   DisposableCollection,
-} from '@wow/tflow-core'
-import { uuidv4 } from '@wow/tflow-core'
-import type { MODELS } from '@wow/tflow-core'
+} from '@jiangzhongxi0322/tflow-core'
+import { uuidv4 } from '@jiangzhongxi0322/tflow-core'
+import type { MODELS } from '@jiangzhongxi0322/tflow-core'
 import type { IMenuRenderProps } from './interface'
 
 export namespace NsContextMenu {

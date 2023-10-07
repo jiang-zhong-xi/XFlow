@@ -129,7 +129,7 @@ export const useGraphConfig = createGraphConfig(config => {
 如果想在节点内部使用[IGraphCommandService](/api/interface/command#igraphcommandservice) 和 [IModelService](/api/interface/model#imodelservice), 来执行命令或者使用全局保存的状态, 则使用方式如下:
 
 ```tsx | pure
-import { NsGraph, useAppContext } from '@wow/tflow'
+import { NsGraph, useAppContext } from '@jiangzhongxi0322/tflow'
 
 interface IAppContext {
   cell: X6Node | X6Edge

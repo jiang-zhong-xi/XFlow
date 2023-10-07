@@ -1,9 +1,9 @@
 import React from 'react'
 import classnames from 'classnames'
 import { Toolbar } from '@antv/x6-react-components'
-import { useXFlowApp } from '@wow/tflow-core'
-import { IconStore } from '@wow/tflow-core'
-import type { IToolbarItemOptions, IToolbarLayout } from '@wow/tflow-core'
+import { useXFlowApp } from '@jiangzhongxi0322/tflow-core'
+import { IconStore } from '@jiangzhongxi0322/tflow-core'
+import type { IToolbarItemOptions, IToolbarLayout } from '@jiangzhongxi0322/tflow-core'
 
 export interface IProps {
   item: IToolbarItemOptions

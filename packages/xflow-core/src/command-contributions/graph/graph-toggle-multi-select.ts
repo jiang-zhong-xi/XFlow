@@ -2,7 +2,7 @@ import { inject, injectable, postConstruct } from 'mana-syringe'
 import type { IContext, IArgsBase } from '../../command/interface'
 import { ICommandHandler, ICommandContextProvider } from '../../command/interface'
 import { MODELS } from '../../model-service'
-import type { HookHub } from '@wow/tflow-hook'
+import type { HookHub } from '@jiangzhongxi0322/tflow-hook'
 import type { IHooks } from '../../hooks/interface'
 import { XFlowGraphCommands } from '../constant'
 

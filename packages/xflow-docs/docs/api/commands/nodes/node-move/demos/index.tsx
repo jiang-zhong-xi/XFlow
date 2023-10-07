@@ -1,6 +1,6 @@
 import React from 'react'
-import type { IAppLoad, NsNodeCmd } from '@wow/tflow'
-import { XFlow, createGraphConfig, XFlowCanvas, XFlowNodeCommands } from '@wow/tflow'
+import type { IAppLoad, NsNodeCmd } from '@jiangzhongxi0322/tflow'
+import { XFlow, createGraphConfig, XFlowCanvas, XFlowNodeCommands } from '@jiangzhongxi0322/tflow'
 import { FormPanel } from './form'
 import './index.less'
 

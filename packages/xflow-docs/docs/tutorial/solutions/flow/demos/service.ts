@@ -1,6 +1,6 @@
 import { DND_RENDER_ID, NODE_WIDTH, NODE_HEIGHT } from './constant'
-import { uuidv4, NsGraph } from '@wow/tflow'
-import type { NsNodeCmd, NsEdgeCmd, NsGraphCmd } from '@wow/tflow'
+import { uuidv4, NsGraph } from '@jiangzhongxi0322/tflow'
+import type { NsNodeCmd, NsEdgeCmd, NsGraphCmd } from '@jiangzhongxi0322/tflow'
 
 /** mock 后端接口调用 */
 export namespace MockApi {

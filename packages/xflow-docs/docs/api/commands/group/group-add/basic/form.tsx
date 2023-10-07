@@ -1,9 +1,9 @@
-import type { IFormSchema } from '@wow/tflow'
-import type { NsGraph, NsGroupCmd } from '@wow/tflow'
+import type { IFormSchema } from '@jiangzhongxi0322/tflow'
+import type { NsGraph, NsGroupCmd } from '@jiangzhongxi0322/tflow'
 import React from 'react'
 import { Card, Form, Input, message, Button } from 'antd'
-import { usePanelContext, WorkspacePanel, FormBuilder, uuidv4 } from '@wow/tflow'
-import { XFlowGroupCommands } from '@wow/tflow'
+import { usePanelContext, WorkspacePanel, FormBuilder, uuidv4 } from '@jiangzhongxi0322/tflow'
+import { XFlowGroupCommands } from '@jiangzhongxi0322/tflow'
 import { GROUP_NODE_RENDER_ID, GROUP_COLLAPSED_SIZE } from './constant'
 export const width = 100
 export const height = 40

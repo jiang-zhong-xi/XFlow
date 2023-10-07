@@ -23,7 +23,7 @@ import {
   CanvasSnapline,
   /** 通用组件：节点连接桩 */
   CanvasNodePortTooltip,
-} from '@wow/tflow'
+} from '@jiangzhongxi0322/tflow'
 // import type { Graph } from '@antv/x6'
 /** 配置Command*/
 import { useCmdConfig } from './config-cmd'
@@ -36,7 +36,7 @@ import { useKeybindingConfig } from './config-keybinding'
 /** 配置Dnd组件面板 */
 import { DndNode } from './react-node/dnd-node'
 
-import '@wow/tflow/dist/index.css'
+import '@jiangzhongxi0322/tflow/dist/index.css'
 
 import './index.less'
 

@@ -1,7 +1,11 @@
 import React from 'react'
 import uniqBy from 'lodash/uniqBy'
 import cloneDeep from 'lodash/cloneDeep'
-import type { IModelService, NsModelServiceCmd, IGraphCommandService } from '@wow/tflow-core'
+import type {
+  IModelService,
+  NsModelServiceCmd,
+  IGraphCommandService,
+} from '@jiangzhongxi0322/tflow-core'
 import {
   // utils
   Disposable,
@@ -12,7 +16,7 @@ import {
   createComponentModel,
   // commands
   XFlowModelCommands,
-} from '@wow/tflow-core'
+} from '@jiangzhongxi0322/tflow-core'
 
 import type { IProps, ITreeNode } from './interface'
 import { TREE_ROOT_ID } from './constants'

@@ -1,4 +1,4 @@
-import { createGraphConfig } from '@wow/tflow'
+import { createGraphConfig } from '@jiangzhongxi0322/tflow'
 
 export const useGraphConfig = createGraphConfig(config => {
   /** 预设XFlow画布配置项 */

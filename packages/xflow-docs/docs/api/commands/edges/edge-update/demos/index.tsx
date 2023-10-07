@@ -1,6 +1,18 @@
 import React from 'react'
-import { XFlow, XFlowCanvas, IAppLoad, IApplication, NsGraph, createGraphConfig } from '@wow/tflow'
-import { XFlowGraphCommands, XFlowEdgeCommands, NsGraphCmd, NsEdgeCmd } from '@wow/tflow'
+import {
+  XFlow,
+  XFlowCanvas,
+  IAppLoad,
+  IApplication,
+  NsGraph,
+  createGraphConfig,
+} from '@jiangzhongxi0322/tflow'
+import {
+  XFlowGraphCommands,
+  XFlowEdgeCommands,
+  NsGraphCmd,
+  NsEdgeCmd,
+} from '@jiangzhongxi0322/tflow'
 import './index.less'
 
 export const useGraphConfig = createGraphConfig(config => {

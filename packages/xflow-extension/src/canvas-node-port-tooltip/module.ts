@@ -1,4 +1,4 @@
-import { ManaSyringe } from '@wow/tflow-core'
+import { ManaSyringe } from '@jiangzhongxi0322/tflow-core'
 import 'reflect-metadata'
 /** Application 扩展依赖 */
 

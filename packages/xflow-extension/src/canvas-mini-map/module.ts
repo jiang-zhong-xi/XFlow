@@ -2,8 +2,8 @@ import 'reflect-metadata'
 /** Application 扩展依赖 */
 import { HookContribution } from './contributions/hook'
 import { IMinimapConfigProvider } from './interface'
-import { ManaSyringe } from '@wow/tflow-core'
-import type { IModuleConfig } from '@wow/tflow-core'
+import { ManaSyringe } from '@jiangzhongxi0322/tflow-core'
+import type { IModuleConfig } from '@jiangzhongxi0322/tflow-core'
 import type { IMinimapOptions } from './interface'
 
 /** 依赖扩展模块，必须要加载 */

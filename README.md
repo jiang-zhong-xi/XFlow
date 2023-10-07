@@ -4,7 +4,7 @@
 
 [![](https://img.shields.io/travis/antvis/xflow.svg)](https://travis-ci.org/antvis/xflow) ![](https://img.shields.io/badge/language-javascript-red.svg) ![](https://img.shields.io/badge/license-MIT-000000.svg)
 
-[![npm package](https://img.shields.io/npm/v/@wow/tflow.svg)](https://www.npmjs.com/package/@wow/tflow) [![npm downloads](http://img.shields.io/npm/dm/@wow/tflow.svg)](https://npmjs.org/package/@wow/tflow) [![Percentage of issues still open](http://isitmaintained.com/badge/open/antvis/xflow.svg)](http://isitmaintained.com/project/antvis/xflow 'Percentage of issues still open')
+[![npm package](https://img.shields.io/npm/v/@jiangzhongxi0322/tflow.svg)](https://www.npmjs.com/package/@jiangzhongxi0322/tflow) [![npm downloads](http://img.shields.io/npm/dm/@jiangzhongxi0322/tflow.svg)](https://npmjs.org/package/@jiangzhongxi0322/tflow) [![Percentage of issues still open](http://isitmaintained.com/badge/open/antvis/xflow.svg)](http://isitmaintained.com/project/antvis/xflow 'Percentage of issues still open')
 
 ## What is XFlow?
 
@@ -41,27 +41,27 @@ XFlow is a graph editing application-level solution for users of the React techn
 
 ```shell
 #npm
-$ npm install @wow/tflow --save
+$ npm install @jiangzhongxi0322/tflow --save
 
 #yarn
-$ yarn add @wow/tflow
+$ yarn add @jiangzhongxi0322/tflow
 ```
 
 ### Using CDN
 
 Using a script tag, you can use either of the following two CDN's to load XFlow library; these CDN's default to returning the latest version of XFlow
 
-- https://unpkg.com/@wow/tflow/dist/index.umd.js
-- https://cdn.jsdelivr.net/npm/@wow/tflow/dist/index.umd.js
+- https://unpkg.com/@jiangzhongxi0322/tflow/dist/index.umd.js
+- https://cdn.jsdelivr.net/npm/@jiangzhongxi0322/tflow/dist/index.umd.js
 
 ```tsx | pure
-<script src="https://unpkg.com/@wow/tflow/dist/index.umd.js"></script>
+<script src="https://unpkg.com/@jiangzhongxi0322/tflow/dist/index.umd.js"></script>
 ```
 
 For production environments, we recommend using an explicit version number to avoid unpredictable damage caused by new version upgrades:
 
-- https://unpkg.com/@wow/tflow@0.3.2-beta.1/dist/index.umd.js
-- https://cdn.jsdelivr.net/npm/@wow/tflow@0.3.2-beta.1/dist/index.umd.js
+- https://unpkg.com/@jiangzhongxi0322/tflow@0.3.2-beta.1/dist/index.umd.js
+- https://cdn.jsdelivr.net/npm/@jiangzhongxi0322/tflow@0.3.2-beta.1/dist/index.umd.js
 
 ## Getting Started Example
 
@@ -70,8 +70,12 @@ For production environments, we recommend using an explicit version number to av
 First, we need to build an XFlow workspace, in which the XFlowCanvas canvas component, CanvasScaleToolbar toolbar, CanvasMiniMap minimap, CanvasSnapline alignment line and other interactive components are all content in the XFlow workspace. **It is important to emphasize that in XFlow, everything is a React component**
 
 ```tsx | pure
-import { XFlow, XFlowCanvas } from '@wow/tflow'
-import { CanvasScaleToolbar, CanvasMiniMap, CanvasSnapline } from '@wow/tflow-extension'
+import { XFlow, XFlowCanvas } from '@jiangzhongxi0322/tflow'
+import {
+  CanvasScaleToolbar,
+  CanvasMiniMap,
+  CanvasSnapline,
+} from '@jiangzhongxi0322/tflow-extension'
 import { useGraphConfig } from './config-graph'
 
 return (
@@ -104,7 +108,7 @@ return (
 Then, we need to set the canvas global configuration item `graphConfig`, which determines how the content on the canvas is rendered. For example, whether the canvas needs a grid, the zoom level of the canvas, whether the canvas supports scroll wheel zooming, etc., and what type of React nodes/connections need to be rendered on the canvas.
 
 ```tsx | pure
-import { createGraphConfig } from '@wow/tflow'
+import { createGraphConfig } from '@jiangzhongxi0322/tflow'
 import Node1 from './react-node/node1'
 import Edge1 from './react-edge/edge1'
 

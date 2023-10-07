@@ -1,5 +1,5 @@
 import React from 'react'
-import type { IGraphCommandService, IModelService } from '@wow/tflow-core'
+import type { IGraphCommandService, IModelService } from '@jiangzhongxi0322/tflow-core'
 import type { PropsProxy } from './config'
 
 interface IContext<T = any> {

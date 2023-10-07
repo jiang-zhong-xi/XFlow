@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import type { IAppLoad, NsGraph, IApplication } from '@wow/tflow'
-import { XFlow, XFlowCanvas, KeyBindings } from '@wow/tflow'
-import { XFlowAppProvider, useXFlowApp } from '@wow/tflow'
-import type { NsGraphCmd, NsNodeCmd, NsEdgeCmd } from '@wow/tflow'
-import { XFlowGraphCommands, XFlowNodeCommands, XFlowEdgeCommands } from '@wow/tflow'
-import { CanvasMiniMap, CanvasScaleToolbar, CanvasSnapline } from '@wow/tflow'
-import { MODELS } from '@wow/tflow'
+import type { IAppLoad, NsGraph, IApplication } from '@jiangzhongxi0322/tflow'
+import { XFlow, XFlowCanvas, KeyBindings } from '@jiangzhongxi0322/tflow'
+import { XFlowAppProvider, useXFlowApp } from '@jiangzhongxi0322/tflow'
+import type { NsGraphCmd, NsNodeCmd, NsEdgeCmd } from '@jiangzhongxi0322/tflow'
+import { XFlowGraphCommands, XFlowNodeCommands, XFlowEdgeCommands } from '@jiangzhongxi0322/tflow'
+import { CanvasMiniMap, CanvasScaleToolbar, CanvasSnapline } from '@jiangzhongxi0322/tflow'
+import { MODELS } from '@jiangzhongxi0322/tflow'
 import GraphToolbar from './GraphToolbar/index'
 
 /** 配置画布 */

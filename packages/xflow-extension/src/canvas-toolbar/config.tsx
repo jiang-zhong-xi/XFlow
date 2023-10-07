@@ -1,4 +1,4 @@
-import { uuidv4 } from '@wow/tflow-core'
+import { uuidv4 } from '@jiangzhongxi0322/tflow-core'
 import type { IToolbarModelService, IToolbarCustomRenderService } from './interface'
 
 export const CONFIG_TYPE = 'CanvasToolbar'

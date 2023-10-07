@@ -1,4 +1,4 @@
-import type { NsJsonSchemaForm } from '@wow/tflow'
+import type { NsJsonSchemaForm } from '@jiangzhongxi0322/tflow'
 import { EditorShape } from './custom-editor'
 import { LinkShape } from './custom-link'
 

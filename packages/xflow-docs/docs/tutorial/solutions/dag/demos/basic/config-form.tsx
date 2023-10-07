@@ -1,6 +1,6 @@
-import type { NsJsonSchemaForm } from '@wow/tflow'
+import type { NsJsonSchemaForm } from '@jiangzhongxi0322/tflow'
 import { controlMapService, ControlShapeEnum } from './form-controls'
-import { MODELS } from '@wow/tflow'
+import { MODELS } from '@jiangzhongxi0322/tflow'
 
 export function delay(ms: number) {
   return new Promise(resolve => setTimeout(() => resolve(true), ms))

@@ -1,7 +1,7 @@
 import React from 'react'
 import {} from 'antd'
 import { PlusCircleOutlined, DeleteOutlined, LinkOutlined } from '@ant-design/icons'
-import { MODELS, useXFlowApp } from '@wow/tflow'
+import { MODELS, useXFlowApp } from '@jiangzhongxi0322/tflow'
 import './index.less'
 
 interface Props {

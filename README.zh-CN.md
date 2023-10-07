@@ -2,7 +2,7 @@
 
 [![](https://img.shields.io/travis/antvis/xflow.svg)](https://travis-ci.org/antvis/xflow) ![](https://img.shields.io/badge/language-javascript-red.svg) ![](https://img.shields.io/badge/license-MIT-000000.svg)
 
-[![npm package](https://img.shields.io/npm/v/@wow/tflow.svg)](https://www.npmjs.com/package/@wow/tflow) [![npm downloads](http://img.shields.io/npm/dm/@wow/tflow.svg)](https://npmjs.org/package/@wow/tflow) [![Percentage of issues still open](http://isitmaintained.com/badge/open/antvis/xflow.svg)](http://isitmaintained.com/project/antvis/xflow 'Percentage of issues still open')
+[![npm package](https://img.shields.io/npm/v/@jiangzhongxi0322/tflow.svg)](https://www.npmjs.com/package/@jiangzhongxi0322/tflow) [![npm downloads](http://img.shields.io/npm/dm/@jiangzhongxi0322/tflow.svg)](https://npmjs.org/package/@jiangzhongxi0322/tflow) [![Percentage of issues still open](http://isitmaintained.com/badge/open/antvis/xflow.svg)](http://isitmaintained.com/project/antvis/xflow 'Percentage of issues still open')
 
 ## 什么是 XFlow？
 
@@ -39,10 +39,10 @@ XFlow 是 AntV 旗下, 基于 X6 图编辑引擎、面向 React 技术栈用户�
 
 ```shell
 #npm
-$ npm install @wow/tflow --save
+$ npm install @jiangzhongxi0322/tflow --save
 
 #yarn
-$ yarn add @wow/tflow
+$ yarn add @jiangzhongxi0322/tflow
 
 ```
 
@@ -50,19 +50,19 @@ $ yarn add @wow/tflow
 
 通过 script 标签引入, 可以使用下面两个 CDN 中的任何一个, 默认返回 XFlow 的最新版:
 
-- https://unpkg.com/@wow/tflow/dist/index.umd.js
+- https://unpkg.com/@jiangzhongxi0322/tflow/dist/index.umd.js
 
-- https://cdn.jsdelivr.net/npm/@wow/tflow/dist/index.umd.js
+- https://cdn.jsdelivr.net/npm/@jiangzhongxi0322/tflow/dist/index.umd.js
 
 ```tsx | pure
-<script src="https://unpkg.com/@wow/tflow/dist/index.umd.js"></script>
+<script src="https://unpkg.com/@jiangzhongxi0322/tflow/dist/index.umd.js"></script>
 ```
 
 对于生产环境, 我们推荐使用一个明确的版本号, 以避免新版本升级造成不可预期的破坏:
 
-- https://unpkg.com/@wow/tflow@0.3.2-beta.1/dist/index.umd.js
+- https://unpkg.com/@jiangzhongxi0322/tflow@0.3.2-beta.1/dist/index.umd.js
 
-- https://cdn.jsdelivr.net/npm/@wow/tflow@0.3.2-beta.1/dist/index.umd.js
+- https://cdn.jsdelivr.net/npm/@jiangzhongxi0322/tflow@0.3.2-beta.1/dist/index.umd.js
 
 ## 开始使用
 
@@ -71,8 +71,12 @@ $ yarn add @wow/tflow
 首先, 我们需要构建一个 XFlow 工作空间，其中 XFlowCanvas 画布组件，CanvasScaleToolbar 工具栏、CanvasMiniMap 小地图、CanvasSnapline 对齐线等交互组件，都是 XFlow 工作空间中的内容。`需要强调的是，在XFlow 中，一切都是React 组件`。
 
 ```tsx | pure
-import { XFlow, XFlowCanvas } from '@wow/tflow'
-import { CanvasScaleToolbar, CanvasMiniMap, CanvasSnapline } from '@wow/tflow-extension'
+import { XFlow, XFlowCanvas } from '@jiangzhongxi0322/tflow'
+import {
+  CanvasScaleToolbar,
+  CanvasMiniMap,
+  CanvasSnapline,
+} from '@jiangzhongxi0322/tflow-extension'
 import { useGraphConfig } from './config-graph'
 
 return (
@@ -108,7 +112,7 @@ return (
 然后, 我们需要设置画布全局配置项 `graphConfig`, 该配置项决定了画布上的内容如何呈现。比如画布是否需要网格、画布的缩放等级、画布是否支持滚轮缩放等, 再比如画布上需要渲染哪种类型的 React 节点/连线等。
 
 ```tsx | pure
-import { createGraphConfig } from '@wow/tflow'
+import { createGraphConfig } from '@jiangzhongxi0322/tflow'
 import Node1 from './react-node/node1'
 import Edge1 from './react-edge/edge1'
 

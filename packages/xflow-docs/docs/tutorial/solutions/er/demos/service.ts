@@ -1,4 +1,4 @@
-import type { NsGraph, NsNodeCmd, NsEdgeCmd } from '@wow/tflow'
+import type { NsGraph, NsNodeCmd, NsEdgeCmd } from '@jiangzhongxi0322/tflow'
 import { mockEntityData, mockRelationData } from './mock'
 
 /** mock后端接口调用 */

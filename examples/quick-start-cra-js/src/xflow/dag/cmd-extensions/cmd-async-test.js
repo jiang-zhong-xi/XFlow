@@ -1,4 +1,4 @@
-import { ICommandContextProvider, ManaSyringe } from '@wow/tflow'
+import { ICommandContextProvider, ManaSyringe } from '@jiangzhongxi0322/tflow'
 import { CustomCommands } from './constants'
 
 const { inject, injectable } = ManaSyringe

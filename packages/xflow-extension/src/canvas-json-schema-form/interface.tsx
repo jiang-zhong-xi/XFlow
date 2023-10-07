@@ -1,7 +1,12 @@
 import type React from 'react'
 import type { FormInstance } from 'antd'
 import type { FieldData, Rule } from 'rc-field-form/es/interface'
-import type { IPosition, NsGraph, IModelService, IGraphCommandService } from '@wow/tflow-core'
+import type {
+  IPosition,
+  NsGraph,
+  IModelService,
+  IGraphCommandService,
+} from '@jiangzhongxi0322/tflow-core'
 import type { Cell, Graph as X6Graph } from '@antv/x6'
 
 export { FieldData }

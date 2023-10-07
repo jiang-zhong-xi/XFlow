@@ -1,7 +1,11 @@
 import React from 'react'
 import type { IConfig } from '../module'
 import { createModule } from '../module'
-import { XFlowAppExtensionModule, useExtensionRegistry, insertCss } from '@wow/tflow-core'
+import {
+  XFlowAppExtensionModule,
+  useExtensionRegistry,
+  insertCss,
+} from '@jiangzhongxi0322/tflow-core'
 
 export interface IProps {
   color?: string

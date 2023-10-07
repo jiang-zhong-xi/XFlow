@@ -1,5 +1,5 @@
-import type { NsGraphCmd, IToolbarGroupOptions } from '@wow/tflow-core'
-import { IconStore, MODELS, XFlowGraphCommands } from '@wow/tflow-core'
+import type { NsGraphCmd, IToolbarGroupOptions } from '@jiangzhongxi0322/tflow-core'
+import { IconStore, MODELS, XFlowGraphCommands } from '@jiangzhongxi0322/tflow-core'
 import {
   ZoomInOutlined,
   ZoomOutOutlined,

@@ -1,4 +1,4 @@
-import type { IAppLoad } from '@wow/tflow'
+import type { IAppLoad } from '@jiangzhongxi0322/tflow'
 import React, { useRef, useEffect } from 'react'
 /** 交互组件 */
 import {
@@ -24,7 +24,7 @@ import {
   CanvasSnapline,
   /** 通用组件：节点连接桩 */
   CanvasNodePortTooltip,
-} from '@wow/tflow'
+} from '@jiangzhongxi0322/tflow'
 import type { Graph } from '@antv/x6'
 /** 配置Command*/
 import { useCmdConfig } from './config-cmd'

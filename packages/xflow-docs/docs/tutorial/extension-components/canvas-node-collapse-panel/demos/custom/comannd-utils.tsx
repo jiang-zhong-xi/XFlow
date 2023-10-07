@@ -1,5 +1,5 @@
-import type { NsNodeCmd, IGraphCommandService, NsGraph } from '@wow/tflow'
-import { XFlowNodeCommands, uuidv4 } from '@wow/tflow'
+import type { NsNodeCmd, IGraphCommandService, NsGraph } from '@jiangzhongxi0322/tflow'
+import { XFlowNodeCommands, uuidv4 } from '@jiangzhongxi0322/tflow'
 
 export const addNode = (cmd: IGraphCommandService, nodeConfig: NsGraph.INodeConfig) => {
   return cmd.executeCommand<NsNodeCmd.AddNode.IArgs>(XFlowNodeCommands.ADD_NODE.id, {

@@ -1,7 +1,7 @@
 import type React from 'react'
-import type { IMenuModel, IMenuTarget } from '@wow/tflow-core'
+import type { IMenuModel, IMenuTarget } from '@jiangzhongxi0322/tflow-core'
 import { renderMenuOptions } from './menu-render'
-import { useModel, useXFlowApp } from '@wow/tflow-core'
+import { useModel, useXFlowApp } from '@jiangzhongxi0322/tflow-core'
 
 interface IProps {
   onHide: () => void

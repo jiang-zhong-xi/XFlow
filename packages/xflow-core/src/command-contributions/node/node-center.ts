@@ -1,6 +1,6 @@
 import { inject, injectable, postConstruct } from 'mana-syringe'
 import type { Node as X6Node } from '@antv/x6'
-import type { HookHub } from '@wow/tflow-hook'
+import type { HookHub } from '@jiangzhongxi0322/tflow-hook'
 import type { IHooks } from '../../hooks/interface'
 import { XFlowNodeCommands } from '../constant'
 import type { NsGraph } from '../../interface'

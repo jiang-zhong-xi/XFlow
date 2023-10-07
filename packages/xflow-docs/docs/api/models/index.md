@@ -174,7 +174,7 @@ export namespace HISTORY_REDOABLE {
 
 ```tsx | pure
 // 如何使用？
-import { MODELS } from '@wow/tflow'
+import { MODELS } from '@jiangzhongxi0322/tflow'
 // 使用models
 const getModel = async () => {
   // 使用model中的值，类型是：MODELS.GRAPH_SCALE.IState
@@ -185,7 +185,7 @@ const getModel = async () => {
 Model 的类型如下：
 
 ```tsx | pure
-import { NsModel } from '@wow/tflow'
+import { NsModel } from '@jiangzhongxi0322/tflow'
 
 /** NsModel.IModel的类型 */
 export interface IModel<T> {
@@ -208,7 +208,7 @@ export interface IModel<T> {
 
 ```tsx | pure
 // 如何使用？
-import { MODELS } from '@wow/tflow'
+import { MODELS } from '@jiangzhongxi0322/tflow'
 // 使用models
 const getModel = async () => {
   // 使用model中的值
@@ -226,7 +226,7 @@ const getModel = async () => {
 
 ```tsx | pure
 // 如何使用？
-import { MODELS, useXFlowApp, useModelAsync } from '@wow/tflow'
+import { MODELS, useXFlowApp, useModelAsync } from '@jiangzhongxi0322/tflow'
 export const Demo: React.FC = () => {
   const app = useXFlowApp()
   const [modelValue] = useModelAsync<MODELS.SELECTED_NODES.IState>({

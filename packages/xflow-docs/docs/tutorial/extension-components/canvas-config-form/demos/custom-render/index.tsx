@@ -5,7 +5,7 @@
  *   配置一个函数决定是否用自定义组件代替form的渲染 <br>
  */
 import React from 'react'
-import type { NsNodeCmd, NsGraph } from '@wow/tflow'
+import type { NsNodeCmd, NsGraph } from '@jiangzhongxi0322/tflow'
 import {
   XFlow,
   XFlowCanvas,
@@ -13,10 +13,10 @@ import {
   createGraphConfig,
   NsJsonSchemaForm,
   XFlowNodeCommands,
-} from '@wow/tflow'
+} from '@jiangzhongxi0322/tflow'
 import { set } from 'lodash'
 import { onLoad } from './graph-config'
-import '@wow/tflow/dist/index.css'
+import '@jiangzhongxi0322/tflow/dist/index.css'
 import './index.less'
 
 /**  Demo Props  */

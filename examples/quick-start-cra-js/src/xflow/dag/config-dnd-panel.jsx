@@ -1,5 +1,5 @@
-import { uuidv4 } from '@wow/tflow'
-import { XFlowNodeCommands } from '@wow/tflow'
+import { uuidv4 } from '@jiangzhongxi0322/tflow'
+import { XFlowNodeCommands } from '@jiangzhongxi0322/tflow'
 import { DND_RENDER_ID } from './constant'
 import { Card } from 'antd'
 import React from 'react'

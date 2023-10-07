@@ -37,7 +37,7 @@ CommandService 在 XFlow 内部无处不在，入口分为两种：
 在 XFlow 组件内部我们可以获得 App App 上就有 CommandService 可以使用
 
 ```tsx | pure
-import { useXFlowApp, XFlowGraphCommands, NsGraphCmd } from '@wow/tflow'
+import { useXFlowApp, XFlowGraphCommands, NsGraphCmd } from '@jiangzhongxi0322/tflow'
 
 export const GroupNode: NsGraph.INodeRender = props => {
   const { cell } = props
@@ -61,7 +61,7 @@ export const GroupNode: NsGraph.INodeRender = props => {
 XFlow 的所有组件配置的所有事件函数的参数中都包含了 CommandService，比如 setEvents 的时候，仔细看下 IEvent 的函数签名
 
 ```tsx | pure
-import { createGraphConfig } from '@wow/tflow'
+import { createGraphConfig } from '@jiangzhongxi0322/tflow'
 
 export const useGraphConfig = createGraphConfig(config => {
   const event: IEvent<'node:click'> = {

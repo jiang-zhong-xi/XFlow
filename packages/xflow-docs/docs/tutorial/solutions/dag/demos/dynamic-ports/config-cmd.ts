@@ -1,7 +1,7 @@
-import type { NsGraphCmd } from '@wow/tflow'
-import { createCmdConfig, DisposableCollection, XFlowGraphCommands } from '@wow/tflow'
-import type { IApplication } from '@wow/tflow'
-import type { IGraphPipelineCommand } from '@wow/tflow'
+import type { NsGraphCmd } from '@jiangzhongxi0322/tflow'
+import { createCmdConfig, DisposableCollection, XFlowGraphCommands } from '@jiangzhongxi0322/tflow'
+import type { IApplication } from '@jiangzhongxi0322/tflow'
+import type { IGraphPipelineCommand } from '@jiangzhongxi0322/tflow'
 import { MockApi } from './service'
 import { commandContributions } from './cmd-extensions'
 

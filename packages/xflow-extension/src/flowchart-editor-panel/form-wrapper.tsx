@@ -1,6 +1,11 @@
 import React, { useCallback } from 'react'
-import type { NsGraphCmd } from '@wow/tflow-core'
-import { XFlowGraphCommands, MODELS, XFlowNodeCommands, XFlowEdgeCommands } from '@wow/tflow-core'
+import type { NsGraphCmd } from '@jiangzhongxi0322/tflow-core'
+import {
+  XFlowGraphCommands,
+  MODELS,
+  XFlowNodeCommands,
+  XFlowEdgeCommands,
+} from '@jiangzhongxi0322/tflow-core'
 import { onConfigChange } from '../flowchart-canvas/utils'
 import { FormItemWrapper } from '../canvas-json-schema-form'
 import { usePanelContext } from '../base-panel/context'

@@ -1,6 +1,6 @@
-import type { NsJsonSchemaForm, NsGraphCmd } from '@wow/tflow'
-import { useXFlowApp, MODELS, XFlowGraphCommands } from '@wow/tflow'
-import { FormItemWrapper } from '@wow/tflow'
+import type { NsJsonSchemaForm, NsGraphCmd } from '@jiangzhongxi0322/tflow'
+import { useXFlowApp, MODELS, XFlowGraphCommands } from '@jiangzhongxi0322/tflow'
+import { FormItemWrapper } from '@jiangzhongxi0322/tflow'
 import { Form, Input } from 'antd'
 import React from 'react'
 

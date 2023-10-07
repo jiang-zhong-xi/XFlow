@@ -1,9 +1,9 @@
 import React from 'react'
 import { Card, Form, Input, message, Button } from 'antd'
-import type { IFormSchema } from '@wow/tflow'
-import { useXFlowApp, WorkspacePanel, FormBuilder, uuidv4, delay } from '@wow/tflow'
-import type { NsGroupCmd } from '@wow/tflow'
-import { XFlowGroupCommands } from '@wow/tflow'
+import type { IFormSchema } from '@jiangzhongxi0322/tflow'
+import { useXFlowApp, WorkspacePanel, FormBuilder, uuidv4, delay } from '@jiangzhongxi0322/tflow'
+import type { NsGroupCmd } from '@jiangzhongxi0322/tflow'
+import { XFlowGroupCommands } from '@jiangzhongxi0322/tflow'
 
 interface IFormValues {
   id: string

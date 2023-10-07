@@ -1,5 +1,5 @@
 import React from 'react'
-import type { NsGraph } from '@wow/tflow-core'
+import type { NsGraph } from '@jiangzhongxi0322/tflow-core'
 import { createPath } from '../../utils'
 import { NODE_WIDTH, NODE_HEIGHT, NODE_PADDING, DefaultNodeConfig } from '../../constants'
 

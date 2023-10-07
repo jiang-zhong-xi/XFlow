@@ -3,7 +3,7 @@
  * desc:  通过keybinding字段配置键盘的快捷键：https://craig.is/killing/mice
  */
 import React from 'react'
-import type { IAppLoad, NsGraphCmd } from '@wow/tflow'
+import type { IAppLoad, NsGraphCmd } from '@jiangzhongxi0322/tflow'
 import {
   XFlow,
   XFlowCanvas,
@@ -11,8 +11,8 @@ import {
   XFlowGraphCommands,
   createGraphConfig,
   createKeybindingConfig,
-} from '@wow/tflow'
-import '@wow/tflow/dist/index.css'
+} from '@jiangzhongxi0322/tflow'
+import '@jiangzhongxi0322/tflow/dist/index.css'
 import { getGraphData } from './mock'
 import './index.less'
 

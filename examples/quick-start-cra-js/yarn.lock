@@ -129,12 +129,12 @@
     mousetrap "^1.6.5"
     utility-types "^3.10.0"
 
-"@wow/tflow-core@2.0.0":
+"@jiangzhongxi0322/tflow-core@2.0.0":
   version "2.0.0"
-  resolved "https://registry.npmjs.org/@wow/tflow-core/-/xflow-core-2.0.0.tgz#a18bc53b8e2edf88d3e041677ebef27208462d55"
+  resolved "https://registry.npmjs.org/@jiangzhongxi0322/tflow-core/-/xflow-core-2.0.0.tgz#a18bc53b8e2edf88d3e041677ebef27208462d55"
   integrity sha512-agx+QLqBOZ766MVXoYOOlm/9ommQYIR5XTmc+DA21qqJvWL7E5qn1V1MjiQo31u8fYZw8zs2w5SjMtgWN94+Ww==
   dependencies:
-    "@wow/tflow-hook" "2.0.0"
+    "@jiangzhongxi0322/tflow-hook" "2.0.0"
     classnames "^2.3.1"
     immer "^9.0.7"
     mana-common "^0.1.0"
@@ -142,38 +142,38 @@
     reflect-metadata "^0.1.13"
     rxjs "^6.6.7"
 
-"@wow/tflow-extension@2.0.0":
+"@jiangzhongxi0322/tflow-extension@2.0.0":
   version "2.0.0"
-  resolved "https://registry.npmjs.org/@wow/tflow-extension/-/xflow-extension-2.0.0.tgz#d1e8b60484c9ee75744aa72ca029d0cacd7c8005"
+  resolved "https://registry.npmjs.org/@jiangzhongxi0322/tflow-extension/-/xflow-extension-2.0.0.tgz#d1e8b60484c9ee75744aa72ca029d0cacd7c8005"
   integrity sha512-/HVbpPFbPHID4WJ1Zgg/qswVOuGW75ASYHc7wRQ88NKeRSnhUQGL8d5U6VvnYxGOmHwFrxsyqDsIdFsCMs7dZQ==
   dependencies:
-    "@wow/tflow-core" "2.0.0"
-    "@wow/tflow-hook" "2.0.0"
+    "@jiangzhongxi0322/tflow-core" "2.0.0"
+    "@jiangzhongxi0322/tflow-hook" "2.0.0"
     mana-syringe "^0.2.2"
     moment "^2.29.1"
     rc-field-form "^1.22.0"
     react-color "2.17.1"
     reflect-metadata "^0.1.13"
 
-"@wow/tflow-hook@2.0.0":
+"@jiangzhongxi0322/tflow-hook@2.0.0":
   version "2.0.0"
-  resolved "https://registry.npmjs.org/@wow/tflow-hook/-/xflow-hook-2.0.0.tgz#9aba84bb8b1fdee36d5b86622cfc59062882fb5e"
+  resolved "https://registry.npmjs.org/@jiangzhongxi0322/tflow-hook/-/xflow-hook-2.0.0.tgz#9aba84bb8b1fdee36d5b86622cfc59062882fb5e"
   integrity sha512-lsvXFvukzfitDMS29F63eNnt2l7TNxwaqBWopZFmSy2+en4XxVq0ogQ9og48oI4Yh4yLxJAWB1pUdzlw6QKx+w==
   dependencies:
     toposort "^2.0.2"
 
-"@wow/tflow@workspace:*":
+"@jiangzhongxi0322/tflow@workspace:*":
   version "2.0.0"
-  resolved "https://registry.npmjs.org/@wow/tflow/-/xflow-2.0.0.tgz#c359b0098c41b877b237577151a0407b7a0afb57"
+  resolved "https://registry.npmjs.org/@jiangzhongxi0322/tflow/-/xflow-2.0.0.tgz#c359b0098c41b877b237577151a0407b7a0afb57"
   integrity sha512-Td3BubWUeNyabRypnw/VMRG4IsDC6JZ4yYkUggt4plmCD1xdeui15XlONFawC9n9WdFpikRkL/PFgYr0gqQmtg==
   dependencies:
     "@antv/layout" "^0.1.22"
     "@antv/x6" "^1.29.6"
     "@antv/x6-react-components" "^1.1.15"
     "@antv/x6-react-shape" "^1.5.2"
-    "@wow/tflow-core" "2.0.0"
-    "@wow/tflow-extension" "2.0.0"
-    "@wow/tflow-hook" "2.0.0"
+    "@jiangzhongxi0322/tflow-core" "2.0.0"
+    "@jiangzhongxi0322/tflow-extension" "2.0.0"
+    "@jiangzhongxi0322/tflow-hook" "2.0.0"
 
 "@apideck/better-ajv-errors@^0.3.1":
   version "0.3.3"

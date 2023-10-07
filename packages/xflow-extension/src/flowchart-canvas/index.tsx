@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { XFlowCanvas, useXFlowApp } from '@wow/tflow-core'
+import { XFlowCanvas, useXFlowApp } from '@jiangzhongxi0322/tflow-core'
 import { useGraphConfig } from './config-graph'
 import { setInstance } from './utils'
 export { FlowchartExtension } from './extension/module'

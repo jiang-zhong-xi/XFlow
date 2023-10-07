@@ -4,7 +4,7 @@
  *  折叠指定的群组
  */
 import React from 'react'
-import { XFlow, XFlowCanvas } from '@wow/tflow'
+import { XFlow, XFlowCanvas } from '@jiangzhongxi0322/tflow'
 import { FormPanel } from './form'
 import { useGraphConfig, onLoad } from './config-graph'
 import './index.less'

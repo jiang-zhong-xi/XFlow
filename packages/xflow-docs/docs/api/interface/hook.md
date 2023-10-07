@@ -15,7 +15,7 @@ nav:
 
 ```tsx | pure
 /** 如何引入？ */
-import { IHookService } from '@wow/tflow'
+import { IHookService } from '@jiangzhongxi0322/tflow'
 
 /** 钩子服务 */
 export interface IHookService<T = IHooks> {

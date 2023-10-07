@@ -9,7 +9,7 @@ import type { NsModel, RxModel } from '../common/rx-model'
 import type { IModelService } from '../model-service'
 // hooks
 import type { IHooks } from '../command-contributions/interface'
-import type { IRuntimeHook } from '@wow/tflow-hook/es/interface'
+import type { IRuntimeHook } from '@jiangzhongxi0322/tflow-hook/es/interface'
 import type { NsGraph } from '../interface'
 
 /**

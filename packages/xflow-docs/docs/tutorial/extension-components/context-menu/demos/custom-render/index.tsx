@@ -4,12 +4,12 @@
  *    内置的菜单补满足时，可以配置自定义组件 <br>
  */
 import React from 'react'
-import { XFlow, XFlowCanvas, CanvasContextMenu } from '@wow/tflow'
+import { XFlow, XFlowCanvas, CanvasContextMenu } from '@jiangzhongxi0322/tflow'
 import { onLoad, useGraphConfig } from './graph-config'
 import { useMenuConfig } from './menu-config'
 
 import './index.less'
-import '@wow/tflow/dist/index.css'
+import '@jiangzhongxi0322/tflow/dist/index.css'
 
 /**  Demo Props  */
 export interface IDemoProps {

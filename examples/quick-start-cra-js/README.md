@@ -8,7 +8,7 @@
 ```javascript
 {
   "dependencies": {
-    "@wow/tflow": "^1.0.41",
+    "@jiangzhongxi0322/tflow": "^1.0.41",
     "antd": "^4.17.4"
   },
    "devDependencies": {

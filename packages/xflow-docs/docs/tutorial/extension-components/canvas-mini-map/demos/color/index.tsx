@@ -4,16 +4,16 @@
  */
 
 import React from 'react'
-import type { IAppLoad, NsGraphCmd } from '@wow/tflow'
+import type { IAppLoad, NsGraphCmd } from '@jiangzhongxi0322/tflow'
 import {
   XFlow,
   createGraphConfig,
   XFlowCanvas,
   CanvasMiniMap,
   XFlowGraphCommands,
-} from '@wow/tflow'
+} from '@jiangzhongxi0322/tflow'
 import { getGraphData } from './mock'
-import '@wow/tflow/dist/index.css'
+import '@jiangzhongxi0322/tflow/dist/index.css'
 import './index.less'
 
 /**  Demo Props  */

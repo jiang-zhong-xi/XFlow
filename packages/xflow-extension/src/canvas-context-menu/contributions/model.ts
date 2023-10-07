@@ -1,4 +1,4 @@
-import type { IMenuOptions } from '@wow/tflow-core'
+import type { IMenuOptions } from '@jiangzhongxi0322/tflow-core'
 import {
   ManaSyringe,
   DisposableCollection,
@@ -7,8 +7,8 @@ import {
   IModelService,
   RxModel,
   Disposable,
-} from '@wow/tflow-core'
-import { MODELS } from '@wow/tflow-core'
+} from '@jiangzhongxi0322/tflow-core'
+import { MODELS } from '@jiangzhongxi0322/tflow-core'
 import { CONTEXT_MENU_MODEL } from '../interface'
 import { ContextMenuConfig } from '../config'
 

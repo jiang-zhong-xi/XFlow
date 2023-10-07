@@ -1,7 +1,7 @@
 import React from 'react'
 import type { Graph } from '@antv/x6'
-import { useXFlowApp, getNodeReactComponent } from '@wow/tflow-core'
-import type { IGraphConfig } from '@wow/tflow-core'
+import { useXFlowApp, getNodeReactComponent } from '@jiangzhongxi0322/tflow-core'
+import type { IGraphConfig } from '@jiangzhongxi0322/tflow-core'
 import { Addon } from '@antv/x6'
 import { XFlowNode } from '../../canvas-dag-extension/x6-extension/node'
 import type {

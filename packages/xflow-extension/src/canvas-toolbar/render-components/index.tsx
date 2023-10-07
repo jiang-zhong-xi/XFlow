@@ -2,8 +2,12 @@ import React from 'react'
 import { Spin } from 'antd'
 import classnames from 'classnames'
 // xflow
-import type { IToolbarOptions, IToolbarLayout, IToolbarGroupOptions } from '@wow/tflow-core'
-import { usePositionStyle } from '@wow/tflow-core'
+import type {
+  IToolbarOptions,
+  IToolbarLayout,
+  IToolbarGroupOptions,
+} from '@jiangzhongxi0322/tflow-core'
+import { usePositionStyle } from '@jiangzhongxi0322/tflow-core'
 // component
 import { Toolbar } from '@antv/x6-react-components'
 import { ToolbarGroup } from './toolbar-group'

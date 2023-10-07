@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useXflowPrefixCls } from '@wow/tflow-core'
+import { useXflowPrefixCls } from '@jiangzhongxi0322/tflow-core'
 import { DoubleRightOutlined, DoubleLeftOutlined } from '@ant-design/icons'
 import { get } from 'lodash'
 import { WorkspacePanel } from '../base-panel'

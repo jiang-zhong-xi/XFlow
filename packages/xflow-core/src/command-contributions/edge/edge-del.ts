@@ -4,7 +4,7 @@ import type { IContext, IArgsBase } from '../../command/interface'
 import { ICommandHandler, ICommandContextProvider } from '../../command/interface'
 import type { IHooks } from '../../hooks/interface'
 
-import type { HookHub } from '@wow/tflow-hook'
+import type { HookHub } from '@jiangzhongxi0322/tflow-hook'
 import type { Cell, Edge, Model } from '@antv/x6'
 import { XFlowEdgeCommands } from '../constant'
 import { Disposable } from '../../common/disposable'

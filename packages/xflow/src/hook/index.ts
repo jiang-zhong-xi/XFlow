@@ -6,4 +6,4 @@ export {
   IMainHandler,
   ScheduleOptions,
   ScheduleTypeEnum,
-} from '@wow/tflow-hook'
+} from '@jiangzhongxi0322/tflow-hook'

@@ -3,11 +3,11 @@
  * desc: 支持三种布局：'vertical'|'horizontal'|'horizontal-center'
  */
 import React from 'react'
-import { XFlow, createGraphConfig, XFlowCanvas, CanvasToolbar } from '@wow/tflow'
+import { XFlow, createGraphConfig, XFlowCanvas, CanvasToolbar } from '@jiangzhongxi0322/tflow'
 import { useToolbarConfig1, useToolbarConfig2, useToolbarConfig3 } from './toolbar-config'
-import type { IAppLoad } from '@wow/tflow'
+import type { IAppLoad } from '@jiangzhongxi0322/tflow'
 import './index.less'
-import '@wow/tflow/dist/index.css'
+import '@jiangzhongxi0322/tflow/dist/index.css'
 /**  Demo Props  */
 export interface IDemoProps {
   anything: string

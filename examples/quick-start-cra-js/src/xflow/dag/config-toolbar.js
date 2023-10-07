@@ -1,4 +1,4 @@
-import { createToolbarConfig, uuidv4 } from '@wow/tflow'
+import { createToolbarConfig, uuidv4 } from '@jiangzhongxi0322/tflow'
 import {
   XFlowGraphCommands,
   XFlowGroupCommands,
@@ -6,7 +6,7 @@ import {
   NsGraphStatusCommand,
   MODELS,
   IconStore,
-} from '@wow/tflow'
+} from '@jiangzhongxi0322/tflow'
 import {
   UngroupOutlined,
   SaveOutlined,

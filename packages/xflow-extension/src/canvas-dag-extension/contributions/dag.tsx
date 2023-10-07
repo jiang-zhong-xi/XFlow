@@ -4,7 +4,7 @@ import {
   NsGraph,
   Disposable,
   XFlowEdgeCommands,
-} from '@wow/tflow-core'
+} from '@jiangzhongxi0322/tflow-core'
 import type {
   IModelService,
   IHookService,
@@ -12,16 +12,16 @@ import type {
   NsEdgeCmd,
   NsNodeCmd,
   IGraphCommandService,
-} from '@wow/tflow-core'
+} from '@jiangzhongxi0322/tflow-core'
 import {
   IGraphCommandFactory,
   IHookContribution,
   IModelContribution,
   IGraphCommandContribution,
-} from '@wow/tflow-core'
+} from '@jiangzhongxi0322/tflow-core'
 import type { Edge, Graph, Node } from '@antv/x6'
 import type { EventArgs } from '@antv/x6/lib/graph/events'
-import { HookHub } from '@wow/tflow-hook'
+import { HookHub } from '@jiangzhongxi0322/tflow-hook'
 import { XFlowNode } from '../x6-extension/node'
 import { XFlowEdge } from '../x6-extension/edge'
 import { GRAPH_STATUS_INFO } from '../constants'

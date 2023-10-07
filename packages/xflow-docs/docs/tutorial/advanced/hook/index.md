@@ -27,8 +27,8 @@ nav:
 ### 如何新建 Hook 的配置项
 
 ```tsx | pure
-import type { NsGraph } from '@wow/tflow'
-import { XFlow, createHookConfig, DisposableCollection } from '@wow/tflow'
+import type { NsGraph } from '@jiangzhongxi0322/tflow'
+import { XFlow, createHookConfig, DisposableCollection } from '@jiangzhongxi0322/tflow'
 
 export const useGraphHookConfig = createHookConfig(config => {
   config.setRegisterHook(hooks => {

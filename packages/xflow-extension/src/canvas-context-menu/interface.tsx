@@ -1,4 +1,4 @@
-import { MODELS } from '@wow/tflow-core'
+import { MODELS } from '@jiangzhongxi0322/tflow-core'
 import type { ContextMenuConfig } from './config'
 import type {
   IAnchor,
@@ -6,7 +6,7 @@ import type {
   IMenuTarget,
   IModelService,
   DisposableCollection,
-} from '@wow/tflow-core'
+} from '@jiangzhongxi0322/tflow-core'
 
 export interface IProps {
   config: ContextMenuConfig

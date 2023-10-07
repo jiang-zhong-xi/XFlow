@@ -1,6 +1,6 @@
-import type { ICmdHooks } from '@wow/tflow-core'
-import { DisposableCollection, Disposable } from '@wow/tflow-core'
-import { IHookContribution, ManaSyringe } from '@wow/tflow-core'
+import type { ICmdHooks } from '@jiangzhongxi0322/tflow-core'
+import { DisposableCollection, Disposable } from '@jiangzhongxi0322/tflow-core'
+import { IHookContribution, ManaSyringe } from '@jiangzhongxi0322/tflow-core'
 
 /**
  * 内置的hook contribution

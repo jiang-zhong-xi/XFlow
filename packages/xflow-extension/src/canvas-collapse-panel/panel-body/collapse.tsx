@@ -1,6 +1,11 @@
 import React from 'react'
-import { isReactComponent } from '@wow/tflow-core'
-import type { NsGraph, IGraphConfig, IModelService, IGraphCommandService } from '@wow/tflow-core'
+import { isReactComponent } from '@jiangzhongxi0322/tflow-core'
+import type {
+  NsGraph,
+  IGraphConfig,
+  IModelService,
+  IGraphCommandService,
+} from '@jiangzhongxi0322/tflow-core'
 import type { ICollapsePanel, IOnActiveKeyChange, IPanelNode } from '../interface'
 import { CaretRightOutlined } from '@ant-design/icons'
 import { PanelNode } from './panel-node'

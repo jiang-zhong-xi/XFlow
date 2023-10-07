@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { uuidv4 } from '@wow/tflow'
-import { XFlowNodeCommands } from '@wow/tflow'
+import { uuidv4 } from '@jiangzhongxi0322/tflow'
+import { XFlowNodeCommands } from '@jiangzhongxi0322/tflow'
 import { DND_RENDER_ID } from './constant'
-import type { NsNodeCmd } from '@wow/tflow'
-import type { NsNodeCollapsePanel } from '@wow/tflow'
+import type { NsNodeCmd } from '@jiangzhongxi0322/tflow'
+import type { NsNodeCollapsePanel } from '@jiangzhongxi0322/tflow'
 import { Card } from 'antd'
 import React from 'react'
 

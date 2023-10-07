@@ -1,4 +1,4 @@
-import { createCmdConfig, DisposableCollection, XFlowGraphCommands } from '@wow/tflow'
+import { createCmdConfig, DisposableCollection, XFlowGraphCommands } from '@jiangzhongxi0322/tflow'
 import { MockApi } from './service'
 import { commandContributions } from './cmd-extensions'
 

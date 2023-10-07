@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import type { NsNodeCmd, NsEdgeCmd, IMenuOptions, NsGraph } from '@wow/tflow'
+import type { NsNodeCmd, NsEdgeCmd, IMenuOptions, NsGraph } from '@jiangzhongxi0322/tflow'
 import type { NsRenameNodeCmd } from './cmd-extensions/cmd-rename-node-modal'
-import { createCtxMenuConfig, MenuItemType } from '@wow/tflow'
-import { IconStore, XFlowNodeCommands, XFlowEdgeCommands } from '@wow/tflow'
+import { createCtxMenuConfig, MenuItemType } from '@jiangzhongxi0322/tflow'
+import { IconStore, XFlowNodeCommands, XFlowEdgeCommands } from '@jiangzhongxi0322/tflow'
 import { DeleteOutlined, EditOutlined, StopOutlined } from '@ant-design/icons'
 import { CustomCommands } from './cmd-extensions/constants'
 import { MockApi } from './service'

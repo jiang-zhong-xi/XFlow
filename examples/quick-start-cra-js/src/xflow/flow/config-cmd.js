@@ -1,4 +1,4 @@
-import { createCmdConfig, DisposableCollection, uuidv4 } from '@wow/tflow'
+import { createCmdConfig, DisposableCollection, uuidv4 } from '@jiangzhongxi0322/tflow'
 
 export const useCmdConfig = createCmdConfig(config => {
   config.setRegisterHookFn(hooks => {

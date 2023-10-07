@@ -1,5 +1,10 @@
-import type { NsNodeCmd, NsEdgeCmd, IGraphCommandService } from '@wow/tflow'
-import { createKeybindingConfig, XFlowNodeCommands, XFlowEdgeCommands, MODELS } from '@wow/tflow'
+import type { NsNodeCmd, NsEdgeCmd, IGraphCommandService } from '@jiangzhongxi0322/tflow'
+import {
+  createKeybindingConfig,
+  XFlowNodeCommands,
+  XFlowEdgeCommands,
+  MODELS,
+} from '@jiangzhongxi0322/tflow'
 import type { Node as X6Node, Edge as X6Edge } from '@antv/x6'
 import { Platform } from '@antv/x6'
 import { message } from 'antd'

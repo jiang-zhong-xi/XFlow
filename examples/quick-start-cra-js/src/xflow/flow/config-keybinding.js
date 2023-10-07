@@ -4,7 +4,7 @@ import {
   XFlowEdgeCommands,
   XFlowGraphCommands,
   MODELS,
-} from '@wow/tflow'
+} from '@jiangzhongxi0322/tflow'
 
 export const useKeybindingConfig = createKeybindingConfig(config => {
   // delete

@@ -1,5 +1,9 @@
-import type { IToolbarOptions } from '@wow/tflow-core'
-import { useXFlowApp, createComponentModel, DisposableCollection } from '@wow/tflow-core'
+import type { IToolbarOptions } from '@jiangzhongxi0322/tflow-core'
+import {
+  useXFlowApp,
+  createComponentModel,
+  DisposableCollection,
+} from '@jiangzhongxi0322/tflow-core'
 import React from 'react'
 import type { IToolbarProps } from './interface'
 

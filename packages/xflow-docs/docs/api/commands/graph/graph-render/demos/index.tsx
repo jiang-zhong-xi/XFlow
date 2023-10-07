@@ -1,7 +1,7 @@
 import React from 'react'
-import type { NsGraph, NsGraphCmd, IAppLoad } from '@wow/tflow'
-import { XFlow, XFlowCanvas, createGraphConfig, XFlowGraphCommands } from '@wow/tflow'
-import '@wow/tflow/dist/index.css'
+import type { NsGraph, NsGraphCmd, IAppLoad } from '@jiangzhongxi0322/tflow'
+import { XFlow, XFlowCanvas, createGraphConfig, XFlowGraphCommands } from '@jiangzhongxi0322/tflow'
+import '@jiangzhongxi0322/tflow/dist/index.css'
 import './index.less'
 
 /** graphConfig hook */

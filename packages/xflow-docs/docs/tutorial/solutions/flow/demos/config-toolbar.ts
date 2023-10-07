@@ -11,7 +11,7 @@ import {
   NsNodeCmd,
   IconStore,
   MODELS,
-} from '@wow/tflow'
+} from '@jiangzhongxi0322/tflow'
 import {
   UngroupOutlined,
   SaveOutlined,

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 /** 图核心组件 & 类型定义 */
-import type { IAppLoad, NsGraph, IApplication, NsGraphCmd } from '@wow/tflow'
-import { XFlow, XFlowCanvas, createGraphConfig, XFlowGraphCommands } from '@wow/tflow'
+import type { IAppLoad, NsGraph, IApplication, NsGraphCmd } from '@jiangzhongxi0322/tflow'
+import { XFlow, XFlowCanvas, createGraphConfig, XFlowGraphCommands } from '@jiangzhongxi0322/tflow'
 import './index.less'
-import '@wow/tflow/dist/index.css'
+import '@jiangzhongxi0322/tflow/dist/index.css'
 
 export const useGraphConfig = createGraphConfig(config => {
   config.setX6Config({ grid: true })

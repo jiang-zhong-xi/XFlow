@@ -1,5 +1,5 @@
-import { ManaSyringe } from '@wow/tflow-core'
-import type { IExtensionModule } from '@wow/tflow-core'
+import { ManaSyringe } from '@jiangzhongxi0322/tflow-core'
+import type { IExtensionModule } from '@jiangzhongxi0322/tflow-core'
 import type { Graph as X6Graph } from '@antv/x6'
 
 /** 画布布局 */

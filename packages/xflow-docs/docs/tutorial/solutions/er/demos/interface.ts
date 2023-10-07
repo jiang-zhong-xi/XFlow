@@ -1,4 +1,4 @@
-import type { NsGraph } from '@wow/tflow'
+import type { NsGraph } from '@jiangzhongxi0322/tflow'
 
 /** 实体数据模型 */
 export interface EntityModel {

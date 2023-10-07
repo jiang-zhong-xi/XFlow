@@ -1,7 +1,7 @@
 import 'reflect-metadata'
 /** Application 扩展依赖 */
-import type { IExtensionModule } from '@wow/tflow-core'
-import { ManaSyringe } from '@wow/tflow-core'
+import type { IExtensionModule } from '@jiangzhongxi0322/tflow-core'
+import { ManaSyringe } from '@jiangzhongxi0322/tflow-core'
 import { DagHooksContribution } from './contributions/dag'
 import { QueryGraphStatusCommand } from './contributions/command'
 export * from './x6-extension/edge'

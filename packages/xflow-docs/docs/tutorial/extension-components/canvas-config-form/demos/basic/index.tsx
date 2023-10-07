@@ -13,11 +13,11 @@ import {
   createGraphConfig,
   NsJsonSchemaForm,
   XFlowNodeCommands,
-} from '@wow/tflow'
+} from '@jiangzhongxi0322/tflow'
 import { set } from 'lodash'
 import { onLoad } from './graph-config'
-import type { NsNodeCmd, NsGraph } from '@wow/tflow'
-import '@wow/tflow/dist/index.css'
+import type { NsNodeCmd, NsGraph } from '@jiangzhongxi0322/tflow'
+import '@jiangzhongxi0322/tflow/dist/index.css'
 import './index.less'
 
 /**  Demo Props  */

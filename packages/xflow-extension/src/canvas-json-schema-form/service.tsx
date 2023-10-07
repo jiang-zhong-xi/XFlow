@@ -1,7 +1,15 @@
 import React from 'react'
-import { useXFlowApp, DisposableCollection, createComponentModel } from '@wow/tflow-core'
-import type { NsModelServiceCmd, IGraphCommandService, IModelService } from '@wow/tflow-core'
-import { XFlowModelCommands, Disposable, MODELS } from '@wow/tflow-core'
+import {
+  useXFlowApp,
+  DisposableCollection,
+  createComponentModel,
+} from '@jiangzhongxi0322/tflow-core'
+import type {
+  NsModelServiceCmd,
+  IGraphCommandService,
+  IModelService,
+} from '@jiangzhongxi0322/tflow-core'
+import { XFlowModelCommands, Disposable, MODELS } from '@jiangzhongxi0322/tflow-core'
 import type { IProps, ISchema, TargetType, TargetData } from './interface'
 import type { Cell } from '@antv/x6'
 

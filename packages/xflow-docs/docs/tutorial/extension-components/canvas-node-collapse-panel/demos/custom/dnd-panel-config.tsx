@@ -1,6 +1,6 @@
-import type { NsNodeCollapsePanel } from '@wow/tflow'
+import type { NsNodeCollapsePanel } from '@jiangzhongxi0322/tflow'
 import React from 'react'
-import { XFlowConstants } from '@wow/tflow'
+import { XFlowConstants } from '@jiangzhongxi0322/tflow'
 import * as commandUtils from './comannd-utils'
 
 export const DND_RENDER_ID = 'DND_RENDER_ID'

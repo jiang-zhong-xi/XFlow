@@ -1,7 +1,7 @@
 import React from 'react'
 import { PlusSquareOutlined, MinusSquareOutlined } from '@ant-design/icons'
-import type { NsGraph } from '@wow/tflow'
-import { useXFlowApp, XFlowGroupCommands, NsNodeCmd } from '@wow/tflow'
+import type { NsGraph } from '@jiangzhongxi0322/tflow'
+import { useXFlowApp, XFlowGroupCommands, NsNodeCmd } from '@jiangzhongxi0322/tflow'
 import './group.less'
 
 export const GroupNode: NsGraph.INodeRender = props => {

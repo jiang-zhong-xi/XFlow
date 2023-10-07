@@ -1,31 +1,35 @@
 /** 对齐线 */
-export { CanvasSnapline, ICanvasSnaplineProps } from '@wow/tflow-extension'
+export { CanvasSnapline, ICanvasSnaplineProps } from '@jiangzhongxi0322/tflow-extension'
 
 /** Port Tooltip */
-export { CanvasNodePortTooltip } from '@wow/tflow-extension'
+export { CanvasNodePortTooltip } from '@jiangzhongxi0322/tflow-extension'
 
 /** 画布 右键菜单 */
 export {
   CanvasContextMenu,
   ICanvasContextMenuProps,
   createCtxMenuConfig,
-} from '@wow/tflow-extension'
+} from '@jiangzhongxi0322/tflow-extension'
 
 /** 画布 Scale Toolbar */
 export {
   CanvasScaleToolbar,
   ICanvasScaleToolbarProps,
   CANVAS_SCALE_TOOLBAR_CONFIG,
-} from '@wow/tflow-extension'
+} from '@jiangzhongxi0322/tflow-extension'
 
 /** 画布 Toolbar */
-export { CanvasToolbar, IToolbarProps, createToolbarConfig } from '@wow/tflow-extension'
+export {
+  CanvasToolbar,
+  IToolbarProps,
+  createToolbarConfig,
+} from '@jiangzhongxi0322/tflow-extension'
 
 /** demo utils */
-export { FormBuilder, IFormSchema, randomInt } from '@wow/tflow-extension'
+export { FormBuilder, IFormSchema, randomInt } from '@jiangzhongxi0322/tflow-extension'
 
 /** 画布 minimap */
-export { CanvasMiniMap, ICanvasMiniMapProps } from '@wow/tflow-extension'
+export { CanvasMiniMap, ICanvasMiniMapProps } from '@jiangzhongxi0322/tflow-extension'
 
 /** 组件树 */
 export {
@@ -33,7 +37,7 @@ export {
   NsNodeTreePanelModel,
   INodeTreePanelProps,
   NsNodeTreePanel,
-} from '@wow/tflow-extension'
+} from '@jiangzhongxi0322/tflow-extension'
 
 /** 组件折叠面板 */
 export {
@@ -41,7 +45,7 @@ export {
   NsCollapsePanelModel,
   NsNodeCollapsePanel,
   INodeCollapsePanelProps,
-} from '@wow/tflow-extension'
+} from '@jiangzhongxi0322/tflow-extension'
 
 /** JSON Schema Form */
 export {
@@ -52,10 +56,14 @@ export {
   NsJsonSchemaForm,
   NsJsonSchemaFormModel,
   executeJsonSchemaFormCommand,
-} from '@wow/tflow-extension'
+} from '@jiangzhongxi0322/tflow-extension'
 
 /** Panel 提供 getValue context和 ensure app context存在 */
-export { WorkspacePanel, usePanelContext, IWorkspacePanelProps } from '@wow/tflow-extension'
+export {
+  WorkspacePanel,
+  usePanelContext,
+  IWorkspacePanelProps,
+} from '@jiangzhongxi0322/tflow-extension'
 
 /** DAG图扩展 */
 export {
@@ -63,10 +71,10 @@ export {
   GRAPH_STATUS_INFO,
   XFlowDagCommands,
   NsGraphStatusCommand,
-} from '@wow/tflow-extension'
+} from '@jiangzhongxi0322/tflow-extension'
 
 /** 流程图扩展 */
-export { FlowGraphExtension } from '@wow/tflow-extension'
+export { FlowGraphExtension } from '@jiangzhongxi0322/tflow-extension'
 
 /** 流程图相关组件 */
 export {
@@ -81,4 +89,4 @@ export {
   IFlowchartFormWrapperProps,
   EditorPanels,
   FlowchartService,
-} from '@wow/tflow-extension'
+} from '@jiangzhongxi0322/tflow-extension'

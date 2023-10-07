@@ -7,7 +7,7 @@ import type { NsGraph } from '../../interface'
 import type { IContext, IArgsBase } from '../../command/interface'
 import { ICommandHandler, ICommandContextProvider } from '../../command/interface'
 import type { IHooks } from '../../hooks/interface'
-import type { HookHub } from '@wow/tflow-hook'
+import type { HookHub } from '@jiangzhongxi0322/tflow-hook'
 import { XFlowEdgeCommands } from '../constant'
 
 type ICommand = ICommandHandler<NsUpdateEdge.IArgs, NsUpdateEdge.IResult, NsUpdateEdge.ICmdHooks>

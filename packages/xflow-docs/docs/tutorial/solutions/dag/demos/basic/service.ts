@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { DND_RENDER_ID, NODE_WIDTH, NODE_HEIGHT } from './constant'
-import { uuidv4, NsGraph, NsGraphStatusCommand } from '@wow/tflow'
+import { uuidv4, NsGraph, NsGraphStatusCommand } from '@jiangzhongxi0322/tflow'
 import type { NsRenameNodeCmd } from './cmd-extensions/cmd-rename-node-modal'
-import type { NsNodeCmd, NsEdgeCmd, NsGraphCmd } from '@wow/tflow'
+import type { NsNodeCmd, NsEdgeCmd, NsGraphCmd } from '@jiangzhongxi0322/tflow'
 import type { NsDeployDagCmd } from './cmd-extensions/cmd-deploy'
 /** mock 后端接口调用 */
 export namespace MockApi {

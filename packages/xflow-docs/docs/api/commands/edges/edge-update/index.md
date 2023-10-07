@@ -47,7 +47,7 @@ export interface IUpdateEdgeService {
  XFlow 的命令可以通过全局的 Hook 来扩展业务逻辑, 比如 UpdateEdge 时配置全局的 updateEdgeService。
 
 ```tsx | pure
-import { createCmdConfig, DisposableCollection } from '@wow/tflow'
+import { createCmdConfig, DisposableCollection } from '@jiangzhongxi0322/tflow'
 import { MockApi } from './service'
 
 export const useCmdConfig = createCmdConfig(config => {

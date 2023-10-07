@@ -1,11 +1,11 @@
 import type { Graph } from '@antv/x6'
-import type { NsGraph, IModelService } from '@wow/tflow-core'
-import type { ICmdHooks } from '@wow/tflow-core'
+import type { NsGraph, IModelService } from '@jiangzhongxi0322/tflow-core'
+import type { ICmdHooks } from '@jiangzhongxi0322/tflow-core'
 import classnames from 'classnames'
-import { IHookContribution, ManaSyringe } from '@wow/tflow-core'
-import { IGraphProvider } from '@wow/tflow-core'
+import { IHookContribution, ManaSyringe } from '@jiangzhongxi0322/tflow-core'
+import { IGraphProvider } from '@jiangzhongxi0322/tflow-core'
 import { ACTIVE_NODE_PORT, NsPortEvent } from '../interface'
-import { DisposableCollection, IModelContribution, Disposable } from '@wow/tflow-core'
+import { DisposableCollection, IModelContribution, Disposable } from '@jiangzhongxi0322/tflow-core'
 
 /**
  * 内置的hook contribution

@@ -1,5 +1,5 @@
-import { createToolbarConfig } from '@wow/tflow'
-import { IconStore } from '@wow/tflow'
+import { createToolbarConfig } from '@jiangzhongxi0322/tflow'
+import { IconStore } from '@jiangzhongxi0322/tflow'
 import { PlusCircleOutlined } from '@ant-design/icons'
 
 IconStore.set('PlusCircleOutlined', PlusCircleOutlined)

@@ -1,7 +1,7 @@
-import type { IAppLoad, NsGraphCmd } from '@wow/tflow'
+import type { IAppLoad, NsGraphCmd } from '@jiangzhongxi0322/tflow'
 import React from 'react'
-import { createGraphConfig } from '@wow/tflow'
-import { XFlowGraphCommands } from '@wow/tflow'
+import { createGraphConfig } from '@jiangzhongxi0322/tflow'
+import { XFlowGraphCommands } from '@jiangzhongxi0322/tflow'
 import { getGraphData } from './mock'
 
 export const onLoad: IAppLoad = async app => {

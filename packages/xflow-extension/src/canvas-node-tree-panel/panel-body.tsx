@@ -10,8 +10,13 @@ import type {
   IOnFolderExpand,
   INodeFactoryArgs,
 } from './interface'
-import type { IModelService, IGraphCommandService, IGraphConfig, NsGraph } from '@wow/tflow-core'
-import { getNodeReactComponent, useXFlowApp, XFlowConstants } from '@wow/tflow-core'
+import type {
+  IModelService,
+  IGraphCommandService,
+  IGraphConfig,
+  NsGraph,
+} from '@jiangzhongxi0322/tflow-core'
+import { getNodeReactComponent, useXFlowApp, XFlowConstants } from '@jiangzhongxi0322/tflow-core'
 import { XFlowNode } from '../canvas-dag-extension/x6-extension/node'
 const { DirectoryTree, TreeNode } = Tree
 

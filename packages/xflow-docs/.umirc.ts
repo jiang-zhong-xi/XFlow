@@ -10,6 +10,7 @@ export default defineConfig({
   favicon: 'https://gw.alipayobjects.com/zos/antfincdn/FLrTNDvlna/antv.png',
   esbuild: {},
   runtimePublicPath: true,
+  publicPath: '/XFlow/',
   resolve: {
     includes: ['docs'],
   },

@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 /** 图核心组件 & 类型定义 */
-import type { IAppLoad, NsGraph } from '@wow/tflow'
-import { XFlow, XFlowCanvas } from '@wow/tflow'
+import type { IAppLoad, NsGraph } from '@jiangzhongxi0322/tflow'
+import { XFlow, XFlowCanvas } from '@jiangzhongxi0322/tflow'
 /** 图的各种扩展交互组件 */
-import { CanvasMiniMap, CanvasScaleToolbar, CanvasSnapline } from '@wow/tflow'
+import { CanvasMiniMap, CanvasScaleToolbar, CanvasSnapline } from '@jiangzhongxi0322/tflow'
 /** 图的配置项 */
 import { useGraphConfig } from './config-graph'
 import { message } from 'antd'
 import './index.less'
-import '@wow/tflow/dist/index.css'
+import '@jiangzhongxi0322/tflow/dist/index.css'
 
 export interface IProps {}
 

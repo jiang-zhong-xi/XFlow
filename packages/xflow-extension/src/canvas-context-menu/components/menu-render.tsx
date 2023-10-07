@@ -5,11 +5,11 @@ import type {
   IMenuOptions,
   IModelService,
   IGraphCommandService,
-} from '@wow/tflow-core'
+} from '@jiangzhongxi0322/tflow-core'
 import {
   // app service
   IconStore,
-} from '@wow/tflow-core'
+} from '@jiangzhongxi0322/tflow-core'
 
 import { Menu } from '@antv/x6-react-components'
 

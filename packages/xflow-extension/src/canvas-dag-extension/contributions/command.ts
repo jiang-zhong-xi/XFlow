@@ -1,7 +1,12 @@
-import type { HookHub } from '@wow/tflow-hook'
-import type { IArgsBase } from '@wow/tflow-core'
-import type { IHooks } from '@wow/tflow-core'
-import { ManaSyringe, ICommandHandler, ICommandContextProvider, delay } from '@wow/tflow-core'
+import type { HookHub } from '@jiangzhongxi0322/tflow-hook'
+import type { IArgsBase } from '@jiangzhongxi0322/tflow-core'
+import type { IHooks } from '@jiangzhongxi0322/tflow-core'
+import {
+  ManaSyringe,
+  ICommandHandler,
+  ICommandContextProvider,
+  delay,
+} from '@jiangzhongxi0322/tflow-core'
 import { XFlowDagCommands, GRAPH_STATUS_INFO, EDGE_PROCESSING_CLASSNAME } from '../constants'
 
 import type { Graph as X6Graph, Node as X6Node } from '@antv/x6'

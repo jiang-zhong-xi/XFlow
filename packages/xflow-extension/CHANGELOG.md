@@ -1,4 +1,4 @@
-# @wow/tflow-extension
+# @jiangzhongxi0322/tflow-extension
 
 ## 1.0.54
 
@@ -8,8 +8,8 @@
 - 013cfc5e: fix: cannot paste group in flow chart
 - Updated dependencies [013cfc5e]
 - Updated dependencies [013cfc5e]
-  - @wow/tflow-core@1.0.54
-  - @wow/tflow-hook@1.0.54
+  - @jiangzhongxi0322/tflow-core@1.0.54
+  - @jiangzhongxi0322/tflow-hook@1.0.54
 
 ## 1.0.52
 
@@ -17,8 +17,8 @@
 
 - ec6e7203: fix: cannot copy edge Close#322
 - Updated dependencies [ec6e7203]
-  - @wow/tflow-core@1.0.52
-  - @wow/tflow-hook@1.0.52
+  - @jiangzhongxi0322/tflow-core@1.0.52
+  - @jiangzhongxi0322/tflow-hook@1.0.52
 
 ## 1.0.51
 
@@ -26,8 +26,8 @@
 
 - 9fcf1234: chore: release version
 - Updated dependencies [9fcf1234]
-  - @wow/tflow-core@1.0.51
-  - @wow/tflow-hook@1.0.51
+  - @jiangzhongxi0322/tflow-core@1.0.51
+  - @jiangzhongxi0322/tflow-hook@1.0.51
 
 ## 1.0.49
 
@@ -41,8 +41,8 @@
 - Updated dependencies [706c98dc]
 - Updated dependencies [1bfa63a4]
 - Updated dependencies [372f453b]
-  - @wow/tflow-core@1.0.49
-  - @wow/tflow-hook@1.0.49
+  - @jiangzhongxi0322/tflow-core@1.0.49
+  - @jiangzhongxi0322/tflow-hook@1.0.49
 
 ## 1.0.48
 
@@ -52,8 +52,8 @@
 - cd8c2be5: chore: add changelog
 - Updated dependencies [cd8c2be5]
 - Updated dependencies [cd8c2be5]
-  - @wow/tflow-core@1.0.48
-  - @wow/tflow-hook@1.0.48
+  - @jiangzhongxi0322/tflow-core@1.0.48
+  - @jiangzhongxi0322/tflow-hook@1.0.48
 
 ## 1.0.47
 
@@ -61,8 +61,8 @@
 
 - 58382676: fix:修复注册节点为空时出错
 - Updated dependencies [58382676]
-  - @wow/tflow-core@1.0.47
-  - @wow/tflow-hook@1.0.47
+  - @jiangzhongxi0322/tflow-core@1.0.47
+  - @jiangzhongxi0322/tflow-hook@1.0.47
 
 ## 1.0.46
 
@@ -72,8 +72,8 @@
 - 779a9705: release 1.0.45
 - Updated dependencies [779a9705]
 - Updated dependencies [779a9705]
-  - @wow/tflow-core@1.0.46
-  - @wow/tflow-hook@1.0.46
+  - @jiangzhongxi0322/tflow-core@1.0.46
+  - @jiangzhongxi0322/tflow-hook@1.0.46
 
 ## 2.0.0
 
@@ -89,8 +89,8 @@
 - 54c875d3: fix: Type of source & target in edgeConfig
 - Updated dependencies [411c9fa4]
 - Updated dependencies [54c875d3]
-  - @wow/tflow-core@1.0.44
-  - @wow/tflow-hook@1.0.44
+  - @jiangzhongxi0322/tflow-core@1.0.44
+  - @jiangzhongxi0322/tflow-hook@1.0.44
 
 ## 1.0.43
 
@@ -98,8 +98,8 @@
 
 - 214c5531: fix cant add edge when use customLayOut
 - Updated dependencies [214c5531]
-  - @wow/tflow-core@1.0.43
-  - @wow/tflow-hook@1.0.43
+  - @jiangzhongxi0322/tflow-core@1.0.43
+  - @jiangzhongxi0322/tflow-hook@1.0.43
 
 ## 1.0.42
 
@@ -111,8 +111,8 @@
 - Updated dependencies [0d6cb480]
 - Updated dependencies [a0702137]
 - Updated dependencies [a0702137]
-  - @wow/tflow-core@1.0.42
-  - @wow/tflow-hook@1.0.42
+  - @jiangzhongxi0322/tflow-core@1.0.42
+  - @jiangzhongxi0322/tflow-hook@1.0.42
 
 ## 1.0.41
 
@@ -120,8 +120,8 @@
 
 - 354b4135: 'add mode for flowchart'
 - Updated dependencies [354b4135]
-  - @wow/tflow-core@1.0.41
-  - @wow/tflow-hook@1.0.41
+  - @jiangzhongxi0322/tflow-core@1.0.41
+  - @jiangzhongxi0322/tflow-hook@1.0.41
 
 ## 1.0.40
 
@@ -129,8 +129,8 @@
 
 - 82f1c2b9: chore: fix wrong release version
 - Updated dependencies [82f1c2b9]
-  - @wow/tflow-core@1.0.40
-  - @wow/tflow-hook@1.0.40
+  - @jiangzhongxi0322/tflow-core@1.0.40
+  - @jiangzhongxi0322/tflow-hook@1.0.40
 
 ## 1.0.39
 
@@ -139,8 +139,8 @@
 - 94bc5e8a: fix: graph render command order issue
 - Updated dependencies [c5578bb0]
 - Updated dependencies [94bc5e8a]
-  - @wow/tflow-core@2.0.0
-  - @wow/tflow-hook@1.0.39
+  - @jiangzhongxi0322/tflow-core@2.0.0
+  - @jiangzhongxi0322/tflow-hook@1.0.39
 
 ## 1.0.38
 
@@ -148,8 +148,8 @@
 
 - ba4f7091: chore: release version 1.0.38
 - Updated dependencies [ba4f7091]
-  - @wow/tflow-core@1.0.38
-  - @wow/tflow-hook@1.0.38
+  - @jiangzhongxi0322/tflow-core@1.0.38
+  - @jiangzhongxi0322/tflow-hook@1.0.38
 
 ## 1.0.37
 
@@ -159,8 +159,8 @@
 - 9c8063ce: xflow version to 1.0.37
 - Updated dependencies [1286ef25]
 - Updated dependencies [9c8063ce]
-  - @wow/tflow-core@1.0.37
-  - @wow/tflow-hook@1.0.37
+  - @jiangzhongxi0322/tflow-core@1.0.37
+  - @jiangzhongxi0322/tflow-hook@1.0.37
 
 ## 1.0.36
 
@@ -168,8 +168,8 @@
 
 - 90a2950f: chore: upgrade mana-common version avoid runtime generator issue
 - Updated dependencies [90a2950f]
-  - @wow/tflow-core@1.0.36
-  - @wow/tflow-hook@1.0.36
+  - @jiangzhongxi0322/tflow-core@1.0.36
+  - @jiangzhongxi0322/tflow-hook@1.0.36
 
 ## 1.0.35
 
@@ -177,8 +177,8 @@
 
 - 2fa59874: fix: add update for vertices, router, connector, source, target in edge-update command chore: update x6 version to 1.30.1
 - Updated dependencies [2fa59874]
-  - @wow/tflow-core@1.0.35
-  - @wow/tflow-hook@1.0.35
+  - @jiangzhongxi0322/tflow-core@1.0.35
+  - @jiangzhongxi0322/tflow-hook@1.0.35
 
 ## 1.0.34
 
@@ -190,8 +190,8 @@
 - Updated dependencies [85dd60b6]
 - Updated dependencies [01bb0958]
 - Updated dependencies [85dd60b6]
-  - @wow/tflow-core@1.0.34
-  - @wow/tflow-hook@1.0.34
+  - @jiangzhongxi0322/tflow-core@1.0.34
+  - @jiangzhongxi0322/tflow-hook@1.0.34
 
 ## 1.0.32
 
@@ -199,8 +199,8 @@
 
 - 97dc25f: fix: XFlow style props is not working
 - Updated dependencies [97dc25f]
-  - @wow/tflow-core@1.0.32
-  - @wow/tflow-hook@1.0.32
+  - @jiangzhongxi0322/tflow-core@1.0.32
+  - @jiangzhongxi0322/tflow-hook@1.0.32
 
 ## 1.0.31
 
@@ -208,8 +208,8 @@
 
 - 1c37eca: fix: JsonSchemaForm type error close#122
 - Updated dependencies [1c37eca]
-  - @wow/tflow-core@1.0.31
-  - @wow/tflow-hook@1.0.31
+  - @jiangzhongxi0322/tflow-core@1.0.31
+  - @jiangzhongxi0322/tflow-hook@1.0.31
 
 ## 1.0.30
 
@@ -217,8 +217,8 @@
 
 - dba9f5c: fix: flow chart cannot trigger addEdgeService
 - Updated dependencies [dba9f5c]
-  - @wow/tflow-core@1.0.30
-  - @wow/tflow-hook@1.0.30
+  - @jiangzhongxi0322/tflow-core@1.0.30
+  - @jiangzhongxi0322/tflow-hook@1.0.30
 
 ## 1.0.29
 
@@ -226,8 +226,8 @@
 
 - 0a2c18d: fix: cannot update node since use wrong node id
 - Updated dependencies [0a2c18d]
-  - @wow/tflow-core@1.0.29
-  - @wow/tflow-hook@1.0.29
+  - @jiangzhongxi0322/tflow-core@1.0.29
+  - @jiangzhongxi0322/tflow-hook@1.0.29
 
 ## 1.0.28
 
@@ -235,8 +235,8 @@
 
 - 634d925: fix: addEdgeService is called more than once when edge connecting is rejected
 - Updated dependencies [634d925]
-  - @wow/tflow-core@1.0.28
-  - @wow/tflow-hook@1.0.28
+  - @jiangzhongxi0322/tflow-core@1.0.28
+  - @jiangzhongxi0322/tflow-hook@1.0.28
 
 ## 1.0.27
 
@@ -244,8 +244,8 @@
 
 - e7c7ccb: fix: dag extension connecting edge support right to left layout
 - Updated dependencies [e7c7ccb]
-  - @wow/tflow-core@1.0.27
-  - @wow/tflow-hook@1.0.27
+  - @jiangzhongxi0322/tflow-core@1.0.27
+  - @jiangzhongxi0322/tflow-hook@1.0.27
 
 ## 1.0.26
 
@@ -253,8 +253,8 @@
 
 - c79a9ea: fix: after add node port update nodeConfig automatically
 - Updated dependencies [c79a9ea]
-  - @wow/tflow-core@1.0.26
-  - @wow/tflow-hook@1.0.26
+  - @jiangzhongxi0322/tflow-core@1.0.26
+  - @jiangzhongxi0322/tflow-hook@1.0.26
 
 ## 1.0.25
 
@@ -262,15 +262,15 @@
 
 - 9bc9095: feat: add useConfig to flow chart
 - Updated dependencies [9bc9095]
-  - @wow/tflow-hook@1.0.24
-  - @wow/tflow-core@1.0.25
+  - @jiangzhongxi0322/tflow-hook@1.0.24
+  - @jiangzhongxi0322/tflow-core@1.0.25
 
 ## 1.0.24
 
 ### Patch Changes
 
 - Updated dependencies [232b897]
-  - @wow/tflow-core@1.0.24
+  - @jiangzhongxi0322/tflow-core@1.0.24
 
 ## 1.0.23
 
@@ -278,8 +278,8 @@
 
 - 922e83e: feat: add layout prop to DagGraphExtension Component
 - Updated dependencies [922e83e]
-  - @wow/tflow-core@1.0.23
-  - @wow/tflow-hook@1.0.23
+  - @jiangzhongxi0322/tflow-core@1.0.23
+  - @jiangzhongxi0322/tflow-hook@1.0.23
 
 ## 1.0.22
 
@@ -289,8 +289,8 @@
 - 24db2b1: Command: add update node port command for dynamic node port purpose.
 - Updated dependencies [24db2b1]
 - Updated dependencies [24db2b1]
-  - @wow/tflow-core@1.0.22
-  - @wow/tflow-hook@1.0.22
+  - @jiangzhongxi0322/tflow-core@1.0.22
+  - @jiangzhongxi0322/tflow-hook@1.0.22
 
 ## 1.0.21
 
@@ -298,8 +298,8 @@
 
 - 1c20705: feat: support createNodeService and createEdgeService stop command execution Close#73
 - Updated dependencies [1c20705]
-  - @wow/tflow-core@1.0.21
-  - @wow/tflow-hook@1.0.21
+  - @jiangzhongxi0322/tflow-core@1.0.21
+  - @jiangzhongxi0322/tflow-hook@1.0.21
 
 ## 1.0.20
 
@@ -307,8 +307,8 @@
 
 - 92eeefa: feat: support model options in add/del node/edge command Close#68
 - Updated dependencies [92eeefa]
-  - @wow/tflow-hook@1.0.20
-  - @wow/tflow-core@1.0.20
+  - @jiangzhongxi0322/tflow-hook@1.0.20
+  - @jiangzhongxi0322/tflow-core@1.0.20
 
 ## 1.0.19
 
@@ -318,8 +318,8 @@
 - 9f21cf4: chore: fix destroy spell issue
 - Updated dependencies [9f21cf4]
 - Updated dependencies [9f21cf4]
-  - @wow/tflow-core@1.0.19
-  - @wow/tflow-hook@1.0.19
+  - @jiangzhongxi0322/tflow-core@1.0.19
+  - @jiangzhongxi0322/tflow-hook@1.0.19
 
 ## 1.0.18
 
@@ -327,8 +327,8 @@
 
 - resolve workspace:version issues
 - Updated dependencies
-  - @wow/tflow-core@1.0.18
-  - @wow/tflow-hook@1.0.18
+  - @jiangzhongxi0322/tflow-core@1.0.18
+  - @jiangzhongxi0322/tflow-hook@1.0.18
 
 ## 1.0.17
 
@@ -336,8 +336,8 @@
 
 - c46813a: fix: xflow edgeConfig process logic, support multi type of port config
 - Updated dependencies [c46813a]
-  - @wow/tflow-core@1.0.17
-  - @wow/tflow-hook@1.0.17
+  - @jiangzhongxi0322/tflow-core@1.0.17
+  - @jiangzhongxi0322/tflow-hook@1.0.17
 
 ## 1.0.16
 
@@ -345,5 +345,5 @@
 
 - use pnpm and changeset to release pkgs
 - Updated dependencies
-  - @wow/tflow-core@1.0.16
-  - @wow/tflow-hook@1.0.16
+  - @jiangzhongxi0322/tflow-core@1.0.16
+  - @jiangzhongxi0322/tflow-hook@1.0.16

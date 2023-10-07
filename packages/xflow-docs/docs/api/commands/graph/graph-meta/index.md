@@ -56,7 +56,7 @@ appRef.executeCommand(XFlowGraphCommands.LOAD_META.id, {
 
 ```tsx | pure
 import React from 'react'
-import { MODELS, useXFlowAPP } from '@wow/tflow'
+import { MODELS, useXFlowAPP } from '@jiangzhongxi0322/tflow'
 
 const Demo = () => {
   const app = useXFlowApp()

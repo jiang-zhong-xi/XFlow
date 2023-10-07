@@ -1,5 +1,5 @@
 import React from 'react'
-import { createComponentModel, Disposable, MODELS, useXFlowApp } from '@wow/tflow-core'
+import { createComponentModel, Disposable, MODELS, useXFlowApp } from '@jiangzhongxi0322/tflow-core'
 import type { IProps, IFlowchartNode, IRegisterNode } from './interface'
 import { nodeService } from './utils'
 import { isArray } from 'lodash'

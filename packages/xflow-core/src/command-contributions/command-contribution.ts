@@ -22,7 +22,7 @@ import { registerGroupCommand, hookhubList as groupHooks } from './group'
 import { registerModelServiceCommand, hookhubList as observablesHooks } from './models'
 
 /** Command Hooks*/
-import { HookHub } from '@wow/tflow-hook'
+import { HookHub } from '@jiangzhongxi0322/tflow-hook'
 import { CommandConfig } from './config'
 import type { ICmdHooks } from './interface'
 import type { IEvent } from '../hooks/interface'

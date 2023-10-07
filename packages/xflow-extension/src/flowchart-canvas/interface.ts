@@ -1,6 +1,6 @@
 import type React from 'react'
-import type { IPosition, NsGraph } from '@wow/tflow-core'
-import type { GraphConfig } from '@wow/tflow-core/es/xflow-main/graph/config'
+import type { IPosition, NsGraph } from '@jiangzhongxi0322/tflow-core'
+import type { GraphConfig } from '@jiangzhongxi0322/tflow-core/es/xflow-main/graph/config'
 import type { Graph as X6Graph, Edge } from '@antv/x6'
 
 export type Datum = {

@@ -1,5 +1,5 @@
 import { inject, injectable } from 'mana-syringe'
-import type { HookHub } from '@wow/tflow-hook'
+import type { HookHub } from '@jiangzhongxi0322/tflow-hook'
 import type { NsGraph } from '../../interface'
 import type { IHooks } from '../../hooks/interface'
 import type { IArgsBase } from '../../command/interface'

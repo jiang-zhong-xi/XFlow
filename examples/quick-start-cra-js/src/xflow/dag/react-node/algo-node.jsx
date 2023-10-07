@@ -7,7 +7,7 @@ import {
   ExclamationCircleOutlined,
   InfoCircleOutlined,
 } from '@ant-design/icons'
-import { NsGraphStatusCommand } from '@wow/tflow'
+import { NsGraphStatusCommand } from '@jiangzhongxi0322/tflow'
 import './algo-node.less'
 
 const fontStyle = { fontSize: '16px', color: '#3057e3' }

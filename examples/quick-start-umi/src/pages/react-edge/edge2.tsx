@@ -1,6 +1,6 @@
 import React from 'react';
-import type { NsGraph } from '@wow/tflow';
-import { useAppContext } from '@wow/tflow';
+import type { NsGraph } from '@jiangzhongxi0322/tflow';
+import { useAppContext } from '@jiangzhongxi0322/tflow';
 import './edge2.less';
 
 const Edge2: NsGraph.IEdgeRender = (props) => {

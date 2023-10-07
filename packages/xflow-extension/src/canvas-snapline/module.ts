@@ -1,7 +1,7 @@
 import 'reflect-metadata'
 /** Application 扩展依赖 */
 
-import { ManaSyringe } from '@wow/tflow-core'
+import { ManaSyringe } from '@jiangzhongxi0322/tflow-core'
 import { HookContribution } from './contributions/hook'
 
 export interface IConfig {}

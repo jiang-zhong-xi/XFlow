@@ -1,4 +1,9 @@
-import type { IGraphCommandService, IModelService, IPosition, NsGraph } from '@wow/tflow-core'
+import type {
+  IGraphCommandService,
+  IModelService,
+  IPosition,
+  NsGraph,
+} from '@jiangzhongxi0322/tflow-core'
 import type { Cell } from '@antv/x6'
 import type { NsJsonSchemaForm } from '../canvas-json-schema-form'
 

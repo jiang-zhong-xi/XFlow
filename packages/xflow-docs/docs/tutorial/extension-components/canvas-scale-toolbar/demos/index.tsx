@@ -3,12 +3,12 @@
  * desc: CanvasScaleToolbar组件的使用，只需要配置下position属性
  */
 import React from 'react'
-import type { IAppLoad, NsGraphCmd } from '@wow/tflow'
-import { XFlowGraphCommands } from '@wow/tflow'
-import { XFlow, createGraphConfig, XFlowCanvas, CanvasScaleToolbar } from '@wow/tflow'
+import type { IAppLoad, NsGraphCmd } from '@jiangzhongxi0322/tflow'
+import { XFlowGraphCommands } from '@jiangzhongxi0322/tflow'
+import { XFlow, createGraphConfig, XFlowCanvas, CanvasScaleToolbar } from '@jiangzhongxi0322/tflow'
 import { getGraphData } from './mock'
 import './index.less'
-import '@wow/tflow/dist/index.css'
+import '@jiangzhongxi0322/tflow/dist/index.css'
 
 /**  Demo Props  */
 export interface IDemoProps {

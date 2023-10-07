@@ -1,6 +1,6 @@
 import { inject, injectable } from 'mana-syringe'
 import { createDraft, finishDraft } from 'immer'
-import type { HookHub } from '@wow/tflow-hook'
+import type { HookHub } from '@jiangzhongxi0322/tflow-hook'
 import type { IArgsBase } from '../../command/interface'
 import { ICommandHandler, ICommandContextProvider } from '../../command/interface'
 import { XFlowModelCommands } from '../constant'

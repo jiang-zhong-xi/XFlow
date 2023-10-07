@@ -1,6 +1,6 @@
 import type { Syringe } from 'mana-syringe'
 import type { IGraphCommand } from '../../command/interface'
-import type { HookHub } from '@wow/tflow-hook'
+import type { HookHub } from '@jiangzhongxi0322/tflow-hook'
 
 import { NsAddGroup, AddGroupCommand } from './group-add'
 import { NsDelGroup, DelGroupCommand } from './group-del'

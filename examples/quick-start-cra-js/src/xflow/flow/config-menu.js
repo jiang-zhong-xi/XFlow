@@ -1,5 +1,5 @@
-import { createCtxMenuConfig, MenuItemType } from '@wow/tflow'
-import { IconStore, XFlowNodeCommands, XFlowEdgeCommands } from '@wow/tflow'
+import { createCtxMenuConfig, MenuItemType } from '@jiangzhongxi0322/tflow'
+import { IconStore, XFlowNodeCommands, XFlowEdgeCommands } from '@jiangzhongxi0322/tflow'
 import { DeleteOutlined, EditOutlined, StopOutlined } from '@ant-design/icons'
 
 /** 节点命令 */

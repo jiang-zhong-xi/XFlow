@@ -1,5 +1,5 @@
-import type { NsGraph } from '@wow/tflow'
-import { uuidv4 } from '@wow/tflow'
+import type { NsGraph } from '@jiangzhongxi0322/tflow'
+import { uuidv4 } from '@jiangzhongxi0322/tflow'
 import { DND_NODE_RENDER_ID } from './constant'
 
 // NodeConfig
