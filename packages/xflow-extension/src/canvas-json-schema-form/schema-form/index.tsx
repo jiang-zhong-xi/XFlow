@@ -84,35 +84,42 @@ export const SchemaForm: React.FC<Props> = props => {
           const { name: tabName, groups } = tab
           return (
             <TabPane key={tabName} tab={tabName}>
-              {groups.length === 0 && <Empty style={{ padding: '24px 0' }} />}
-              {groups.length > 0 &&
-                groups.map(group => {
-                  const { controls: groupControls = [] } = group
-                  if (groupControls.length === 0) {
-                    return <Empty style={{ padding: '24px 0' }} />
-                  }
-                  return groupControls.map(control => {
-                    const { shape, name: controlName } = control
-                    const ControlComponent = getControlFromMap(
-                      shape,
-                      controlMap,
-                      defaultControlRender,
-                    )
-                    if (!ControlComponent) {
-                      console.error('未找到对应的控件:', shape)
-                      return null
+              <div className="flowchart-editor-panel-body">
+                {groups.length === 0 && <Empty style={{ padding: '24px 0' }} />}
+                {groups.length > 0 &&
+                  groups.map(group => {
+                    const { controls: groupControls = [], name } = group
+                    if (groupControls.length === 0) {
+                      return <Empty style={{ padding: '24px 0' }} key={name} />
                     }
                     return (
-                      <ControlComponent
-                        key={controlName as string}
-                        form={form}
-                        controlSchema={control}
-                        triggerUpdate={innerTriggerUpdate}
-                        afterUpdatingCb={afterUpdatingCb}
-                      />
+                      <div className="flowchart-editor-panel-group" key={name}>
+                        {name && <h5>{name}</h5>}
+                        {groupControls.map(control => {
+                          const { shape, name: controlName } = control
+                          const ControlComponent = getControlFromMap(
+                            shape,
+                            controlMap,
+                            defaultControlRender,
+                          )
+                          if (!ControlComponent) {
+                            console.error('未找到对应的控件:', shape)
+                            return null
+                          }
+                          return (
+                            <ControlComponent
+                              key={controlName as string}
+                              form={form}
+                              controlSchema={control}
+                              triggerUpdate={innerTriggerUpdate}
+                              afterUpdatingCb={afterUpdatingCb}
+                            />
+                          )
+                        })}
+                      </div>
                     )
-                  })
-                })}
+                  })}
+              </div>
             </TabPane>
           )
         })}
