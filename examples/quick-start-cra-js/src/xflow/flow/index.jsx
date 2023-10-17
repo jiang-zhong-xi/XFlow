@@ -108,7 +108,41 @@ const Demo = props => {
         <CanvasSnapline color="#faad14" />
         <CanvasNodePortTooltip />
       </FlowchartCanvas>
-      <FlowchartFormPanel show={true} position={{ width: 200, top: 40, bottom: 0, right: 0 }} />
+      <FlowchartFormPanel
+        show={true}
+        position={{ width: 200, top: 40, bottom: 0, right: 0 }}
+        formSchemaService={() => {
+          return {
+            tabs: [
+              {
+                name: '数据',
+                groups: [
+                  {
+                    name: 'basic',
+                    controls: [
+                      {
+                        label: 'Description',
+                        name: 'description',
+                        shape: 'Input',
+                      },
+                    ],
+                  },
+                  {
+                    name: 'config',
+                    controls: [
+                      {
+                        label: 'Forward Propagation',
+                        name: 'Forward Propagation',
+                        shape: 'Checkbox',
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+          }
+        }}
+      />
       <KeyBindings config={keybindingConfig} />
     </XFlow>
   )
