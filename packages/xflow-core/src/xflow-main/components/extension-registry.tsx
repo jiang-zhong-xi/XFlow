@@ -68,7 +68,10 @@ export class ExtensionRegistry {
   }
 }
 
-/** 获取Xflow extension，用于收集React组件的配置 */
+/**  代码笔记
+ * * 相当于对ExtensionRegistry（ER）的代理
+ * * 代理中添加ER实例的缓存类似于单例，只是单例为什么不通过mana-syring实现呢？
+ */
 export const createExtensionRegistry = () => {
   /* eslint-disable-next-line react-hooks/rules-of-hooks */
   const registry = React.useMemo(() => {

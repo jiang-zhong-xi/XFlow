@@ -95,12 +95,20 @@ export class GraphCommandRegistry
     const map = this.Globals.getValue() as Map<string, any>
     return map.get(key)
   }
+  /**  代码笔记
+   * * Contribution的详解见FrontedApplication
+   */
   constructor(
     @contrib(IGraphCommandContribution)
     protected readonly contributionProvider: Contribution.Provider<IGraphCommandContribution>,
   ) {}
 
   onStart(): void {
+    /**  代码笔记
+     * * 和FrontedApplication一样，这里是对GraphCommandRegistry的插件的初始化
+     * * GraphCommandRegistry的插件包括XFlowCommandContribution
+     * * 初始化过程看XFlowCommandContribution
+     */
     const contributions = this.contributionProvider.getContributions()
     for (const contribItem of contributions) {
       contribItem.registerGraphCommands(this)
@@ -125,8 +133,14 @@ export class GraphCommandRegistry
     cmdArgs: Args,
     hook: IRuntimeHook<Args, Result> = [],
   ) {
+    /**  代码笔记
+     * * factory以及factory.createCommand相关看XFlowCommandContribution.registerGraphCommands
+     */
     const factory = this.getFactory(commandId)
     if (factory) {
+      /**  代码笔记
+       * * 这里的cmd对应的是例如AddNodeCommand这样的类
+       */
       const cmd = (await factory.createCommand(commandId, cmdArgs, hook)) as ICommandHandler<
         Args,
         Result

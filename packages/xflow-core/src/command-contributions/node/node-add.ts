@@ -64,12 +64,25 @@ export class AddNodeCommand implements ICommand {
   /** 执行Cmd */
   execute = async () => {
     const ctx = this.contextProvider()
+    /**  代码笔记
+     * * runtimeHook 执行命令时传入的的钩子
+     * * ctx.getHooks() 提前内置或者用户注入的钩子见packages\xflow-core\src\hooks\hook-registry.ts
+     */
     const { args, hooks: runtimeHook } = ctx.getArgs()
     const hooks = ctx.getHooks()
-
+    /**  代码笔记
+     * * hooks.addNode的注册见XFlowCommandContribution.registerHookHub
+     *
+     * * hooks.[key]指的都是HookHub的实例，call函数的逻辑见xflow-hook/HookHub
+     */
     const result = await hooks.addNode.call(
       args,
       async handlerArgs => {
+        /**  代码笔记
+         * * createNodeServicecellFactory、cellFactory、commandService、options
+         * * 详见packages\xflow-docs\docs\api\commands\nodes\node-add\index.md
+         * *
+         */
         const { createNodeService, cellFactory, commandService, options } = handlerArgs
         const graph = await ctx.getX6Graph()
         let rawNode: NsGraph.INodeConfig = handlerArgs.nodeConfig
@@ -133,6 +146,9 @@ export class AddNodeCommand implements ICommand {
       const graphConfig = await ctx.getGraphConfig()
       nodeConfig.view = graphConfig.graphId
     }
+    /**  代码笔记
+     * * 没有定义component则使用预设graphConfig component
+     */
     /** 获取 react component */
     if (!nodeConfig.component) {
       const reactComponent = await this.getNodeReactComponent(nodeConfig)

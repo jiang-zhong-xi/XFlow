@@ -60,9 +60,18 @@ export interface IGeneralAppService {
 export const initHooks = () => ({
   graphOptions: new HookHub<Graph.Options>(),
   reactNodeRender: new HookHub<Map<string, NsGraph.INodeRender>>(),
+  /**  代码笔记
+   * * 在graph init后, 外部事件
+   */
   reactEdgeLabelRender: new HookHub<Map<string, NsGraph.IEdgeRender>>(),
   afterGraphInit: new HookHub<IGeneralAppService>(),
+  /**  代码笔记
+   * * 在graph停止时 取消外部事件
+   */
   beforeGraphDestroy: new HookHub<IGeneralAppService>(),
+  /**  代码笔记
+   * * 在graph启动前, 注册外部事件到x6Events的hooks上
+   */
   x6Events: new HookHub<IEventCollection, IEventSubscription>(),
 })
 

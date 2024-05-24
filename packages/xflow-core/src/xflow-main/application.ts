@@ -16,9 +16,25 @@ import { cellsToJson } from '../common/graph-utils'
 export { IFrontendApplicationContribution } from './interface'
 
 const TIMER_WARNING_THRESHOLD = 100
-
+/**  代码笔记
+ * * singleton声明FrontendApplication（FA）是单例的
+ * * FA是“门户”，开发者通过useXFlowApp或者API回调参数都可以获取FA的实例
+ */
 @singleton()
 export class FrontendApplication {
+  /**  代码笔记
+   * * contrib不同于inject，contrib注入的是一个集合，inject注入的是一个对象
+   * * contrib使用的过程如下：
+   * * 1. mana-syringe暴露了一个函数Contrition
+   * * 2. 通过Contribution.register(register, IFrontendApplicationContribution)绑定了一个token（IFrontendApplicationContribution）和一个useDynamic，useDynamic是一个函数，函数范围一个类（A）的实例
+   * * 3. 在FA中通过下面的代码获取到IFrontendApplicationContribution这个token对应的对象~类A的实例a
+   * * 4. 其它的类，想加入这个集合通过类似contrib: [IFrontendApplicationContribution, IGraphCommandService]的方式“声明”，包括GraphCommandRegistry、HookRegistry、KeyBindingRegistry、MenuRegistry、ModelRegistry、ToolbarRegistry
+   * * 5. 通过a.getContributions方式获取所有token为IFrontendApplicationContribution的对象的集合
+   *
+   * * contribution翻译时同样是贡献，但这里翻译为插件可能更合适，某个类通过插件的方式增强了自己的作用，这也是一种高内聚低耦合的方式，类只负责获取和使用插件对象，而具体的绑定由插件类自己完成
+   *
+   * * 加入类中由很多成员对象都有一个过程，比如初始化，那么就可以通过contribution的方式，让有共同过程的对象很容易的实现
+   */
   /** app的扩展 */
   @contrib(IFrontendApplicationContribution)
   protected readonly contributions!: Contribution.Provider<IFrontendApplicationContribution>

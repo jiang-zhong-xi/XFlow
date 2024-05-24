@@ -20,6 +20,9 @@ export const HookRegistry: React.FC<IProps> = props => {
   )
 
   React.useEffect(() => {
+    /**  代码笔记
+     * * config中包含开发者（框架使用者）自定义的hook，在命令和其它模块也是通过config传入的
+     */
     const disposable = extensionRegistry.addCoreModule({
       config: hookConfig,
       createModule,

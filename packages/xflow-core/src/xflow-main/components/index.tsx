@@ -69,7 +69,9 @@ export interface IProps {
 export type IAppLoad = (app: IApplication, registry?: ExtensionRegistry) => void
 export type IAppDestroy = (app: IApplication) => void
 export type IAppConfigReady = (registry: ExtensionRegistry) => void
-
+/**  代码笔记
+ * * 顶层组件，任何Xflow的使用都要在这个组件下
+ */
 export const XFlow: React.FC<IProps> = props => {
   const {
     meta,
@@ -102,8 +104,15 @@ export const XFlow: React.FC<IProps> = props => {
       onAppConfigReady(extensionRegistry)
     }
 
+    /**  代码笔记
+     * * initApp之前完成了插件的收集，也就是模块声明自己有哪些内容要“绑定”，详见initApp笔记
+     * * initApp则完成了门户类FrontendApplication的实例化以及涉及的contributions的实例化
+     */
     /** 初始化应用 */
     const app = initApp(extensionRegistry)
+    /**  代码笔记
+     * * app.start()则是对所有contributions以及嵌套的contributions的实例进行初始化具体可以见各个contribution
+     */
     app.start().then(async () => {
       /** 保留引用 */
       setAppRef(app)

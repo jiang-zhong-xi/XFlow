@@ -45,14 +45,30 @@ export class XFlowCommandContribution
   @inject(CommandConfig)
   commandConfig: CommandConfig
 
+  /**  代码笔记
+   * * 把图相关的命令注册到GraphCommandRegistry中，包括内部命令和开发人员传入的外部命令
+   *
+   * * GraphCommandRegistry让注册的过程由插件完成，自己的代码更精简，扩展更容易
+   */
   /** 注册画布节点命令 */
   registerGraphCommands(registry: GraphCommandRegistry): void {
+    /**  代码笔记
+     * * command中保存了该命令唯一的一个ID，所有的命令都用一个commandFactory，这里保存了ID和工厂的映射
+     * * 工厂类似于委托模式，所有的命令都用一个工厂对象，而工厂对象内部通过唯一的ID去找真正的命令，这部分见commandFactory(IGraphCommandFactory)详解
+     */
     /** 注册内置的命令 */
     hookhubList.forEach(({ command }) => {
       registry.registerCommand(command, {
         createCommand: this.commandFactory,
       })
     })
+    /**  代码笔记
+     * * 示例见packages\xflow-docs\docs\tutorial\solutions\dag\demos\basic\config-cmd.ts
+     * * createCmdConfig是暴露给开发人员自定义外部命令的，详见createCmdConfig
+     * * 获取开发人员传入的外部命令，然后保存到GraphCommandRegistry
+     *
+     * * 而commandConfig是基于CommandConfig然后加上开发人员自定义部分的对象，详见CommandConfig
+     */
     /** 注册外部传入的命令 */
     this.commandConfig.getConfig().then(({ getContributions }) => {
       const CommandContributions = getContributions()
@@ -63,7 +79,7 @@ export class XFlowCommandContribution
       })
     })
   }
-  /** 注册钩子 */
+  /** hooksService中hooks的处理函数 */
   registerHook = async (hooks: ICmdHooks) => {
     const d = hooks.x6Events.registerHook({
       name: 'bind group node move event',
@@ -164,13 +180,23 @@ export class XFlowCommandContribution
       d.dispose()
     })
   }
+  /**  代码笔记
+   * * 注册内置命令以及外部命令的hook，注册到packages\xflow-core\src\hooks\hook-registry.ts中
+   * * 所有的钩子都注册到hookRegistry,所有的命令都注册到了GraphCommandRegistry上
+   *
+   * * 钩子和插件都是通过contribution扩展的方式分散在各个扩展中，在onStart时在统一注册
+   *
+   * * 实现的核心时contribution，这里contribution就可以理解为扩展槽，扩展时直接声明为对应的类型就能通过contribution获取到，这样实现了高内聚低耦合，维护和扩展都很方便
+   */
   /** 注册钩子 */
   registerHookHub = async (registry: IHookService<ICmdHooks>) => {
     const toDispose = new DisposableCollection()
+    // 内置的命令的hooks
     hookhubList.forEach(({ hookKey, createHook = defaultHookFactory }) => {
       const d = registry.registerHookHub(hookKey, createHook())
       toDispose.push(d)
     })
+    /** 注册外部传入的hook */
     this.commandConfig.getConfig().then(({ getContributions }) => {
       const CommandContributions = getContributions()
       CommandContributions.forEach(({ hookKey, createHook = defaultHookFactory }) => {
@@ -186,6 +212,12 @@ export const registerXFlowCommandContribution = (
   register: Syringe.Register,
   commandConfig: CommandConfig,
 ) => {
+  /**  代码笔记
+   * * 这里注册是把ICommandHandler作为标示，command.id作为name
+   * * 所以在获取时就能通过child.getNamed<ICommandHandler>(ICommandHandler, commandId)获取
+   *
+   * * 目的1是通过ICommandHandler归类，目的是可以通过ICommandHandler获取所有的command
+   */
   /** 扩展 用户自定义命令 */
   const configContributions = commandConfig.getCommandContributions()
   configContributions.forEach(execution => {
@@ -196,6 +228,10 @@ export const registerXFlowCommandContribution = (
     })
   })
 
+  /**  代码笔记
+   * * 这里注册的是把命令类作为标示
+   * * 所以获取时也是通过命令类获取
+   */
   /** 扩展 Graph 命令 */
   registerGraphCommand(register)
   /** 扩展 Node 命令 */

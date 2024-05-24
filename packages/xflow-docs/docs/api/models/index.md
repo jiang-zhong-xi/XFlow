@@ -93,7 +93,7 @@ export namespace SELECTED_GROUPS {
   export const useValue = useModelValueUtil<IState>(id)
 }
 /** 画布节点右键菜单状态 */
-export namespace CONTEXTMENU_NODE {
+export namespace  {
   export const id = 'CONTEXTMENU_NODE'
   export type IState = Node<Node.Properties> | null
   export const getModel = getModelUtil<IState>(id)

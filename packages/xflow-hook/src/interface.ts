@@ -31,9 +31,9 @@ export interface IHookHub<Args, Result> {
 
 /** hooks 执行的策略 */
 export enum ScheduleTypeEnum {
-  /** pipeline串行执行：所有async任务完成后再执行回调 */
+  /** pipeline串行执行：所有async任务完成后再同步执行回调 */
   'ASYNC_SRRIES' = 'ASYNC_SRRIES',
-  /** async并行执行：等待Promise.all所有async任务后再执行回调 */
+  /** async并行执行：所有async任务后再异步执行回调 */
   'ASYNC_PARALLEL' = 'ASYNC_PARALLEL',
 }
 

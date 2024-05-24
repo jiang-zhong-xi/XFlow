@@ -16,7 +16,9 @@ export const getDefaultContributions = () => {
 export interface IRegisterCommandContribution {
   (): ICommandContributionConfig[]
 }
-
+/**  代码笔记
+ * * 该类的实例对象可供开发人员修改详见createCmdConfig
+ */
 export class CommandConfig implements IHookContribution<ICmdHooks> {
   private getContributions: IRegisterCommandContribution
 
