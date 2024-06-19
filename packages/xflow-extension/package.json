@@ -44,13 +44,11 @@
     "moment": "^2.29.1",
     "rc-field-form": "^1.22.0",
     "react-color": "2.17.1",
-    "antd": "^4.6.3",
     "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
     "react": "^16.8.0  || ^17.0.0",
     "react-dom": "^16.8.0  || ^17.0.0",
-    "antd": "5.18.0",
     "@antv/x6": "^1.30.1",
     "@antv/x6-react-components": "^1.1.15",
     "@antv/x6-react-shape": "^1.5.2",
