@@ -42,7 +42,7 @@ const RenderTooltip: React.FC<IConfigProps> = props => {
   const title = props.getTooltip ? props.getTooltip(state) : state.tooltip
 
   return (
-    <Tooltip visible={visible} title={title} placement={state.placement || 'top'}>
+    <Tooltip open={visible} title={title} placement={state.placement || 'top'}>
       <span
         className="canvas-node-port-tooltip"
         style={{ position: 'absolute', left: state.position.x, top: state.position.y }}
