@@ -1,6 +1,6 @@
 {
   "name": "@jiangzhongxi0322/tflow",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist es lib",
@@ -78,8 +78,8 @@
     "typescript": "^4.5.4"
   },
   "peerDependencies": {
-    "@ant-design/icons": "^4.6.0",
-    "antd": "5.18.0",
+    "@ant-design/icons": "^5.3.7",
+    "antd": "^5.18.0",
     "lodash": "^4.17.20",
     "react": "^16.8.0  || ^17.0.0",
     "react-dom": "^16.8.0  || ^17.0.0"
