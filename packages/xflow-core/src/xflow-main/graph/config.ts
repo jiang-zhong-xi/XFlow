@@ -281,7 +281,16 @@ export const registerGraphConfig = (register: Syringe.Register, graphConfig: Gra
 interface IValueProxy<T> {
   getValue: () => T
 }
-
+/**  代码笔记
+ * * createGraphConfig接收一个函数参数A然后返回一个函数B，B就是useGraphConfig, react钩子函数
+ * * 钩子B
+ * *       接收一个props参数，即自定义属性。
+ * *       新建一个GraphConfig实例，由于用了useMemo所以B无论调用多少次都实例化一个GraphConfig
+ * * 函数参数A
+ * *        接受两个参数，config即GraphConfig实例，propsContainer即props
+ * *
+ * * 总结：createGraphConfig的回调参数A的作用是可以定义不同的config和props的合并方式，而钩子B的作用是在不同组件使用B可以共享config和props
+ */
 export const createGraphConfig =
   <T = any>(addOptions: (config: GraphConfig, proxy: IValueProxy<T>) => void) =>
   (props?: T) => {

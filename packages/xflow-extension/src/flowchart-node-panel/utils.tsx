@@ -90,7 +90,10 @@ export const nodeService = async nodes => {
     }),
   ]
 }
-
+/**  代码笔记
+ * * 把registerNodes中包含的node都拿出来，然后用item.key作为分组依据
+ * * 拿出来的node在“共享配置”中存一份，在共享配置的graphConfig再存一份
+ */
 export const registerCustomNode = (panelConfigs?: IRegisterNode | IRegisterNode[]) => {
   const registerNodes: IRegisterNode[] = (
     panelConfigs ? (isArray(panelConfigs) ? panelConfigs : [panelConfigs]) : []

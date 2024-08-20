@@ -43,7 +43,6 @@ const defaultEdgeConfig = {
         width: 12,
         height: 8,
       },
-      strokeDasharray: '5 5',
       strokeWidth: 1,
     },
   },

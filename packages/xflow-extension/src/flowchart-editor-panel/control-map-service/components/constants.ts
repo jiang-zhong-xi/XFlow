@@ -5,7 +5,7 @@ export const DefaultEdgeConfig = {
   attrs: {
     line: {
       stroke: '#A2B1C3',
-      strokeWidth: 1,
+      strokeWidth: 0,
     },
     text: {
       fill: '#000',

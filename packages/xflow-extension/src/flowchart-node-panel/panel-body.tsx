@@ -66,7 +66,6 @@ export const NodePanelBody: React.FC<IBodyProps> = props => {
           ...ports,
           items: ports.items?.map(item => ({
             ...item,
-            id: uuidv4(),
           })),
         },
       }

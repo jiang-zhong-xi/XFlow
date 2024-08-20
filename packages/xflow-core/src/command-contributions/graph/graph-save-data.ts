@@ -70,11 +70,13 @@ export class GraphSaveDataCommand implements ICommand {
           const data = node.getData<NsGraph.INodeConfig>()
           const position = node.position()
           const size = node.size()
+          const ports = node.ports as any
           const model = {
             id: node.id,
             ...data,
             ...position,
             ...size,
+            ports,
           }
           if (includeAttrs) {
             model.attrs = node.getAttrs()
