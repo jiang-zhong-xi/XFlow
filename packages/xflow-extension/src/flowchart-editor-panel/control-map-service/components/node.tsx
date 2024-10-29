@@ -42,7 +42,7 @@ const NodeComponent = props => {
 
   return (
     <div className={`${PREFIX}-panel-body`}>
-      <div className={`${PREFIX}-panel-group`}>
+      {/* <div className={`${PREFIX}-panel-group`}>
         <h5>内容</h5>
         <InputFiled
           label="标题"
@@ -51,9 +51,9 @@ const NodeComponent = props => {
             onNodeConfigChange('label', value)
           }}
         />
-      </div>
+      </div> */}
       <div className={`${PREFIX}-panel-group`}>
-        <h5>样式</h5>
+        {/* <h5>样式</h5> */}
         <Position
           x={nodeConfig.x}
           y={nodeConfig.y}

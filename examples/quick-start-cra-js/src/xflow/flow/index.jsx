@@ -1,3 +1,4 @@
+import { Input } from 'antd'
 import React, { useRef, useEffect } from 'react'
 /** 交互组件 */
 import {
@@ -11,6 +12,7 @@ import {
   FlowchartNodePanel,
   /** 流程图表单组件 */
   FlowchartFormPanel,
+  FlowchartFormWrapper,
   /** 通用组件：快捷键 */
   KeyBindings,
   /** 通用组件：画布缩放 */
@@ -35,10 +37,33 @@ import { useToolbarConfig } from './config-toolbar'
 import { useKeybindingConfig } from './config-keybinding'
 /** 配置Dnd组件面板 */
 import { DndNode } from './react-node/dnd-node'
-
 import '@jiangzhongxi0322/tflow/dist/index.css'
 
 import './index.less'
+
+const InputComponent = props => {
+  const { plugin = {} } = props
+  const { updateNode } = plugin
+  const onLabelChange = e => {
+    updateNode({
+      label: e.target.value,
+    })
+  }
+  return <Input value={'label'} onChange={onLabelChange} />
+}
+
+const RenameService = props => {
+  return (
+    <FlowchartFormWrapper {...props}>
+      {(config, plugin) => <InputComponent {...props} plugin={plugin} config={config} />}
+    </FlowchartFormWrapper>
+  )
+}
+
+export const controlMapService = controlMap => {
+  controlMap.set('rename-service', RenameService)
+  return controlMap
+}
 
 const Demo = props => {
   const { meta } = props
@@ -123,7 +148,7 @@ const Demo = props => {
                       {
                         label: 'Description',
                         name: 'description',
-                        shape: 'Input',
+                        shape: 'rename-service',
                       },
                     ],
                   },
@@ -142,6 +167,7 @@ const Demo = props => {
             ],
           }
         }}
+        controlMapService={controlMapService}
       />
       <KeyBindings config={keybindingConfig} />
     </XFlow>

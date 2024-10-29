@@ -32,6 +32,7 @@ export const FlowchartFormPanel: React.FC<IFlowchartFormPanelProps> = props => {
         right: !collpased ? right : -width,
       }}
     >
+      <div className="layout-dragger" />
       <div className={`${CONTAINER_CLASS}-wrapper`}>
         {/* @ts-ignore */}
         <JsonSchemaForm

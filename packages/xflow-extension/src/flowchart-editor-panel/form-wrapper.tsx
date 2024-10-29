@@ -19,12 +19,12 @@ export const FlowchartFormWrapper: React.FC<
   const { commandService, modelService } = usePanelContext()
 
   const getSelectNode = useCallback(async () => {
-    const { data } = await MODELS.SELECTED_NODE.useValue(modelService)
+    const { data } = (await MODELS.SELECTED_NODE.useValue(modelService)) || {}
     return data as object
   }, [modelService])
 
   const getSelectEdge = useCallback(async () => {
-    const cell = await MODELS.SELECTED_CELL.useValue(modelService)
+    const cell = (await MODELS.SELECTED_CELL.useValue(modelService)) || ({} as any)
     const data = cell.getData()
     return {
       id: cell.id,
@@ -84,8 +84,12 @@ export const FlowchartFormWrapper: React.FC<
 
   return (
     <FormItemWrapper schema={controlSchema}>
-      {() => {
-        return children({ ...(data as object) }, { updateNode, updateEdge, updateGroup })
+      {({ disabled, hidden }) => {
+        return children(
+          { ...(data as object) },
+          { updateNode, updateEdge, updateGroup },
+          { disabled, hidden },
+        )
       }}
     </FormItemWrapper>
   )

@@ -77,6 +77,8 @@ export class GraphSaveDataCommand implements ICommand {
             ...position,
             ...size,
             ports,
+            incomingEdges: x6Graph.getIncomingEdges(node),
+            outgoingEdges: x6Graph.getOutgoingEdges(node),
           }
           if (includeAttrs) {
             model.attrs = node.getAttrs()
@@ -86,9 +88,18 @@ export class GraphSaveDataCommand implements ICommand {
 
         const edges = x6Edges.map(edge => {
           const data = edge.getData<NsGraph.IEdgeConfig>()
+          const source = edge.getSource() as any
+          const target = edge.getTarget() as any
+          const connection = {
+            source: source.cell,
+            sourcePortId: source.port,
+            target: target.cell,
+            targetPortId: target.port,
+          }
           const model = {
-            id: edge.id,
             ...data,
+            ...connection,
+            id: edge.id,
           }
           if (includeAttrs) {
             model.attrs = edge.getAttrs()

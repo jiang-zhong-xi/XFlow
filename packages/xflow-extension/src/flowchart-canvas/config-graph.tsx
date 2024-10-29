@@ -14,7 +14,7 @@ import {
   setNodeRender,
   setGroupRender,
 } from '../flowchart-node-panel'
-import { movedNode, resizeNode, changePortsVisible, addTools, removeTools, setProps } from './utils'
+import { movedNode, resizeNode, addTools, removeTools, setProps } from './utils'
 import type { IFlowchartGraphProps } from './interface'
 
 /** 临时边 */
@@ -70,13 +70,7 @@ const XFlowEdge = Shape.Edge.registry.register(
 )
 
 export const useGraphConfig = createGraphConfig<IFlowchartGraphProps>((config, proxy) => {
-  const {
-    config: canvasConfig = {},
-    useConfig,
-    mode = 'edit',
-    showPortsOnNodeSelected = false,
-    edgeConfig = {},
-  } = proxy.getValue()
+  const { config: canvasConfig = {}, useConfig, edgeConfig = {} } = proxy.getValue()
   config.setEdgeTypeParser(edge => edge?.renderKey as string)
   /** 这里比较黑，props 共享*/
   setProps({
@@ -119,30 +113,30 @@ export const useGraphConfig = createGraphConfig<IFlowchartGraphProps>((config, p
           },
           createEdge() {
             const tempEdge = new XFlowEdge({})
-            this.once('edge:connected', args => {
-              const { edge, isNew } = args
-              /** 没有edge:connected时，会导致graph.once的事件没有执行 */
-              if (isNew && edge && edge.isEdge() && tempEdge === edge) {
-                const targetNode = edge.getTargetCell()
-                if (targetNode && targetNode.isNode()) {
-                  const targetPortId = edge.getTargetPortId()
-                  const sourcePortId = edge.getSourcePortId()
-                  const sourceCellId = edge.getSourceCellId()
-                  const targetCellId = edge.getTargetCellId()
-                  const customEdgeConfig =
-                    typeof edgeConfig === 'function' ? edgeConfig(edge) : edgeConfig
-                  this.trigger(NsAddEdgeEvent.EVENT_NAME, {
-                    targetPortId,
-                    sourcePortId,
-                    source: sourceCellId,
-                    target: targetCellId,
-                    edge: edge,
-                    tempEdgeId: tempEdge.id,
-                    ...merge(defaultEdgeConfig, customEdgeConfig),
-                  } as NsAddEdgeEvent.IArgs)
-                }
-              }
-            })
+            // this.once('edge:connected', args => {
+            //   const { edge, isNew } = args
+            //   /** 没有edge:connected时，会导致graph.once的事件没有执行 */
+            //   if (isNew && edge && edge.isEdge() && tempEdge === edge) {
+            //     const targetNode = edge.getTargetCell()
+            //     if (targetNode && targetNode.isNode()) {
+            //       const targetPortId = edge.getTargetPortId()
+            //       const sourcePortId = edge.getSourcePortId()
+            //       const sourceCellId = edge.getSourceCellId()
+            //       const targetCellId = edge.getTargetCellId()
+            //       const customEdgeConfig =
+            //         typeof edgeConfig === 'function' ? edgeConfig(edge) : edgeConfig
+            //       this.trigger(NsAddEdgeEvent.EVENT_NAME, {
+            //         targetPortId,
+            //         sourcePortId,
+            //         source: sourceCellId,
+            //         target: targetCellId,
+            //         edge: edge,
+            //         tempEdgeId: tempEdge.id,
+            //         ...merge(defaultEdgeConfig, customEdgeConfig),
+            //       } as NsAddEdgeEvent.IArgs)
+            //     }
+            //   }
+            // })
             return tempEdge
           },
           validateEdge: args => {
@@ -216,12 +210,6 @@ export const useGraphConfig = createGraphConfig<IFlowchartGraphProps>((config, p
   /** 内交互，上层通过实例绑定 */
   config.setEvents([
     {
-      eventName: 'node:selected',
-      callback: () => {
-        mode === 'edit' && changePortsVisible(false)
-      },
-    } as IEvent<'node:selected'>,
-    {
       eventName: 'edge:dblclick',
       callback: e => {
         addTools(e)
@@ -233,18 +221,6 @@ export const useGraphConfig = createGraphConfig<IFlowchartGraphProps>((config, p
         removeTools(e, cmds)
       },
     } as IEvent<'edge:mouseleave'>,
-    {
-      eventName: 'node:mouseenter',
-      callback: e => {
-        mode === 'edit' && changePortsVisible(true, e, showPortsOnNodeSelected)
-      },
-    } as IEvent<'node:mouseenter'>,
-    {
-      eventName: 'node:mouseleave',
-      callback: e => {
-        changePortsVisible(false, e)
-      },
-    } as IEvent<'node:mouseleave'>,
     {
       eventName: 'node:moved',
       callback: (e, cmds) => {
